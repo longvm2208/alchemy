@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f7fbd3ca93b194dab585b6fe1745f8, type: 3}
+  m_Name: ItemDatabaseConfig
+  m_EditorClassIdentifier: 
+  Items:
+  - {fileID: 11400000, guid: 871cb7324b9ff1347a7eb19c4f9de01e, type: 2}
+  - {fileID: 11400000, guid: 7e0b67861a0b1c44d9c6df3310a5529c, type: 2}
+  - {fileID: 11400000, guid: 704455b69e78e9d4bb3a84ca9ce9e050, type: 2}
+  - {fileID: 11400000, guid: 0c268878a11bff349a80197fa412802a, type: 2}
+  - {fileID: 11400000, guid: 278c0a51128ec744288547878cea3e7f, type: 2}
+  - {fileID: 11400000, guid: 63bb00d1ca9d3904c9337131a866c3ef, type: 2}
+  - {fileID: 11400000, guid: edd8308587a09664dbe75333f036731b, type: 2}
+  - {fileID: 11400000, guid: ca0432c80288e224d97dc1878f8852b9, type: 2}
+  - {fileID: 11400000, guid: a05ccbc97b0867a4485780b3a72ea052, type: 2}
+  - {fileID: 11400000, guid: 3fe2f1b1822fad94caceb6f6d7f4bccd, type: 2}
+  - {fileID: 11400000, guid: a71c7ac8c890de74f962124d96e672cf, type: 2}
+  - {fileID: 11400000, guid: 11207f845431cfc41ad55523ca0ed998, type: 2}
+  - {fileID: 11400000, guid: bb1ca62773b332c4ea31418a22a5ec73, type: 2}
+  - {fileID: 11400000, guid: 262dc64f0a97fbf40b3d1b9a13c0570a, type: 2}
+  - {fileID: 11400000, guid: 153cfdb80f505d842a8f98a0e8c3b4d9, type: 2}
+  - {fileID: 11400000, guid: e37b0400fbf7a1f4ab34da1295f19ba2, type: 2}
+  - {fileID: 11400000, guid: 50b2be9767627984d8677ebb1dae2948, type: 2}
+  - {fileID: 11400000, guid: ec633cde9db15e14094052d334a21117, type: 2}
+  Recipes:
+  - Id: 0
+    ItemAId: 1
+    ItemBId: 3
+    ResultItemId: 1001
+  - Id: 1
+    ItemAId: 2
+    ItemBId: 1001
+    ResultItemId: 1002
+  - Id: 2
+    ItemAId: 1
+    ItemBId: 1002
+    ResultItemId: 1003
+  - Id: 3
+    ItemAId: 1003
+    ItemBId: 1
+    ResultItemId: 1004
+  - Id: 4
+    ItemAId: 1
+    ItemBId: 5
+    ResultItemId: 1012
+  - Id: 5
+    ItemAId: 1004
+    ItemBId: 1012
+    ResultItemId: 1005
+  - Id: 6
+    ItemAId: 1001
+    ItemBId: 4
+    ResultItemId: 1006
+  - Id: 7
+    ItemAId: 1003
+    ItemBId: 1006
+    ResultItemId: 1007
+  - Id: 8
+    ItemAId: 4
+    ItemBId: 1002
+    ResultItemId: 1008
+  - Id: 9
+    ItemAId: 1007
+    ItemBId: 1008
+    ResultItemId: 1009
+  - Id: 10
+    ItemAId: 1007
+    ItemBId: 1003
+    ResultItemId: 1010
+  - Id: 11
+    ItemAId: 1003
+    ItemBId: 2
+    ResultItemId: 1011
+  appsScriptUrl: https://script.google.com/macros/s/AKfycbyctnFmyKEym9RdybzNSGkzBdp1CEDRs61yzDBU7zFTK4oLXkI8s5EJ5ld_XRKqwTuJ/exec

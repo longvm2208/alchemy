@@ -1,0 +1,9 @@
+﻿﻿# Ignore everything
+/*
+
+# Except
+!.gitignore
+!.gitattributes
+!Assets/
+!Packages/
+!ProjectSettings/
