@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Sand
   m_EditorClassIdentifier: 
-  Icon: {fileID: -1679481209, guid: 0994ab60d6fff104da52bdadc4573016, type: 3}
-  Id: 1008
+  Icon: {fileID: 0}
+  Id: 14
   Name: Sand
-  Description: Sand
+  Description: Harsh winds eroding solid mountain ridges over millennia, grinding
+    rock into fine grains.

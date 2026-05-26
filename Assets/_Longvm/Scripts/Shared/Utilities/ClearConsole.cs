@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Reflection;
 using UnityEditor;
 
@@ -11,3 +12,4 @@ public class ClearConsole
         method.Invoke(new object(), null);
     }
 }
+#endif

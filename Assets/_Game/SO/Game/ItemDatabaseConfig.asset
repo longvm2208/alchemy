@@ -13,71 +13,467 @@ MonoBehaviour:
   m_Name: ItemDatabaseConfig
   m_EditorClassIdentifier: 
   Items:
-  - {fileID: 11400000, guid: 871cb7324b9ff1347a7eb19c4f9de01e, type: 2}
-  - {fileID: 11400000, guid: 7e0b67861a0b1c44d9c6df3310a5529c, type: 2}
-  - {fileID: 11400000, guid: 704455b69e78e9d4bb3a84ca9ce9e050, type: 2}
-  - {fileID: 11400000, guid: 0c268878a11bff349a80197fa412802a, type: 2}
-  - {fileID: 11400000, guid: 278c0a51128ec744288547878cea3e7f, type: 2}
-  - {fileID: 11400000, guid: 63bb00d1ca9d3904c9337131a866c3ef, type: 2}
-  - {fileID: 11400000, guid: edd8308587a09664dbe75333f036731b, type: 2}
   - {fileID: 11400000, guid: ca0432c80288e224d97dc1878f8852b9, type: 2}
-  - {fileID: 11400000, guid: a05ccbc97b0867a4485780b3a72ea052, type: 2}
-  - {fileID: 11400000, guid: 3fe2f1b1822fad94caceb6f6d7f4bccd, type: 2}
-  - {fileID: 11400000, guid: a71c7ac8c890de74f962124d96e672cf, type: 2}
-  - {fileID: 11400000, guid: 11207f845431cfc41ad55523ca0ed998, type: 2}
-  - {fileID: 11400000, guid: bb1ca62773b332c4ea31418a22a5ec73, type: 2}
-  - {fileID: 11400000, guid: 262dc64f0a97fbf40b3d1b9a13c0570a, type: 2}
-  - {fileID: 11400000, guid: 153cfdb80f505d842a8f98a0e8c3b4d9, type: 2}
-  - {fileID: 11400000, guid: e37b0400fbf7a1f4ab34da1295f19ba2, type: 2}
   - {fileID: 11400000, guid: 50b2be9767627984d8677ebb1dae2948, type: 2}
+  - {fileID: 11400000, guid: edd8308587a09664dbe75333f036731b, type: 2}
+  - {fileID: 11400000, guid: 871cb7324b9ff1347a7eb19c4f9de01e, type: 2}
   - {fileID: 11400000, guid: ec633cde9db15e14094052d334a21117, type: 2}
+  - {fileID: 11400000, guid: e37b0400fbf7a1f4ab34da1295f19ba2, type: 2}
+  - {fileID: 11400000, guid: a05ccbc97b0867a4485780b3a72ea052, type: 2}
+  - {fileID: 11400000, guid: 262dc64f0a97fbf40b3d1b9a13c0570a, type: 2}
+  - {fileID: 11400000, guid: a71c7ac8c890de74f962124d96e672cf, type: 2}
+  - {fileID: 11400000, guid: bb1ca62773b332c4ea31418a22a5ec73, type: 2}
+  - {fileID: 11400000, guid: 0c268878a11bff349a80197fa412802a, type: 2}
+  - {fileID: 11400000, guid: 153cfdb80f505d842a8f98a0e8c3b4d9, type: 2}
+  - {fileID: 11400000, guid: 63bb00d1ca9d3904c9337131a866c3ef, type: 2}
+  - {fileID: 11400000, guid: 11207f845431cfc41ad55523ca0ed998, type: 2}
+  - {fileID: 11400000, guid: 704455b69e78e9d4bb3a84ca9ce9e050, type: 2}
+  - {fileID: 11400000, guid: 7e0b67861a0b1c44d9c6df3310a5529c, type: 2}
+  - {fileID: 11400000, guid: 3fe2f1b1822fad94caceb6f6d7f4bccd, type: 2}
+  - {fileID: 11400000, guid: 278c0a51128ec744288547878cea3e7f, type: 2}
+  - {fileID: 11400000, guid: 73629df7a3ba33e42b25c2849bb8b198, type: 2}
+  - {fileID: 11400000, guid: f5bdd63aaa70ca645b175e33909adcf5, type: 2}
+  - {fileID: 11400000, guid: ca1f1d9c9871fd646b57e13ff22ea4db, type: 2}
+  - {fileID: 11400000, guid: 8c6c3cf53cffe574ca672bbbbe4ea503, type: 2}
+  - {fileID: 11400000, guid: e7c9f9bf737dde04ebeea09e874006db, type: 2}
+  - {fileID: 11400000, guid: 50e7d2ffd175a694a9aae3579e1e1358, type: 2}
+  - {fileID: 11400000, guid: 86111eaf898ea3c438c007312826f38d, type: 2}
+  - {fileID: 11400000, guid: d65f37440239d0a46add1a16a4b329c4, type: 2}
+  - {fileID: 11400000, guid: f35cc165d7cc42d489c2163cbd1fe511, type: 2}
+  - {fileID: 11400000, guid: ef5d2fbca4d3d3a42b390602510fe12a, type: 2}
+  - {fileID: 11400000, guid: 5f35fe51a359b1e4797c2917e9442da7, type: 2}
+  - {fileID: 11400000, guid: 5cd9e779ebd8cd24d8ea37315cc22daa, type: 2}
+  - {fileID: 11400000, guid: c38933696f326da45a439b24a2d4b9c3, type: 2}
+  - {fileID: 11400000, guid: eca15e0459efd5248a901924a24080a1, type: 2}
+  - {fileID: 11400000, guid: 2a8921e23e26cdd41abfcb1b1642205a, type: 2}
+  - {fileID: 11400000, guid: 139ab41c45feb7e4a895454fee52f367, type: 2}
+  - {fileID: 11400000, guid: 0119e4ab5c9a5a84581105bbedee1096, type: 2}
+  - {fileID: 11400000, guid: 547b65ae6cea5e646ba083f5e4ce1d9d, type: 2}
+  - {fileID: 11400000, guid: 306828fe5fb0940488a902cb89cf1ba0, type: 2}
+  - {fileID: 11400000, guid: b8626f2614ad8ff46bb6706f454f23d9, type: 2}
+  - {fileID: 11400000, guid: ae2dc6f26c08b884384f55ef46bed800, type: 2}
+  - {fileID: 11400000, guid: 36f9cc63cf8029845a271e6f0ef6feb7, type: 2}
+  - {fileID: 11400000, guid: c454ccfac69751d4b8084bd5030a72ef, type: 2}
+  - {fileID: 11400000, guid: 0a9b0e1416aec72409705760783f244c, type: 2}
+  - {fileID: 11400000, guid: e66d590bec77bd54bac197c0527a9f39, type: 2}
+  - {fileID: 11400000, guid: 092c8ff44a1c50e47ad6e26a77ce463f, type: 2}
+  - {fileID: 11400000, guid: 3d26a80cbdb5d4f4b8d3a52609615ed9, type: 2}
+  - {fileID: 11400000, guid: f58f6acc678c20745b45c7f86e0ce6fb, type: 2}
+  - {fileID: 11400000, guid: 834131b523abeda419d40c2244362554, type: 2}
+  - {fileID: 11400000, guid: e0029b4d973d2954e94abfcf959fbde6, type: 2}
+  - {fileID: 11400000, guid: 985a25df81199b9468f17ad6d936b215, type: 2}
+  - {fileID: 11400000, guid: 865233ec0311e274db753555a2f34b4d, type: 2}
+  - {fileID: 11400000, guid: 2d88d68325edd824aa498efef273d456, type: 2}
+  - {fileID: 11400000, guid: 17cf03e86c26f3b478a751c463884505, type: 2}
+  - {fileID: 11400000, guid: a153bdcd4b569cd41b6b6a85f7cc9be2, type: 2}
+  - {fileID: 11400000, guid: 2b072b7a92f85274ebd9a0b3fbc527ac, type: 2}
+  - {fileID: 11400000, guid: cb5cfd922bfcce343a4238261857c20a, type: 2}
+  - {fileID: 11400000, guid: 0353837c920f9ac41a7752f82dabbb4a, type: 2}
+  - {fileID: 11400000, guid: 6c0363611b0307849b6cb86b79c586fc, type: 2}
+  - {fileID: 11400000, guid: 697cc147aac26e44fb012a02c7f7bfa3, type: 2}
+  - {fileID: 11400000, guid: 150e54fff838d5f49bc875ab244e06b3, type: 2}
+  - {fileID: 11400000, guid: a022ba2365d6af942a683a53c89c2271, type: 2}
+  - {fileID: 11400000, guid: a01a540595ef3204bba6c9cb4a4f2b33, type: 2}
+  - {fileID: 11400000, guid: 2bd78507738d1d547a91b8dd2b11adc4, type: 2}
+  - {fileID: 11400000, guid: 0ad0d98cc77ec444fb13d225a7288502, type: 2}
+  - {fileID: 11400000, guid: 41fdbceb66740c74f9edf9ac68fe3f2d, type: 2}
+  - {fileID: 11400000, guid: 2f6b7c4e1a40ea3438733fed65b47b0d, type: 2}
+  - {fileID: 11400000, guid: e78b05a3376df6b4599ff5503b198cc1, type: 2}
+  - {fileID: 11400000, guid: 4372442e645408741bb7f1bdeba3d9d0, type: 2}
+  - {fileID: 11400000, guid: 2468353810338554abe0dc0d9a9b51f9, type: 2}
+  - {fileID: 11400000, guid: 6e7accb057bc3144587de66ec94a2a68, type: 2}
+  - {fileID: 11400000, guid: bece3deddb5fd9943bbbe05ce85c9548, type: 2}
+  - {fileID: 11400000, guid: 3d530328b85ab984997dc817a2fda196, type: 2}
+  - {fileID: 11400000, guid: 9777ed568a890d645b5bbd5f7e7175fc, type: 2}
+  - {fileID: 11400000, guid: 9623efec7da063c4db341eb20e10ec82, type: 2}
+  - {fileID: 11400000, guid: 9482d644119332a4ebb57f3038b5f475, type: 2}
+  - {fileID: 11400000, guid: 5093af8929aa7874985ff1536f027643, type: 2}
+  - {fileID: 11400000, guid: a3dc7f4d977596f47a4b7036382e00ef, type: 2}
+  - {fileID: 11400000, guid: e077fc3d58ad4084c86c00dd519b1136, type: 2}
+  - {fileID: 11400000, guid: b4fbbe79aaab52c47849e6d5766a0243, type: 2}
+  - {fileID: 11400000, guid: ae85f5ba630c7114f8d399ae3a1a2288, type: 2}
+  - {fileID: 11400000, guid: dcb6d7b0615aef246956190d79d9c081, type: 2}
+  - {fileID: 11400000, guid: 536ace11d09805b479c2261a249c39fc, type: 2}
+  - {fileID: 11400000, guid: 3d7fa4f53d64f1b4682c60d0a459815b, type: 2}
+  - {fileID: 11400000, guid: bfcf212144cad9b40b760889477eef51, type: 2}
+  - {fileID: 11400000, guid: c4a2628584efe9742bc1520716ed2e28, type: 2}
+  - {fileID: 11400000, guid: b24ffca26a779a54894599da16f2adda, type: 2}
+  - {fileID: 11400000, guid: de14eadc54ec8d24f85728979f421c0b, type: 2}
+  - {fileID: 11400000, guid: 4691ca1e5e52e63429a451631a629891, type: 2}
+  - {fileID: 11400000, guid: fd3f08008cfad4940b7907c85f8f4af5, type: 2}
+  - {fileID: 11400000, guid: feafe5a3189614a4ea3efe37579dc1b9, type: 2}
+  - {fileID: 11400000, guid: e62f6b3f02eaeaf4187c6349ecbdcaf7, type: 2}
+  - {fileID: 11400000, guid: 234fb81dcfa0f644f864d00121c71a92, type: 2}
+  - {fileID: 11400000, guid: 69ca2abe4a68df446b2e4e8c7bfbf3c9, type: 2}
+  - {fileID: 11400000, guid: b4cb6ece847b043498f4a9ea40ed053b, type: 2}
+  - {fileID: 11400000, guid: 71d29864fa00a9748915765a85a3b5f9, type: 2}
+  - {fileID: 11400000, guid: 6e52901ba16c4ec4bb07aa095a791c3c, type: 2}
+  - {fileID: 11400000, guid: 8b5595e57e5a68147a1172c84d3e7c3c, type: 2}
   Recipes:
   - Id: 0
     ItemAId: 1
     ItemBId: 3
-    ResultItemId: 1001
+    ResultItemId: 7
   - Id: 1
     ItemAId: 2
-    ItemBId: 1001
-    ResultItemId: 1002
+    ItemBId: 7
+    ResultItemId: 8
   - Id: 2
     ItemAId: 1
-    ItemBId: 1002
-    ResultItemId: 1003
+    ItemBId: 8
+    ResultItemId: 9
   - Id: 3
-    ItemAId: 1003
+    ItemAId: 9
     ItemBId: 1
-    ResultItemId: 1004
+    ResultItemId: 10
   - Id: 4
     ItemAId: 1
     ItemBId: 5
-    ResultItemId: 1012
+    ResultItemId: 18
   - Id: 5
-    ItemAId: 1004
-    ItemBId: 1012
-    ResultItemId: 1005
+    ItemAId: 10
+    ItemBId: 18
+    ResultItemId: 11
   - Id: 6
-    ItemAId: 1001
+    ItemAId: 7
     ItemBId: 4
-    ResultItemId: 1006
+    ResultItemId: 12
   - Id: 7
-    ItemAId: 1003
-    ItemBId: 1006
-    ResultItemId: 1007
+    ItemAId: 9
+    ItemBId: 12
+    ResultItemId: 13
   - Id: 8
     ItemAId: 4
-    ItemBId: 1002
-    ResultItemId: 1008
+    ItemBId: 8
+    ResultItemId: 14
   - Id: 9
-    ItemAId: 1007
-    ItemBId: 1008
-    ResultItemId: 1009
+    ItemAId: 13
+    ItemBId: 14
+    ResultItemId: 15
   - Id: 10
-    ItemAId: 1007
-    ItemBId: 1003
-    ResultItemId: 1010
+    ItemAId: 13
+    ItemBId: 9
+    ResultItemId: 16
   - Id: 11
-    ItemAId: 1003
+    ItemAId: 9
     ItemBId: 2
-    ResultItemId: 1011
-  appsScriptUrl: https://script.google.com/macros/s/AKfycbyctnFmyKEym9RdybzNSGkzBdp1CEDRs61yzDBU7zFTK4oLXkI8s5EJ5ld_XRKqwTuJ/exec
+    ResultItemId: 17
+  - Id: 12
+    ItemAId: 2
+    ItemBId: 3
+    ResultItemId: 19
+  - Id: 13
+    ItemAId: 9
+    ItemBId: 19
+    ResultItemId: 20
+  - Id: 14
+    ItemAId: 1
+    ItemBId: 4
+    ResultItemId: 21
+  - Id: 15
+    ItemAId: 4
+    ItemBId: 19
+    ResultItemId: 22
+  - Id: 16
+    ItemAId: 8
+    ItemBId: 21
+    ResultItemId: 23
+  - Id: 17
+    ItemAId: 7
+    ItemBId: 21
+    ResultItemId: 24
+  - Id: 18
+    ItemAId: 10
+    ItemBId: 23
+    ResultItemId: 25
+  - Id: 19
+    ItemAId: 10
+    ItemBId: 25
+    ResultItemId: 26
+  - Id: 20
+    ItemAId: 8
+    ItemBId: 27
+    ResultItemId: 28
+  - Id: 21
+    ItemAId: 28
+    ItemBId: 10
+    ResultItemId: 29
+  - Id: 22
+    ItemAId: 8
+    ItemBId: 7
+    ResultItemId: 30
+  - Id: 23
+    ItemAId: 30
+    ItemBId: 10
+    ResultItemId: 31
+  - Id: 24
+    ItemAId: 24
+    ItemBId: 13
+    ResultItemId: 32
+  - Id: 25
+    ItemAId: 9
+    ItemBId: 33
+    ResultItemId: 34
+  - Id: 26
+    ItemAId: 4
+    ItemBId: 22
+    ResultItemId: 33
+  - Id: 27
+    ItemAId: 8
+    ItemBId: 5
+    ResultItemId: 35
+  - Id: 28
+    ItemAId: 8
+    ItemBId: 1
+    ResultItemId: 12
+  - Id: 29
+    ItemAId: 35
+    ItemBId: 1
+    ResultItemId: 36
+  - Id: 30
+    ItemAId: 12
+    ItemBId: 2
+    ResultItemId: 27
+  - Id: 31
+    ItemAId: 35
+    ItemBId: 27
+    ResultItemId: 37
+  - Id: 32
+    ItemAId: 37
+    ItemBId: 1
+    ResultItemId: 38
+  - Id: 33
+    ItemAId: 38
+    ItemBId: 12
+    ResultItemId: 39
+  - Id: 34
+    ItemAId: 2
+    ItemBId: 1
+    ResultItemId: 40
+  - Id: 35
+    ItemAId: 40
+    ItemBId: 18
+    ResultItemId: 27
+  - Id: 36
+    ItemAId: 27
+    ItemBId: 9
+    ResultItemId: 41
+  - Id: 37
+    ItemAId: 27
+    ItemBId: 2
+    ResultItemId: 42
+  - Id: 38
+    ItemAId: 18
+    ItemBId: 27
+    ResultItemId: 43
+  - Id: 39
+    ItemAId: 37
+    ItemBId: 4
+    ResultItemId: 44
+  - Id: 40
+    ItemAId: 37
+    ItemBId: 45
+    ResultItemId: 46
+  - Id: 41
+    ItemAId: 37
+    ItemBId: 47
+    ResultItemId: 48
+  - Id: 42
+    ItemAId: 5
+    ItemBId: 27
+    ResultItemId: 49
+  - Id: 43
+    ItemAId: 50
+    ItemBId: 1
+    ResultItemId: 51
+  - Id: 44
+    ItemAId: 42
+    ItemBId: 14
+    ResultItemId: 52
+  - Id: 45
+    ItemAId: 52
+    ItemBId: 37
+    ResultItemId: 53
+  - Id: 46
+    ItemAId: 27
+    ItemBId: 12
+    ResultItemId: 54
+  - Id: 47
+    ItemAId: 2
+    ItemBId: 55
+    ResultItemId: 56
+  - Id: 48
+    ItemAId: 42
+    ItemBId: 50
+    ResultItemId: 57
+  - Id: 49
+    ItemAId: 8
+    ItemBId: 8
+    ResultItemId: 58
+  - Id: 50
+    ItemAId: 4
+    ItemBId: 8
+    ResultItemId: 14
+  - Id: 51
+    ItemAId: 2
+    ItemBId: 3
+    ResultItemId: 59
+  - Id: 52
+    ItemAId: 59
+    ItemBId: 1
+    ResultItemId: 60
+  - Id: 53
+    ItemAId: 8
+    ItemBId: 1
+    ResultItemId: 61
+  - Id: 54
+    ItemAId: 61
+    ItemBId: 59
+    ResultItemId: 62
+  - Id: 55
+    ItemAId: 62
+    ItemBId: 14
+    ResultItemId: 63
+  - Id: 56
+    ItemAId: 63
+    ItemBId: 2
+    ResultItemId: 96
+  - Id: 57
+    ItemAId: 62
+    ItemBId: 58
+    ResultItemId: 64
+  - Id: 58
+    ItemAId: 64
+    ItemBId: 10
+    ResultItemId: 65
+  - Id: 59
+    ItemAId: 1
+    ItemBId: 14
+    ResultItemId: 45
+  - Id: 60
+    ItemAId: 45
+    ItemBId: 23
+    ResultItemId: 66
+  - Id: 61
+    ItemAId: 8
+    ItemBId: 14
+    ResultItemId: 67
+  - Id: 62
+    ItemAId: 7
+    ItemBId: 14
+    ResultItemId: 68
+  - Id: 63
+    ItemAId: 8
+    ItemBId: 6
+    ResultItemId: 69
+  - Id: 64
+    ItemAId: 59
+    ItemBId: 6
+    ResultItemId: 70
+  - Id: 65
+    ItemAId: 70
+    ItemBId: 1
+    ResultItemId: 71
+  - Id: 66
+    ItemAId: 71
+    ItemBId: 25
+    ResultItemId: 72
+  - Id: 67
+    ItemAId: 8
+    ItemBId: 6
+    ResultItemId: 73
+  - Id: 68
+    ItemAId: 18
+    ItemBId: 1
+    ResultItemId: 74
+  - Id: 69
+    ItemAId: 35
+    ItemBId: 58
+    ResultItemId: 75
+  - Id: 70
+    ItemAId: 4
+    ItemBId: 6
+    ResultItemId: 76
+  - Id: 71
+    ItemAId: 4
+    ItemBId: 1
+    ResultItemId: 77
+  - Id: 72
+    ItemAId: 4
+    ItemBId: 33
+    ResultItemId: 78
+  - Id: 73
+    ItemAId: 2
+    ItemBId: 33
+    ResultItemId: 79
+  - Id: 74
+    ItemAId: 7
+    ItemBId: 4
+    ResultItemId: 12
+  - Id: 75
+    ItemAId: 3
+    ItemBId: 6
+    ResultItemId: 55
+  - Id: 76
+    ItemAId: 18
+    ItemBId: 78
+    ResultItemId: 80
+  - Id: 77
+    ItemAId: 8
+    ItemBId: 33
+    ResultItemId: 81
+  - Id: 78
+    ItemAId: 81
+    ItemBId: 5
+    ResultItemId: 82
+  - Id: 79
+    ItemAId: 76
+    ItemBId: 79
+    ResultItemId: 83
+  - Id: 80
+    ItemAId: 78
+    ItemBId: 79
+    ResultItemId: 84
+  - Id: 81
+    ItemAId: 84
+    ItemBId: 27
+    ResultItemId: 85
+  - Id: 82
+    ItemAId: 12
+    ItemBId: 18
+    ResultItemId: 86
+  - Id: 83
+    ItemAId: 86
+    ItemBId: 81
+    ResultItemId: 87
+  - Id: 84
+    ItemAId: 4
+    ItemBId: 17
+    ResultItemId: 88
+  - Id: 85
+    ItemAId: 8
+    ItemBId: 89
+    ResultItemId: 90
+  - Id: 86
+    ItemAId: 90
+    ItemBId: 27
+    ResultItemId: 91
+  - Id: 87
+    ItemAId: 14
+    ItemBId: 76
+    ResultItemId: 92
+  - Id: 88
+    ItemAId: 56
+    ItemBId: 79
+    ResultItemId: 93
+  - Id: 89
+    ItemAId: 55
+    ItemBId: 27
+    ResultItemId: 94
+  - Id: 90
+    ItemAId: 42
+    ItemBId: 1
+    ResultItemId: 95
+  appsScriptUrl: https://script.google.com/macros/s/AKfycbwLC7hhsGaDrwQJ7k_RXzlNck7WTyTLiH3Wu3vrn7Le5IQsdviXtbSeYTwb04sqhrDQ/exec
+  enumFilePath: Assets/_Game/Scripts/Game/ItemId.cs
+  itemFolderPath: Assets/_Game/SO/Game/Items

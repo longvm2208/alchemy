@@ -111,8 +111,8 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
 
     public void UpdateHint()
     {
-        hintItemA = itemViews.Contains(hintItemA) ? hintItemA : null;
-        hintItemB = itemViews.Contains(hintItemB) ? hintItemB : null;
+        hintItemA = itemViews != null && itemViews.Contains(hintItemA) ? hintItemA : null;
+        hintItemB = itemViews != null && itemViews.Contains(hintItemB) ? hintItemB : null;
 
         if (!targets.ContainsKey(hintId))
         {

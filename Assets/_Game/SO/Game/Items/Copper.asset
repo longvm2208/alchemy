@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Copper
   m_EditorClassIdentifier: 
-  Icon: {fileID: 2125105060, guid: 0994ab60d6fff104da52bdadc4573016, type: 3}
-  Id: 1007
+  Icon: {fileID: 0}
+  Id: 13
   Name: Copper
   Description: Copper naturally exists as Copper Sulfide (CuS). Sulfur acts as the
     catalyst to isolate copper.

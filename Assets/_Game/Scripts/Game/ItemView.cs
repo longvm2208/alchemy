@@ -162,14 +162,24 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
         {
             if (mergeCandidate != null)
             {
+                if (!BoardManager.Ins.TryMerge(this, mergeCandidate))
+                {
+                    RemoveAndUpdateHint();
+                }
+
                 mergeCandidate.ShowMergeCircle(false);
                 mergeCandidate = null;
             }
+            else
+            {
+                RemoveAndUpdateHint();
+            }
+        }
 
+        void RemoveAndUpdateHint()
+        {
             BoardManager.Ins.RemoveItem(this);
-
             BoosterManager.Ins.UpdateHint();
-
             Remove();
         }
     }
