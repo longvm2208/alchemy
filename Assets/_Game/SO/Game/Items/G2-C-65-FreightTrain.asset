@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
+  m_Name: G2-C-65-FreightTrain
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Id: 164
+  Name: Freight Train
+  Description: Linking heavy truck cargo loads with steam train hauling capacities
+    for mega logistics.
+  Tier: 65
+  GroupId: 2
+  BranchId: 3

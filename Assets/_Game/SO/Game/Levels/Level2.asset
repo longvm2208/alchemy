@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartItems: 010000000300000002000000
   Targets:
-  - Id: 1001
-    RequiredAmount: 2
-  - Id: 1002
+  - Id: 8
     RequiredAmount: 1

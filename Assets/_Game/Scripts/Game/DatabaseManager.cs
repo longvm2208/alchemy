@@ -10,6 +10,7 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
     Dictionary<MergeKey, MergeRecipe> mergeMap;
     Dictionary<ItemId, List<MergeRecipe>> resultMap;
     Dictionary<ItemId, List<MergeRecipe>> ingredientMap;
+    Dictionary<CategoryKey, List<ItemDefinition>> categoryMap;
     bool needUpdateUnlockedItems = true;
     List<ItemDefinition> unlockedItems;
 
@@ -20,41 +21,53 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
         isInitialized = true;
 
         items = new Dictionary<ItemId, ItemDefinition>();
+        categoryMap = new Dictionary<CategoryKey, List<ItemDefinition>>();
 
         for (int i = 0; i < config.Items.Length; i++)
         {
-            items.Add(config.Items[i].Id, config.Items[i]);
-        }
+            ItemDefinition item = config.Items[i];
 
-        mergeMap = new Dictionary<MergeKey, MergeRecipe>();
+            // Items
+            items.Add(item.Id, item);
 
-        for (int i = 0; i < config.Recipes.Length; i++)
-        {
-            MergeKey key = new MergeKey(config.Recipes[i].ItemAId, config.Recipes[i].ItemBId);
-            mergeMap.Add(key, config.Recipes[i]);
-        }
-
-        resultMap = new Dictionary<ItemId, List<MergeRecipe>>();
-
-        for (int i = 0; i < config.Recipes.Length; i++)
-        {
-            ItemId resultId = config.Recipes[i].ResultItemId;
-            if (resultMap.ContainsKey(resultId))
+            // Category
+            CategoryKey key = new CategoryKey(item.GroupId, item.BranchId);
+            if (categoryMap.ContainsKey(key))
             {
-                resultMap[resultId].Add(config.Recipes[i]);
+                categoryMap[key].Add(item);
             }
             else
             {
-                resultMap[resultId] = new List<MergeRecipe> { config.Recipes[i] };
+                categoryMap[key] = new List<ItemDefinition>() { item };
             }
         }
 
+        mergeMap = new Dictionary<MergeKey, MergeRecipe>();
+        resultMap = new Dictionary<ItemId, List<MergeRecipe>>();
         ingredientMap = new Dictionary<ItemId, List<MergeRecipe>>();
 
         for (int i = 0; i < config.Recipes.Length; i++)
         {
-            AddIngredient(config.Recipes[i].ItemAId, config.Recipes[i]);
-            AddIngredient(config.Recipes[i].ItemBId, config.Recipes[i]);
+            MergeRecipe recipe = config.Recipes[i];
+
+            // Merge Map
+            MergeKey key = new MergeKey(recipe.ItemAId, recipe.ItemBId);
+            mergeMap.Add(key, recipe);
+
+            // Result Map
+            ItemId resultId = recipe.ResultItemId;
+            if (resultMap.ContainsKey(resultId))
+            {
+                resultMap[resultId].Add(recipe);
+            }
+            else
+            {
+                resultMap[resultId] = new List<MergeRecipe> { recipe };
+            }
+
+            // Ingredient Map
+            AddIngredient(recipe.ItemAId, recipe);
+            AddIngredient(recipe.ItemBId, recipe);
         }
 
         needUpdateUnlockedItems = true;
