@@ -369,6 +369,29 @@ public class ItemDatabaseConfig : ScriptableObject
             }
 
             Categories = categories.ToArray();
+
+            Dictionary<ItemId, ItemDefinition> itemDict = new();
+            for (int i = 0; i < Items.Length; i++)
+            {
+                itemDict.Add(Items[i].Id, Items[i]);
+            }
+
+            foreach (var category in Categories)
+            {
+                foreach (var itemId in category.Items)
+                {
+                    ItemDefinition item = itemDict[itemId];
+
+                    List<CategoryId> categoryIds = new(item.Categories);
+                    if (!categoryIds.Contains(category.Id))
+                    {
+                        categoryIds.Add(category.Id);
+                        item.Categories = categoryIds.ToArray();
+                        EditorUtility.SetDirty(item);
+                    }
+                }
+            }
+
             EditorUtility.SetDirty(this);
 
             AssetDatabase.SaveAssets();
@@ -505,6 +528,145 @@ public class ItemDatabaseConfig : ScriptableObject
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+    }
+
+    [Button]
+    void Check()
+    {
+        List<ItemId> itemIds = new();
+
+        for (int i = 5; i < Items.Length; i++)
+        {
+            itemIds.Add(Items[i].Id);
+        }
+
+        //foreach (var cat in Categories)
+        //{
+        //    foreach (var item in cat.Items)
+        //    {
+        //        if (itemIds.Contains(item))
+        //        {
+        //            itemIds.Remove(item);
+        //        }
+        //    }
+        //}
+
+        Dictionary<int, List<ItemId>> unuseDict = new();
+
+        foreach (var id in itemIds)
+        {
+            int idNumber = (int)id;
+
+            if (idNumber.InRange3(6, 15))
+            {
+                // 1
+                Add(1, id);
+            }
+            else if (idNumber.InRange3(16, 28))
+            {
+                // 2
+                Add(2, id);
+            }
+            else if (idNumber.InRange3(29, 40))
+            {
+                // 3
+                Add(3, id);
+            }
+            else if (idNumber.InRange3(41, 69))
+            {
+                // 4
+                Add(4, id);
+            }
+            else if (idNumber.InRange3(70, 113))
+            {
+                // 5
+                Add(5, id);
+            }
+            else if (idNumber.InRange3(114, 149))
+            {
+                // 6
+                Add(6, id);
+            }
+            else if (idNumber.InRange3(150, 173))
+            {
+                // 7
+                Add(7, id);
+            }
+            else if (idNumber.InRange3(174, 250))
+            {
+                // 8
+                Add(8, id);
+            }
+            else if (idNumber.InRange3(251, 385))
+            {
+                // 9
+                Add(9, id);
+            }
+            else if (idNumber.InRange3(386, 502))
+            {
+                // 10
+                Add(10, id);
+            }
+            else if (idNumber.InRange3(503, 603))
+            {
+                // 11
+                Add(11, id);
+            }
+            else if (idNumber.InRange3(604, 675))
+            {
+                // 12
+                Add(12, id);
+            }
+            else if (idNumber.InRange3(676, 709))
+            {
+                // 13
+                Add(13, id);
+            }
+            else if (idNumber.InRange3(710, 717))
+            {
+                // 14
+                Add(14, id);
+            }
+            else if (idNumber.InRange3(718, 719))
+            {
+                // 15
+                Add(15, id);
+            }
+        }
+
+        string all = "";
+
+        foreach (var pair in unuseDict)
+        {
+            string message = $"Tier {pair.Key}: ";
+
+            for (int i = 0; i < pair.Value.Count; i++)
+            {
+                message += pair.Value[i].ToString();
+
+                if (i < pair.Value.Count - 1)
+                {
+                    message += ", ";
+                }
+            }
+
+            all += message;
+            all += "\n";
+        }
+
+        Debug.Log(all);
+
+        void Add(int tier, ItemId id)
+        {
+            if (unuseDict.ContainsKey(tier))
+            {
+                unuseDict[tier].Add(id);
+            }
+            else
+            {
+                unuseDict[tier] = new List<ItemId> { id };
+            }
+        }
     }
 #endif
 }

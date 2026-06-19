@@ -39,6 +39,7 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
         if (itemDefinition == null) return;
 
         iconImage.sprite = itemDefinition.Icon;
+        iconImage.gameObject.SetActive(itemDefinition.Icon != null);
         nameText.text = itemDefinition.Name;
     }
 

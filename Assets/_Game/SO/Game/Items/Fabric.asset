@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Fabric
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: fe27c72fc96e21342b6bd04164da2bb5, type: 3}
   Id: 537
   Name: Fabric
   Description: 
-  Tier: 0
+  Categories: 2500000026000000

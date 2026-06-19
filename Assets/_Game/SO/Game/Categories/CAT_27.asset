@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_27
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 26
+  Id: 27
   Name: Small Mammals
   Items: 820200003c020000a80200004c020000b5000000d401000011020000bc00000051010000a5010000

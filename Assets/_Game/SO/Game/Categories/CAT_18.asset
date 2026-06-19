@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_18
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 17
+  Id: 18
   Name: Primitive Flora
   Items: 2d010000e1000000480100005e0100003a010000fc00000067010000b401000033010000ac01000030010000e8010000

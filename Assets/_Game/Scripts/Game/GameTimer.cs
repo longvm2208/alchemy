@@ -27,10 +27,10 @@ public class GameTimer : MonoBehaviour
         }
     }
 
-    public void Init()
+    public void Init(int levelIndex)
     {
         isRunning = false;
-        timeRemaining = 2 * 60;
+        timeRemaining = GameConf.Ins.TimeLimits[levelIndex].Time;
         timeText.text = Mathf.CeilToInt(timeRemaining).ToStringCountdown();
     }
 

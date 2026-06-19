@@ -787,6 +787,108 @@ MonoBehaviour:
         HintPrice: 100
         ExtraTimeLevel: 3
         ExtraTimePrice: 100
+        TimeLimits:
+        - Level: 1
+          Time: 120
+        - Level: 2
+          Time: 120
+        - Level: 3
+          Time: 120
+        - Level: 4
+          Time: 120
+        - Level: 5
+          Time: 120
+        - Level: 6
+          Time: 35
+        - Level: 7
+          Time: 35
+        - Level: 8
+          Time: 120
+        - Level: 9
+          Time: 120
+        - Level: 10
+          Time: 120
+        - Level: 11
+          Time: 120
+        - Level: 12
+          Time: 120
+        - Level: 13
+          Time: 120
+        - Level: 14
+          Time: 120
+        - Level: 15
+          Time: 120
+        - Level: 16
+          Time: 120
+        - Level: 17
+          Time: 120
+        - Level: 18
+          Time: 120
+        - Level: 19
+          Time: 120
+        - Level: 20
+          Time: 120
+        - Level: 21
+          Time: 120
+        - Level: 22
+          Time: 120
+        - Level: 23
+          Time: 120
+        - Level: 24
+          Time: 120
+        - Level: 25
+          Time: 120
+        - Level: 26
+          Time: 120
+        - Level: 27
+          Time: 120
+        - Level: 28
+          Time: 120
+        - Level: 29
+          Time: 120
+        - Level: 30
+          Time: 120
+        - Level: 31
+          Time: 120
+        - Level: 32
+          Time: 120
+        - Level: 33
+          Time: 120
+        - Level: 34
+          Time: 120
+        - Level: 35
+          Time: 120
+        - Level: 36
+          Time: 120
+        - Level: 37
+          Time: 120
+        - Level: 38
+          Time: 120
+        - Level: 39
+          Time: 120
+        - Level: 40
+          Time: 120
+        - Level: 41
+          Time: 120
+        - Level: 42
+          Time: 120
+        - Level: 43
+          Time: 120
+        - Level: 44
+          Time: 120
+        - Level: 45
+          Time: 120
+        - Level: 46
+          Time: 120
+        - Level: 47
+          Time: 120
+        - Level: 48
+          Time: 120
+        - Level: 49
+          Time: 120
+        - Level: 50
+          Time: 120
+        time: 120,120,120,120,120,35,35,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120
 --- !u!1 &1352364974
 GameObject:
   m_ObjectHideFlags: 0

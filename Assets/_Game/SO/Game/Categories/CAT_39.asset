@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_39
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 38
+  Id: 39
   Name: Gunpowder Firearms
   Items: 160000002f0000001f0000008a010000550000000300000021000000e50100006c0000005d020000

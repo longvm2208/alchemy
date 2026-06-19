@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_41
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 40
+  Id: 41
   Name: Sailing Vessels
   Items: 02020000920200005e000000400000003c000000200000001c000000f201000004000000450000004d020000

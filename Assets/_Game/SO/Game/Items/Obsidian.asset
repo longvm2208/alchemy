@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Obsidian
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 0f44cbb9f3ad36a42816311711f1cb71, type: 3}
   Id: 24
   Name: Obsidian
   Description: 
-  Tier: 0
+  Categories: 00000000030000000100000004000000

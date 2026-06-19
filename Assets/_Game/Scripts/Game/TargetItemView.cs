@@ -18,8 +18,8 @@ public class TargetItemView : PooledMonoBehaviour<TargetItemView>
     public void Init(LevelTarget target)
     {
         iconImage.sprite = null;
-        //BranchDefinition branch = DatabaseManager.Ins.GetBranch(target.GroupId, target.BranchId);
-        //nameText.text = branch.Name;
+        CategoryDefinition category = DatabaseManager.Ins.GetCategoryDefinition(target.CategoryId);
+        nameText.text = category.Name;
         requiredCount = target.RequiredAmount;
         currentCount = 0;
         progressText.text = $"{currentCount}/{requiredCount}";

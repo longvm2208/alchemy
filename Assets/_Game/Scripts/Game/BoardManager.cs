@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetState
+public class LevelTargetState
 {
     public int Count;
     public HashSet<ItemId> Collected;
@@ -22,10 +22,8 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
     List<ItemView> itemViews;
     public List<ItemView> ItemViews => itemViews;
-    //Dictionary<ItemId, int> targetDict;
-    //public Dictionary<ItemId, int> TargetDict => targetDict;
-    //Dictionary<CategoryKey, TargetState> targetDict;
-    //public Dictionary<CategoryKey, TargetState> TargetDict => targetDict;
+    Dictionary<CategoryId, LevelTargetState> targetDict;
+    public Dictionary<CategoryId, LevelTargetState> TargetDict => targetDict;
     HashSet<ItemId> newItemIds;
 
     public void UpdateBoardPosAndSize()
@@ -46,19 +44,18 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             itemViews.Clear();
         }
 
-        //targetDict ??= new();
-        //targetDict.Clear();
+        targetDict ??= new();
+        targetDict.Clear();
 
-        //LevelTarget[] targets = LevelManager.Ins.CurrentLevel.Targets;
         LevelTarget[] targets = LevelManager.Ins.CurrentLevel.Targets;
         for (int i = 0; i < targets.Length; i++)
         {
-            //CategoryKey key = new CategoryKey(targets[i].GroupId, targets[i].BranchId);
-            //targetDict[key] = new TargetState
-            //{
-            //    Count = targets[i].RequiredAmount,
-            //    Collected = new HashSet<ItemId>()
-            //};
+            CategoryId key = targets[i].CategoryId;
+            targetDict[key] = new LevelTargetState
+            {
+                Count = targets[i].RequiredAmount,
+                Collected = new HashSet<ItemId>()
+            };
         }
 
         newItemIds ??= new HashSet<ItemId>();
@@ -81,7 +78,10 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
     public void RemoveItem(ItemView itemView)
     {
-        itemViews.Remove(itemView);
+        if (itemViews.Contains(itemView))
+        {
+            itemViews.Remove(itemView);
+        }
     }
 
     public bool IsFullyInside(RectTransform target)
@@ -109,35 +109,68 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         itemView.SetMergeCandidate(candidate);
     }
 
+    public struct MergeResult
+    {
+        public MergeRecipe Recipe;
+        public bool IsTarget;
+        public List<CategoryId> TargetCategories;
+    }
+
     public bool TryMerge(ItemView itemViewA, ItemView itemViewB)
     {
-        if (DatabaseManager.Ins.TryGetMergeResult(itemViewA.Id, itemViewB.Id, out MergeRecipe recipe))
+        if (DatabaseManager.Ins.TryGetMergeResult(itemViewA.Id, itemViewB.Id, out List<MergeRecipe> recipes))
         {
             RemoveItem(itemViewA);
             RemoveItem(itemViewB);
 
-            bool collectTarget = false;
-            ItemDefinition item = DatabaseManager.Ins.GetItemDefinition(recipe.ResultItemId);
-            //CategoryKey key = new CategoryKey(item.GroupId, item.BranchId);
-            //if (targetDict.ContainsKey(key) && targetDict[key].Collected.Add(item.Id))
-            //{
-            //    collectTarget = true;
-            //    targetDict[key].Count--;
+            List<MergeResult> results = new();
 
-            //    if (targetDict[key].Count == 0)
-            //    {
-            //        targetDict.Remove(key);
-            //    }
-            //}
+            for (int i = 0; i < recipes.Count; i++)
+            {
+                MergeRecipe recipe = recipes[i];
+                ItemId resultItemId = recipes[i].ResultItemId;
+                ItemDefinition item = DatabaseManager.Ins.GetItemDefinition(resultItemId);
+
+                MergeResult result = new MergeResult()
+                {
+                    Recipe = recipe,
+                };
+
+                for (int j = 0; j < item.Categories.Length; j++)
+                {
+                    CategoryId categoryId = item.Categories[j];
+
+                    if (targetDict.ContainsKey(categoryId) && targetDict[categoryId].Collected.Add(resultItemId))
+                    {
+                        targetDict[categoryId].Count--;
+
+                        if (targetDict[categoryId].Count == 0)
+                        {
+                            targetDict.Remove(categoryId);
+                        }
+
+                        result.IsTarget = true;
+
+                        if (result.TargetCategories == null)
+                        {
+                            result.TargetCategories = new List<CategoryId>();
+                        }
+
+                        result.TargetCategories.Add(categoryId);
+                    }
+                }
+
+                results.Add(result);
+            }
 
             //BoosterManager.Ins.UpdateHint();
 
-            //if (targetDict.Count == 0)
-            //{
-            //    GameCanvas.Ins.Timer.Stop();
-            //}
+            if (targetDict.Count == 0)
+            {
+                GameCanvas.Ins.Timer.Stop();
+            }
 
-            Merge(itemViewA, itemViewB, recipe, collectTarget);
+            Merge(itemViewA, itemViewB, results);
 
             return true;
         }
@@ -145,14 +178,20 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         return false;
     }
 
-    void Merge(ItemView itemViewA, ItemView itemViewB, MergeRecipe recipe, bool collectTarget)
+    void Merge(ItemView itemViewA, ItemView itemViewB, List<MergeResult> results)
     {
         Vector2 posB = itemViewB.rect.anchoredPosition;
 
-        ItemView resultItem = SpawnItem(recipe.ResultItemId);
-        resultItem.rect.anchoredPosition = posB;
-        resultItem.rect.localScale = Vector3.zero;
-        resultItem.rect.SetAsLastSibling();
+        List<ItemView> resultItems = new();
+
+        for (int i = 0; i < results.Count; i++)
+        {
+            ItemView resultItem = SpawnItem(results[i].Recipe.ResultItemId);
+            resultItem.rect.anchoredPosition = posB;
+            resultItem.rect.localScale = Vector3.zero;
+            resultItem.rect.SetAsLastSibling();
+            resultItems.Add(resultItem);
+        }
 
         Sequence seq = DOTween.Sequence();
 
@@ -168,62 +207,98 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             itemViewB.Destroy();
         });
 
-        seq.Append(resultItem.rect.DOScale(1.15f, 0.15f));
-        seq.Append(resultItem.rect.DOScale(1f, 0.08f));
+        for (int i = 0; i < resultItems.Count; i++)
+        {
+            if (i == 0)
+            {
+                seq.Append(resultItems[i].rect.DOScale(1.15f, 0.15f));
+            }
+            else
+            {
+                seq.Join(resultItems[i].rect.DOScale(1.15f, 0.15f));
+            }
+        }
+
+        for (int i = 0; i < resultItems.Count; i++)
+        {
+            if (i == 0)
+            {
+                seq.Append(resultItems[i].rect.DOScale(1f, 0.08f));
+            }
+            else
+            {
+                seq.Join(resultItems[i].rect.DOScale(1f, 0.08f));
+            }
+        }
 
         seq.OnComplete(() =>
         {
-            OnMergeComplete(recipe, collectTarget, resultItem, itemViewB.rect.position);
+            OnMergeComplete(results, resultItems);
         });
     }
 
-    void OnMergeComplete(MergeRecipe recipe, bool collectTarget, ItemView resultItem, Vector3 collectPos)
+    void OnMergeComplete(List<MergeResult> results, List<ItemView> resultItems)
     {
-        if (!newItemIds.Contains(recipe.ResultItemId))
+        for (int i = 0; i < results.Count; i++)
         {
-            newItemIds.Add(recipe.ResultItemId);
-            startItemMenu.AddItem(recipe.ResultItemId);
-        }
+            MergeResult result = results[i];
+            MergeRecipe recipe = result.Recipe;
+            ItemView resultItem = resultItems[i];
 
-        if (!GamePref.Ins.DiscoveredRecipes.Contains(recipe.Id))
-        {
-            GamePref.Ins.DiscoveredRecipes.Add(recipe.Id);
-        }
-
-        if (GamePref.Ins.DiscoveredItems.Contains(recipe.ResultItemId))
-        {
-            CheckCollectTarget();
-            CheckWin(1);
-        }
-        else
-        {
-            GamePref.Ins.DiscoveredItems.Add(recipe.ResultItemId);
-            DatabaseManager.Ins.NeedUpdateUnlockedItems();
-
-            UIManager.Ins.Open<PopupNewItem>().Init(recipe.ResultItemId).OnClose(() =>
+            if (!newItemIds.Contains(recipe.ResultItemId))
             {
-                CheckCollectTarget();
-                CheckWin(0.25f);
-            });
-        }
+                newItemIds.Add(recipe.ResultItemId);
+                startItemMenu.AddItem(recipe.ResultItemId);
+            }
 
-        void CheckCollectTarget()
-        {
-            if (collectTarget)
+            if (!GamePref.Ins.DiscoveredRecipes.Contains(recipe.Id))
             {
-                RemoveItem(resultItem);
-                resultItem.Remove(false);
-                targetItemMenu.CollectTarget(recipe.ResultItemId, collectPos);
+                GamePref.Ins.DiscoveredRecipes.Add(recipe.Id);
+            }
+
+            if (GamePref.Ins.DiscoveredItems.Contains(recipe.ResultItemId))
+            {
+                CheckCollectTarget(result, resultItem);
+                CheckWin(1);
+            }
+            else
+            {
+                GamePref.Ins.DiscoveredItems.Add(recipe.ResultItemId);
+                DatabaseManager.Ins.NeedUpdateUnlockedItems();
+
+                UIManager.Ins.Open<PopupNewItem>().Init(recipe.ResultItemId).OnClose(() =>
+                {
+                    CheckCollectTarget(result, resultItem);
+                    CheckWin(0.25f);
+                });
+            }
+        }
+    }
+    
+    void CheckCollectTarget(MergeResult result, ItemView resultItem)
+    {
+        if (result.IsTarget)
+        {
+            RemoveItem(resultItem);
+            resultItem.Remove(false);
+
+            ItemId resultItemId = result.Recipe.ResultItemId;
+            Vector3 pos = resultItem.rect.position;
+
+            for (int i = 0; i < result.TargetCategories.Count; i++)
+            {
+                CategoryId categoryId = result.TargetCategories[i];
+                targetItemMenu.CollectTarget(resultItemId, categoryId, pos);
             }
         }
     }
 
     void CheckWin(float delay = 0)
     {
-        //if (targetDict.Count == 0)
-        //{
-        //    LevelManager.Ins.WinLevel(delay);
-        //}
+        if (targetDict.Count == 0)
+        {
+            LevelManager.Ins.WinLevel(delay);
+        }
     }
 
     public void ClearBoard()

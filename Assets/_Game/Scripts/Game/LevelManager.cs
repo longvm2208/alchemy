@@ -2,11 +2,7 @@
 
 public class LevelManager : SingletonMonoBehaviour<LevelManager>
 {
-    //[SerializeField] LevelContainer levelContainer;
-    [SerializeField] LevelContainer levelContainer2;
-
-    //LevelData currentLevel;
-    //public LevelData CurrentLevel => currentLevel;
+    [SerializeField] LevelContainer levelContainer;
 
     LevelData currentLevel;
     public LevelData CurrentLevel => currentLevel;
@@ -15,16 +11,14 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
 
     public void LoadLevel()
     {
-        //int levelIndex = GamePref.Ins.LevelIndex % levelContainer.Levels.Length;
-        //currentLevel = levelContainer.Levels[levelIndex];
-        int levelIndex = GamePref.Ins.LevelIndex % levelContainer2.Levels.Length;
-        currentLevel = levelContainer2.Levels[levelIndex];
+        int levelIndex = GamePref.Ins.LevelIndex % levelContainer.Levels.Length;
+        currentLevel = levelContainer.Levels[levelIndex];
         GameCanvas.Ins.UpdateBottomPos();
         BoardManager.Ins.UpdateBoardPosAndSize();
         DatabaseManager.Ins.Init();
         BoardManager.Ins.Init();
         BoosterManager.Ins.Init();
-        GameCanvas.Ins.Timer.Init();
+        GameCanvas.Ins.Timer.Init(levelIndex);
         isFirstInteraction = true;
     }
 

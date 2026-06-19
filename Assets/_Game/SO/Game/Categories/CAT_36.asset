@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_36
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 35
+  Id: 36
   Name: Historic Weapons
   Items: 6c0000005d02000006020000fb0100002d00000021000000e501000016000000550000008a010000e6000000

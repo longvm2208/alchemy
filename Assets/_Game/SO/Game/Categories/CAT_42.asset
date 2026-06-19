@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_42
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 41
+  Id: 42
   Name: Heavy Machinery
   Items: 43010000e4010000710000004f0000007e01000021000000e50100007b0000008b01000057020000

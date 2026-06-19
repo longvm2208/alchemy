@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Time
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 49e7b47c9c5bb1f449c0172effad0fea, type: 3}
   Id: 5
   Name: Time
   Description: 
-  Tier: 0
+  Categories: 

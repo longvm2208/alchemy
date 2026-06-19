@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Metal
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 22dd045fd83206b48ba2f65dd4638f26, type: 3}
   Id: 33
   Name: Metal
   Description: 
-  Tier: 0
+  Categories: 0d000000210000002300000026000000290000002a0000000e0000002200000024000000270000002b000000

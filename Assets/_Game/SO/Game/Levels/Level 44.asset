@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81395d52d27aae24d9fd5a6542b07728, type: 3}
-  m_Name: Level2
+  m_Name: Level 44
   m_EditorClassIdentifier: 
-  StartItems: 01000000020000000300000004000000050000000700000008000000
+  StartItems: 010000000200000003000000040000000500000015000000
   Targets:
-  - GroupId: 1
-    BranchId: 1
-    RequiredAmount: 10
+  - CategoryId: 1
+    RequiredAmount: 15
+  - CategoryId: 4
+    RequiredAmount: 15

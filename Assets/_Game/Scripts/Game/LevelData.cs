@@ -13,5 +13,6 @@ public class LevelData : ScriptableObject
 [Serializable]
 public struct LevelTarget
 {
+    public CategoryId CategoryId;
     public int RequiredAmount;
 }

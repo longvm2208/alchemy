@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Brick
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 639e09cd0676f5c4e879b2e27b4a39c0, type: 3}
   Id: 16
   Name: Brick
   Description: 
-  Tier: 0
+  Categories: 03000000240000000400000025000000

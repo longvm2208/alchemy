@@ -12,57 +12,41 @@ public class TargetItemMenu : MonoBehaviour
     [SerializeField] TargetItemFly itemFlyPrefab;
     [SerializeField] RectTransform itemFlyHolder;
 
-    List<TargetItemView> itemViews = new();
+    Dictionary<CategoryId, TargetItemView> categoryDict;
 
-    //LevelTarget[] targets => LevelManager.Ins.CurrentLevel.Targets;
     LevelTarget[] targets => LevelManager.Ins.CurrentLevel.Targets;
 
     public void Init()
     {
-        if (!itemViews.IsNullOrEmpty())
+        if (!categoryDict.IsNullOrEmpty())
         {
-            for (int i = 0; i < itemViews.Count; i++)
+            foreach (var targetView in categoryDict.Values)
             {
-                itemViews[i].Destroy();
+                targetView.Destroy();
             }
-            itemViews.Clear();
+            categoryDict.Clear();
         }
 
-        itemViews ??= new List<TargetItemView>();
+        categoryDict ??= new Dictionary<CategoryId, TargetItemView>();
 
         for (int i = 0; i < targets.Length; i++)
         {
             var itemView = itemViewPrefab.GetInstance(scroll.content);
             itemView.Init(targets[i]);
-            itemViews.Add(itemView);
+            categoryDict[targets[i].CategoryId] = itemView;
         }
 
         horizontalLayout.UpdateLayout();
     }
 
-    public void CollectTarget(ItemId id, Vector3 pos)
+    public void CollectTarget(ItemId itemId, CategoryId categoryId, Vector3 pos)
     {
-        int index = -1;
-
-        ItemDefinition item = DatabaseManager.Ins.GetItemDefinition(id);
-
-        for (int i = 0; i < targets.Length; i++)
-        {
-            //if (targets[i].GroupId == item.GroupId && targets[i].BranchId == item.BranchId)
-            //{
-            //    index = i;
-            //    break;
-            //}
-        }
-
-        if (index == -1) return;
-
         TargetItemFly itemFly = itemFlyPrefab.GetInstance(itemFlyHolder);
-        itemFly.Init(id, pos);
-        itemFly.Move(itemViews[index].transform.position, () =>
+        itemFly.Init(itemId, pos);
+        itemFly.Move(categoryDict[categoryId].transform.position, () =>
         {
             itemFly.Destroy();
-            itemViews[index].UpdateProgress();
+            categoryDict[categoryId].UpdateProgress();
         });
     }
 }

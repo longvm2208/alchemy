@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 4470408f0c91b594eb3e27cc5018bb0c, type: 3}
   Id: 53
   Name: Gold
   Description: 
-  Tier: 0
+  Categories: 0d0000000e000000

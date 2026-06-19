@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_07
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 6
+  Id: 7
   Name: Atmosphere & Storms
   Items: 4c0000008600000091000000260000006600000029000000a5000000570000001c0000008c0000000e0000000a0000000f000000b7000000aa010000

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CAT_22
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  Id: 21
+  Id: 22
   Name: Small Amphibians
   Items: cd000000c6000000e801000019000000200000003c00000086010000040000000800000084000000fd000000

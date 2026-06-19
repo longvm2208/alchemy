@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
     [SerializeField] Vector2 strength;
     [SerializeField] int vibrato;
     [SerializeField] Image iconImage;
+    [SerializeField] TMP_Text tempNameText;
     [SerializeField] RectTransform iconRect;
     [SerializeField] RectTransform mergeCircle;
     [SerializeField] RectTransform glowRect;
@@ -28,7 +30,10 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
 
         if (itemDefinition == null) return;
 
+        iconImage.gameObject.SetActive(itemDefinition.Icon != null);
         iconImage.sprite = itemDefinition.Icon;
+        tempNameText.gameObject.SetActive(itemDefinition.Icon == null);
+        tempNameText.text = itemDefinition.Name;
     }
 
     public void SetMergeCandidate(ItemView nextCandidate)

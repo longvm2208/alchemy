@@ -7,11 +7,12 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
 
     bool isInitialized = false;
     Dictionary<ItemId, ItemDefinition> items;
-    Dictionary<MergeKey, MergeRecipe> mergeMap;
+    Dictionary<MergeKey, List<MergeRecipe>> mergeMap;
     Dictionary<ItemId, List<MergeRecipe>> resultMap;
     Dictionary<ItemId, List<MergeRecipe>> ingredientMap;
     bool needUpdateUnlockedItems = true;
     List<ItemDefinition> unlockedItems;
+    Dictionary<CategoryId, CategoryDefinition> categories;
 
     public void Init()
     {
@@ -29,7 +30,7 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
             items.Add(item.Id, item);
         }
 
-        mergeMap = new Dictionary<MergeKey, MergeRecipe>();
+        mergeMap = new Dictionary<MergeKey, List<MergeRecipe>>();
         resultMap = new Dictionary<ItemId, List<MergeRecipe>>();
         ingredientMap = new Dictionary<ItemId, List<MergeRecipe>>();
 
@@ -39,7 +40,14 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
 
             // Merge Map
             MergeKey key = new MergeKey(recipe.ItemAId, recipe.ItemBId);
-            mergeMap.Add(key, recipe);
+            if (mergeMap.ContainsKey(key))
+            {
+                mergeMap[key].Add(recipe);
+            }
+            else
+            {
+                mergeMap[key] = new List<MergeRecipe>() { recipe };
+            }
 
             // Result Map
             ItemId resultId = recipe.ResultItemId;
@@ -58,6 +66,13 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
         }
 
         needUpdateUnlockedItems = true;
+
+        categories = new Dictionary<CategoryId, CategoryDefinition>();
+
+        for (int i = 0; i < config.Categories.Length; i++)
+        {
+            categories.Add(config.Categories[i].Id, config.Categories[i]);
+        }
     }
 
     void AddIngredient(ItemId ingredientId, MergeRecipe recipe)
@@ -85,10 +100,15 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
         }
     }
 
-    public bool TryGetMergeResult(ItemId itemAId, ItemId itemBId, out MergeRecipe recipe)
+    public CategoryDefinition GetCategoryDefinition(CategoryId categoryId)
+    {
+        return categories[categoryId];
+    }
+
+    public bool TryGetMergeResult(ItemId itemAId, ItemId itemBId, out List<MergeRecipe> recipes)
     {
         MergeKey key = new MergeKey(itemAId, itemBId);
-        return mergeMap.TryGetValue(key, out recipe);
+        return mergeMap.TryGetValue(key, out recipes);
     }
 
     public bool TryGetRecipesFor(ItemId resultId, out List<MergeRecipe> recipes)
