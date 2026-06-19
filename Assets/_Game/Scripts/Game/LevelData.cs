@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Level", menuName = "SO/Game/Level Data")]
+[CreateAssetMenu(fileName = "Level ", menuName = "SO/Game/Level Data")]
 public class LevelData : ScriptableObject
 {
     public ItemId[] StartItems;
@@ -13,6 +13,5 @@ public class LevelData : ScriptableObject
 [Serializable]
 public struct LevelTarget
 {
-    public ItemId Id;
     public int RequiredAmount;
 }

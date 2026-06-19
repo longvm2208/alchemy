@@ -20,175 +20,118 @@ public class VerticalGridLayout : MonoBehaviour
     [SerializeField] float paddingRight;
 
     [Header("Content")]
+    [SerializeField] bool setContentWidth = true;
     [SerializeField] bool setContentHeight = true;
     [SerializeField] RectTransform content;
 
     [Button]
     public void UpdateLayout()
     {
-        List<RectTransform> activeChildren = new();
+        List<RectTransform> children = new();
 
         for (int i = 0; i < content.childCount; i++)
         {
-            RectTransform child = content.GetChild(i) as RectTransform;
+            RectTransform child = (RectTransform)content.GetChild(i);
 
             if (child.gameObject.activeSelf)
             {
-                activeChildren.Add(child);
+                children.Add(child);
             }
         }
 
         if (reverseArrangement)
         {
-            activeChildren.Reverse();
+            children.Reverse();
         }
 
-        int totalItemCount = activeChildren.Count;
+        int itemCount = children.Count;
 
-        if (totalItemCount == 0)
+        if (itemCount == 0)
         {
+            Vector2 size = content.sizeDelta;
+
+            if (setContentWidth)
+            {
+                size.x = paddingLeft + paddingRight;
+            }
+
             if (setContentHeight)
             {
-                content.SetSizeDeltaY(paddingTop + paddingBottom);
+                size.y = paddingTop + paddingBottom;
             }
+
+            content.sizeDelta = size;
 
             return;
         }
 
         itemsPerRow = Mathf.Max(1, itemsPerRow);
 
-        int rowCount = Mathf.CeilToInt((float)totalItemCount / itemsPerRow);
+        RectTransform sample = children[0];
 
-        float totalHeight = CalculateTotalHeight(activeChildren, rowCount);
+        float itemWidth = sample.rect.width;
+        float itemHeight = sample.rect.height;
+
+        int rowCount = Mathf.CeilToInt(itemCount / (float)itemsPerRow);
+
+        float fullRowWidth = itemsPerRow * itemWidth + (itemsPerRow - 1) * horizontalSpacing;
+
+        float totalWidth = fullRowWidth + paddingLeft + paddingRight;
+
+        float totalHeight = rowCount * itemHeight + (rowCount - 1) * verticalSpacing + paddingTop + paddingBottom;
+
+        Vector2 sizeDelta = content.sizeDelta;
+
+        if (setContentWidth)
+        {
+            sizeDelta.x = totalWidth;
+        }
 
         if (setContentHeight)
         {
-            content.SetSizeDeltaY(totalHeight);
+            sizeDelta.y = totalHeight;
         }
+
+        content.sizeDelta = sizeDelta;
 
         float contentWidth = content.rect.width - paddingLeft - paddingRight;
 
-        // Pivot center
-        float currentY = totalHeight * 0.5f - paddingTop;
+        float startY = totalHeight * 0.5f - paddingTop - itemHeight * 0.5f;
 
         for (int row = 0; row < rowCount; row++)
         {
             int startIndex = row * itemsPerRow;
 
-            int itemCountInRow = Mathf.Min(
-                itemsPerRow,
-                totalItemCount - startIndex
-            );
+            int itemCountInRow = Mathf.Min(itemsPerRow, itemCount - startIndex);
 
             bool isLastRow = row == rowCount - 1;
             bool isIncompleteRow = itemCountInRow < itemsPerRow;
 
-            float rowHeight = 0f;
-            float rowWidth = 0f;
-
-            // Calculate row size
-            for (int i = 0; i < itemCountInRow; i++)
-            {
-                RectTransform child = activeChildren[startIndex + i];
-
-                rowHeight = Mathf.Max(rowHeight, child.rect.height);
-                rowWidth += child.rect.width;
-            }
-
-            if (itemCountInRow > 1)
-            {
-                rowWidth += horizontalSpacing * (itemCountInRow - 1);
-            }
+            float rowWidth = itemCountInRow * itemWidth + (itemCountInRow - 1) * horizontalSpacing;
 
             float startX;
 
-            bool shouldAlignLeft =
-                isLastRow &&
-                isIncompleteRow &&
-                !centerLastIncompleteRow;
-
-            if (shouldAlignLeft)
+            if (isLastRow && isIncompleteRow && !centerLastIncompleteRow)
             {
-                float fullRowWidth = 0f;
-
-                for (int i = 0; i < itemsPerRow; i++)
-                {
-                    RectTransform refChild = activeChildren[i];
-
-                    fullRowWidth += refChild.rect.width;
-                }
-
-                if (itemsPerRow > 1)
-                {
-                    fullRowWidth += horizontalSpacing * (itemsPerRow - 1);
-                }
-
-                startX =
-                    -contentWidth * 0.5f +
-                    (contentWidth - fullRowWidth) * 0.5f;
+                // Align left theo full row
+                startX = -contentWidth * 0.5f + (contentWidth - fullRowWidth) * 0.5f + itemWidth * 0.5f;
             }
             else
             {
-                startX =
-                    -contentWidth * 0.5f +
-                    (contentWidth - rowWidth) * 0.5f;
+                // Center row
+                startX = -contentWidth * 0.5f + (contentWidth - rowWidth) * 0.5f + itemWidth * 0.5f;
             }
 
-            float currentX = startX;
+            float y = startY - row * (itemHeight + verticalSpacing);
 
-            for (int i = 0; i < itemCountInRow; i++)
+            for (int col = 0; col < itemCountInRow; col++)
             {
-                RectTransform child = activeChildren[startIndex + i];
+                RectTransform child = children[startIndex + col];
 
-                float w = child.rect.width;
-                float h = child.rect.height;
+                float x = startX + col * (itemWidth + horizontalSpacing);
 
-                float posX = currentX + w * 0.5f;
-                float posY = currentY - h * 0.5f;
-
-                child.anchoredPosition = new Vector2(posX, posY);
-
-                currentX += w + horizontalSpacing;
+                child.anchoredPosition = new Vector2(x, y);
             }
-
-            currentY -= rowHeight + verticalSpacing;
         }
-    }
-
-    float CalculateTotalHeight(
-        List<RectTransform> activeChildren,
-        int rowCount
-    )
-    {
-        float totalHeight = paddingTop + paddingBottom;
-
-        for (int row = 0; row < rowCount; row++)
-        {
-            int startIndex = row * itemsPerRow;
-
-            int itemCountInRow = Mathf.Min(
-                itemsPerRow,
-                activeChildren.Count - startIndex
-            );
-
-            float rowHeight = 0f;
-
-            for (int i = 0; i < itemCountInRow; i++)
-            {
-                rowHeight = Mathf.Max(
-                    rowHeight,
-                    activeChildren[startIndex + i].rect.height
-                );
-            }
-
-            totalHeight += rowHeight;
-        }
-
-        if (rowCount > 1)
-        {
-            totalHeight += verticalSpacing * (rowCount - 1);
-        }
-
-        return totalHeight;
     }
 }

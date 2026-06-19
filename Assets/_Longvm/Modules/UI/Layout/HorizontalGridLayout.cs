@@ -21,35 +21,41 @@ public class HorizontalGridLayout : MonoBehaviour
 
     [Header("Content")]
     [SerializeField] bool setContentWidth = true;
+    [SerializeField] bool setContentHeight = true;
     [SerializeField] RectTransform content;
 
     [Button]
     public void UpdateLayout()
     {
-        List<RectTransform> activeChildren = new();
+        List<RectTransform> children = new();
 
         for (int i = 0; i < content.childCount; i++)
         {
-            RectTransform child = content.GetChild(i) as RectTransform;
+            RectTransform child = (RectTransform)content.GetChild(i);
 
             if (child.gameObject.activeSelf)
             {
-                activeChildren.Add(child);
+                children.Add(child);
             }
         }
 
         if (reverseArrangement)
         {
-            activeChildren.Reverse();
+            children.Reverse();
         }
 
-        int totalItemCount = activeChildren.Count;
+        int itemCount = children.Count;
 
-        if (totalItemCount == 0)
+        if (itemCount == 0)
         {
             if (setContentWidth)
             {
                 content.SetSizeDeltaX(paddingLeft + paddingRight);
+            }
+
+            if (setContentHeight)
+            {
+                content.SetSizeDeltaY(paddingTop + paddingBottom);
             }
 
             return;
@@ -57,148 +63,67 @@ public class HorizontalGridLayout : MonoBehaviour
 
         itemsPerColumn = Mathf.Max(1, itemsPerColumn);
 
-        int columnCount = Mathf.CeilToInt(
-            (float)totalItemCount / itemsPerColumn
-        );
+        RectTransform sample = children[0];
 
-        float totalWidth = CalculateTotalWidth(
-            activeChildren,
-            columnCount
-        );
+        float itemWidth = sample.rect.width;
+        float itemHeight = sample.rect.height;
+
+        int columnCount = Mathf.CeilToInt(itemCount / (float)itemsPerColumn);
+
+        float totalWidth = paddingLeft + paddingRight + columnCount * itemWidth + (columnCount - 1) * horizontalSpacing;
 
         if (setContentWidth)
         {
             content.SetSizeDeltaX(totalWidth);
         }
 
-        float contentHeight =
-            content.rect.height - paddingTop - paddingBottom;
+        float contentHeight = content.rect.height - paddingTop - paddingBottom;
 
-        // Pivot center
-        float currentX = -totalWidth * 0.5f + paddingLeft;
+        float fullColumnHeight = itemsPerColumn * itemHeight + (itemsPerColumn - 1) * verticalSpacing;
+
+        float totalHeight = fullColumnHeight + paddingTop + paddingBottom;
+
+        if (setContentHeight)
+        {
+            content.SetSizeDeltaY(totalHeight);
+        }
+
+        float startX = -totalWidth * 0.5f + paddingLeft + itemWidth * 0.5f;
 
         for (int column = 0; column < columnCount; column++)
         {
             int startIndex = column * itemsPerColumn;
 
-            int itemCountInColumn = Mathf.Min(
-                itemsPerColumn,
-                totalItemCount - startIndex
-            );
+            int itemCountInColumn = Mathf.Min(itemsPerColumn, itemCount - startIndex);
 
             bool isLastColumn = column == columnCount - 1;
-            bool isIncompleteColumn =
-                itemCountInColumn < itemsPerColumn;
+            bool isIncompleteColumn = itemCountInColumn < itemsPerColumn;
 
-            float columnWidth = 0f;
-            float columnHeight = 0f;
-
-            // Calculate column size
-            for (int i = 0; i < itemCountInColumn; i++)
-            {
-                RectTransform child = activeChildren[startIndex + i];
-
-                columnWidth = Mathf.Max(columnWidth, child.rect.width);
-                columnHeight += child.rect.height;
-            }
-
-            if (itemCountInColumn > 1)
-            {
-                columnHeight +=
-                    verticalSpacing * (itemCountInColumn - 1);
-            }
+            float columnHeight = itemCountInColumn * itemHeight + (itemCountInColumn - 1) * verticalSpacing;
 
             float startY;
 
-            bool shouldAlignTop =
-                isLastColumn &&
-                isIncompleteColumn &&
-                !centerLastIncompleteColumn;
-
-            if (shouldAlignTop)
+            if (isLastColumn && isIncompleteColumn && !centerLastIncompleteColumn)
             {
-                float fullColumnHeight = 0f;
-
-                for (int i = 0; i < itemsPerColumn; i++)
-                {
-                    RectTransform refChild = activeChildren[i];
-
-                    fullColumnHeight += refChild.rect.height;
-                }
-
-                if (itemsPerColumn > 1)
-                {
-                    fullColumnHeight +=
-                        verticalSpacing * (itemsPerColumn - 1);
-                }
-
-                startY =
-                    contentHeight * 0.5f -
-                    (contentHeight - fullColumnHeight) * 0.5f;
+                // Align top
+                startY = contentHeight * 0.5f - (contentHeight - fullColumnHeight) * 0.5f;
             }
             else
             {
-                // Center column
-                startY =
-                    columnHeight * 0.5f +
-                    (contentHeight - columnHeight) * 0.5f;
+                // Center vertically
+                startY = columnHeight * 0.5f + (contentHeight - columnHeight) * 0.5f;
             }
 
-            float currentY = startY;
+            float x = startX + column * (itemWidth + horizontalSpacing);
 
-            for (int i = 0; i < itemCountInColumn; i++)
+            for (int row = 0; row < itemCountInColumn; row++)
             {
-                RectTransform child = activeChildren[startIndex + i];
+                RectTransform child = children[startIndex + row];
 
-                float w = child.rect.width;
-                float h = child.rect.height;
+                float y = startY - row * (itemHeight + verticalSpacing) - itemHeight * 0.5f;
 
-                float posX = currentX + w * 0.5f;
-                float posY = currentY - h * 0.5f;
-
-                child.anchoredPosition = new Vector2(posX, posY);
-
-                currentY -= h + verticalSpacing;
+                child.anchoredPosition = new Vector2(x, y);
             }
-
-            currentX += columnWidth + horizontalSpacing;
         }
-    }
-
-    float CalculateTotalWidth(
-        List<RectTransform> activeChildren,
-        int columnCount
-    )
-    {
-        float totalWidth = paddingLeft + paddingRight;
-
-        for (int column = 0; column < columnCount; column++)
-        {
-            int startIndex = column * itemsPerColumn;
-
-            int itemCountInColumn = Mathf.Min(
-                itemsPerColumn,
-                activeChildren.Count - startIndex
-            );
-
-            float columnWidth = 0f;
-
-            for (int i = 0; i < itemCountInColumn; i++)
-            {
-                columnWidth = Mathf.Max(
-                    columnWidth,
-                    activeChildren[startIndex + i].rect.width
-                );
-            }
-
-            totalWidth += columnWidth;
-        }
-
-        if (columnCount > 1)
-        {
-            totalWidth += horizontalSpacing * (columnCount - 1);
-        }
-
-        return totalWidth;
     }
 }

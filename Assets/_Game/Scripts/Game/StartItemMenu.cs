@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class StartItemMenu : MonoBehaviour
 {
     [SerializeField] ScrollRect scroll;
-    [SerializeField] HorizontalGridLayout horizontalGridLayout;
+    [SerializeField] HorizontalGridLayout verticalGridLayout;
     [SerializeField] StartItemView itemViewPrefab;
 
     List<StartItemView> itemViews = new();
@@ -34,7 +34,7 @@ public class StartItemMenu : MonoBehaviour
             itemViews.Add(itemView);
         }
 
-        horizontalGridLayout.UpdateLayout();
+        verticalGridLayout.UpdateLayout();
     }
 
     public void AddItem(ItemId id)
@@ -44,7 +44,7 @@ public class StartItemMenu : MonoBehaviour
         itemView.TweenScale();
         itemViews.Add(itemView);
 
-        horizontalGridLayout.UpdateLayout();
+        verticalGridLayout.UpdateLayout();
     }
 
     public void OnBeginDrag(PointerEventData eventData)

@@ -10,7 +10,6 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
     Dictionary<MergeKey, MergeRecipe> mergeMap;
     Dictionary<ItemId, List<MergeRecipe>> resultMap;
     Dictionary<ItemId, List<MergeRecipe>> ingredientMap;
-    Dictionary<CategoryKey, List<ItemDefinition>> categoryMap;
     bool needUpdateUnlockedItems = true;
     List<ItemDefinition> unlockedItems;
 
@@ -21,7 +20,6 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
         isInitialized = true;
 
         items = new Dictionary<ItemId, ItemDefinition>();
-        categoryMap = new Dictionary<CategoryKey, List<ItemDefinition>>();
 
         for (int i = 0; i < config.Items.Length; i++)
         {
@@ -29,17 +27,6 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
 
             // Items
             items.Add(item.Id, item);
-
-            // Category
-            CategoryKey key = new CategoryKey(item.GroupId, item.BranchId);
-            if (categoryMap.ContainsKey(key))
-            {
-                categoryMap[key].Add(item);
-            }
-            else
-            {
-                categoryMap[key] = new List<ItemDefinition>() { item };
-            }
         }
 
         mergeMap = new Dictionary<MergeKey, MergeRecipe>();

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7b6de8a238abf4d975054115fdac36, type: 3}
+  m_Name: CAT_07
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Id: 6
+  Name: Atmosphere & Storms
+  Items: 4c0000008600000091000000260000006600000029000000a5000000570000001c0000008c0000000e0000000a0000000f000000b7000000aa010000

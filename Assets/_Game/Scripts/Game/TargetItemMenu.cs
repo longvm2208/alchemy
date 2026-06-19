@@ -14,6 +14,7 @@ public class TargetItemMenu : MonoBehaviour
 
     List<TargetItemView> itemViews = new();
 
+    //LevelTarget[] targets => LevelManager.Ins.CurrentLevel.Targets;
     LevelTarget[] targets => LevelManager.Ins.CurrentLevel.Targets;
 
     public void Init()
@@ -43,12 +44,15 @@ public class TargetItemMenu : MonoBehaviour
     {
         int index = -1;
 
+        ItemDefinition item = DatabaseManager.Ins.GetItemDefinition(id);
+
         for (int i = 0; i < targets.Length; i++)
         {
-            if (targets[i].Id == id)
-            {
-                index = i;
-            }
+            //if (targets[i].GroupId == item.GroupId && targets[i].BranchId == item.BranchId)
+            //{
+            //    index = i;
+            //    break;
+            //}
         }
 
         if (index == -1) return;

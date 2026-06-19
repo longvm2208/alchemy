@@ -74,13 +74,21 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
         glowRect.DOKill();
     }
 
-    public void Remove()
+    public void Remove(bool tween = true)
     {
         rect.DOKill();
-        rect.DOScale(Vector3.zero, 0.25f).OnComplete(() =>
+
+        if (tween)
+        {
+            rect.DOScale(Vector3.zero, 0.25f).OnComplete(() =>
+            {
+                Destroy();
+            });
+        }
+        else
         {
             Destroy();
-        });
+        }
     }
 
     public void Destroy()

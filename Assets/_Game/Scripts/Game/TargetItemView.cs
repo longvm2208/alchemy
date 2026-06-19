@@ -10,19 +10,16 @@ public class TargetItemView : PooledMonoBehaviour<TargetItemView>
     [SerializeField] TMP_Text progressText;
     [SerializeField] RectTransform progressRect;
     [SerializeField] RectTransform completedRect;
-    [SerializeField] RectTransform corner;
+    [SerializeField] RectTransform progress;
 
     int requiredCount;
     int currentCount;
 
     public void Init(LevelTarget target)
     {
-        ItemDefinition itemDefinition = DatabaseManager.Ins.GetItemDefinition(target.Id);
-
-        if (itemDefinition == null) return;
-
-        iconImage.sprite = itemDefinition.Icon;
-        nameText.text = itemDefinition.Name;
+        iconImage.sprite = null;
+        //BranchDefinition branch = DatabaseManager.Ins.GetBranch(target.GroupId, target.BranchId);
+        //nameText.text = branch.Name;
         requiredCount = target.RequiredAmount;
         currentCount = 0;
         progressText.text = $"{currentCount}/{requiredCount}";
@@ -33,10 +30,10 @@ public class TargetItemView : PooledMonoBehaviour<TargetItemView>
         currentCount++;
         progressText.text = $"{currentCount}/{requiredCount}";
 
-        corner.DOKill();
+        progress.DOKill();
         Sequence seq = DOTween.Sequence();
-        seq.Append(corner.DOScale(Vector3.one * 1.5f, 0.125f));
-        seq.Append(corner.DOScale(Vector3.one, 0.125f));
+        seq.Append(progress.DOScale(Vector3.one * 1.5f, 0.125f));
+        seq.Append(progress.DOScale(Vector3.one, 0.125f));
 
         if (currentCount >= requiredCount)
         {

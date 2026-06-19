@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class TargetState
+{
+    public int Count;
+    public HashSet<ItemId> Collected;
+}
+
 public class BoardManager : SingletonMonoBehaviour<BoardManager>
 {
     [SerializeField] float mergeRadiusSqr;
@@ -9,14 +15,25 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
     [SerializeField] StartItemMenu startItemMenu;
     [SerializeField] ItemView itemViewPrefab;
     [SerializeField] RectTransform mergeBoard;
+    [SerializeField] RectTransform bottomAnchor;
+    [SerializeField] RectTransform bottomFollower;
     [SerializeField] Canvas canvas;
     public float ScaleFactor => canvas.scaleFactor;
 
     List<ItemView> itemViews;
     public List<ItemView> ItemViews => itemViews;
-    Dictionary<ItemId, int> targetDict;
-    public Dictionary<ItemId, int> TargetDict => targetDict;
+    //Dictionary<ItemId, int> targetDict;
+    //public Dictionary<ItemId, int> TargetDict => targetDict;
+    //Dictionary<CategoryKey, TargetState> targetDict;
+    //public Dictionary<CategoryKey, TargetState> TargetDict => targetDict;
     HashSet<ItemId> newItemIds;
+
+    public void UpdateBoardPosAndSize()
+    {
+        bottomFollower.position = bottomAnchor.position;
+        float height = mergeBoard.anchoredPosition.y - bottomFollower.anchoredPosition.y;
+        mergeBoard.SetSizeDeltaY(height);
+    }
 
     public void Init()
     {
@@ -29,13 +46,19 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             itemViews.Clear();
         }
 
-        targetDict ??= new Dictionary<ItemId, int>();
-        targetDict.Clear();
+        //targetDict ??= new();
+        //targetDict.Clear();
 
+        //LevelTarget[] targets = LevelManager.Ins.CurrentLevel.Targets;
         LevelTarget[] targets = LevelManager.Ins.CurrentLevel.Targets;
         for (int i = 0; i < targets.Length; i++)
         {
-            targetDict[targets[i].Id] = targets[i].RequiredAmount;
+            //CategoryKey key = new CategoryKey(targets[i].GroupId, targets[i].BranchId);
+            //targetDict[key] = new TargetState
+            //{
+            //    Count = targets[i].RequiredAmount,
+            //    Collected = new HashSet<ItemId>()
+            //};
         }
 
         newItemIds ??= new HashSet<ItemId>();
@@ -94,23 +117,25 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             RemoveItem(itemViewB);
 
             bool collectTarget = false;
-            if (targetDict.ContainsKey(recipe.ResultItemId))
-            {
-                collectTarget = true;
-                targetDict[recipe.ResultItemId]--;
+            ItemDefinition item = DatabaseManager.Ins.GetItemDefinition(recipe.ResultItemId);
+            //CategoryKey key = new CategoryKey(item.GroupId, item.BranchId);
+            //if (targetDict.ContainsKey(key) && targetDict[key].Collected.Add(item.Id))
+            //{
+            //    collectTarget = true;
+            //    targetDict[key].Count--;
 
-                if (targetDict[recipe.ResultItemId] == 0)
-                {
-                    targetDict.Remove(recipe.ResultItemId);
-                }
-            }
+            //    if (targetDict[key].Count == 0)
+            //    {
+            //        targetDict.Remove(key);
+            //    }
+            //}
 
-            BoosterManager.Ins.UpdateHint();
+            //BoosterManager.Ins.UpdateHint();
 
-            if (targetDict.Count == 0)
-            {
-                GameCanvas.Ins.Timer.Stop();
-            }
+            //if (targetDict.Count == 0)
+            //{
+            //    GameCanvas.Ins.Timer.Stop();
+            //}
 
             Merge(itemViewA, itemViewB, recipe, collectTarget);
 
@@ -148,23 +173,18 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
         seq.OnComplete(() =>
         {
-            if (collectTarget)
-            {
-                targetItemMenu.CollectTarget(recipe.ResultItemId, itemViewB.rect.position);
-            }
-
-            if (!newItemIds.Contains(recipe.ResultItemId))
-            {
-                newItemIds.Add(recipe.ResultItemId);
-                startItemMenu.AddItem(recipe.ResultItemId);
-            }
-
-            OnMergeComplete(recipe);
+            OnMergeComplete(recipe, collectTarget, resultItem, itemViewB.rect.position);
         });
     }
 
-    void OnMergeComplete(MergeRecipe recipe)
+    void OnMergeComplete(MergeRecipe recipe, bool collectTarget, ItemView resultItem, Vector3 collectPos)
     {
+        if (!newItemIds.Contains(recipe.ResultItemId))
+        {
+            newItemIds.Add(recipe.ResultItemId);
+            startItemMenu.AddItem(recipe.ResultItemId);
+        }
+
         if (!GamePref.Ins.DiscoveredRecipes.Contains(recipe.Id))
         {
             GamePref.Ins.DiscoveredRecipes.Add(recipe.Id);
@@ -172,6 +192,7 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
         if (GamePref.Ins.DiscoveredItems.Contains(recipe.ResultItemId))
         {
+            CheckCollectTarget();
             CheckWin(1);
         }
         else
@@ -181,17 +202,28 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
             UIManager.Ins.Open<PopupNewItem>().Init(recipe.ResultItemId).OnClose(() =>
             {
+                CheckCollectTarget();
                 CheckWin(0.25f);
             });
+        }
+
+        void CheckCollectTarget()
+        {
+            if (collectTarget)
+            {
+                RemoveItem(resultItem);
+                resultItem.Remove(false);
+                targetItemMenu.CollectTarget(recipe.ResultItemId, collectPos);
+            }
         }
     }
 
     void CheckWin(float delay = 0)
     {
-        if (targetDict.Count == 0)
-        {
-            LevelManager.Ins.WinLevel(delay);
-        }
+        //if (targetDict.Count == 0)
+        //{
+        //    LevelManager.Ins.WinLevel(delay);
+        //}
     }
 
     public void ClearBoard()

@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf9e53ee9f85d1e46af4b4b15e238c34, type: 3}
+  m_Script: {fileID: 11500000, guid: 81395d52d27aae24d9fd5a6542b07728, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  StartItems: 010000000300000002000000
+  StartItems: 01000000020000000300000004000000050000000700000008000000
   Targets:
-  - Id: 8
-    RequiredAmount: 1
+  - GroupId: 1
+    BranchId: 1
+    RequiredAmount: 10

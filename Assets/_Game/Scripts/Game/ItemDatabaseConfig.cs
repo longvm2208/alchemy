@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -10,12 +12,23 @@ using UnityEngine.Networking;
 public class ItemDatabaseConfig : ScriptableObject
 {
     public ItemDefinition[] Items;
-    [TableList]
+    public CategoryDefinition[] Categories;
+    [SerializeField, HideInInspector]
     public MergeRecipe[] Recipes;
-    [TableList]
-    public GroupDefinition[] Groups;
-    [TableList]
-    public BranchDefinition[] Branches;
+#if UNITY_EDITOR
+    [InlineButton(nameof(ShowPart))]
+    [SerializeField] Vector2Int Range;
+    [SerializeField, TableList] MergeRecipe[] Part;
+
+    void ShowPart()
+    {
+        Part = new MergeRecipe[Range.y - Range.x];
+        for (int i = Range.x; i < Range.y; i++)
+        {
+            Part[i] = Recipes[i + Range.x];
+        }
+    }
+#endif
 
 #if UNITY_EDITOR
     [Serializable]
@@ -28,33 +41,47 @@ public class ItemDatabaseConfig : ScriptableObject
     class ItemsSheetRow
     {
         public string Id;
-        public string Group;
-        public string Branch;
         public string Name;
         public string Description;
     }
 
     [Serializable]
-    class MergeMapSheet
+    class RecipesSheet
     {
-        public MergeMapSheetRow[] Rows;
+        public RecipesSheetRow[] Rows;
     }
 
     [Serializable]
-    class MergeMapSheetRow
+    class RecipesSheetRow
+    {
+        public string ResultItemId;
+        public string Recipes;
+    }
+
+    [Serializable]
+    class CategoriesSheet
+    {
+        public CategoriesSheetRow[] Rows;
+    }
+
+    [Serializable]
+    class CategoriesSheetRow
     {
         public string Id;
-        public string ItemAId;
-        public string ItemBId;
-        public string ResultItemId;
+        public string Name;
+        public string Items;
     }
 
     [Header("Editor")]
     [SerializeField] string appsScriptUrl;
-    [SerializeField, Sirenix.OdinInspector.FilePath] string enumFilePath;
-    [SerializeField, FolderPath] string itemFolderPath;
+    [InlineButton(nameof(UpdateItemIds), "Update")]
+    [SerializeField] MonoScript itemIdFile;
+    [InlineButton(nameof(UpdateCategoryIds), "Update")]
+    [SerializeField] MonoScript categoryIdFile;
+    [SerializeField] DefaultAsset itemDefinitionFolder;
+    [SerializeField] DefaultAsset categoryDefinitionFolder;
+    [SerializeField] DefaultAsset itemSpriteFolder;
 
-    [Button]
     async void UpdateItemIds()
     {
         Debug.Log("Updating...");
@@ -71,13 +98,49 @@ public class ItemDatabaseConfig : ScriptableObject
             json = "{\"Rows\":" + json + "}";
             var sheet = JsonUtility.FromJson<ItemsSheet>(json);
 
-            List<string> itemNames = new List<string>();
+            List<string> names = new List<string>();
             for (int i = 0; i < sheet.Rows.Length; i++)
             {
-                itemNames.Add(sheet.Rows[i].Id);
+                names.Add(sheet.Rows[i].Id);
             }
 
-            EnumGenerator.AppendNewEnumValues(enumFilePath, itemNames);
+            string enumFilePath = AssetDatabase.GetAssetPath(itemIdFile);
+            EnumGenerator.AppendNewEnumValues(enumFilePath, names);
+
+            Debug.Log("Load Success: " + json);
+        }
+        else
+        {
+            Debug.LogError("Load Failed: " + request.error);
+        }
+
+        Debug.Log("Update Success");
+    }
+
+    async void UpdateCategoryIds()
+    {
+        Debug.Log("Updating...");
+
+        string url = appsScriptUrl + "?type=Categories";
+
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        await request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            string json = request.downloadHandler.text;
+            json = "{\"Rows\":" + json + "}";
+            var sheet = JsonUtility.FromJson<CategoriesSheet>(json);
+
+            List<string> names = new List<string>();
+            for (int i = 0; i < sheet.Rows.Length; i++)
+            {
+                names.Add(sheet.Rows[i].Id);
+            }
+
+            string enumFilePath = AssetDatabase.GetAssetPath(categoryIdFile);
+            EnumGenerator.AppendNewEnumValues(enumFilePath, names);
 
             Debug.Log("Load Success: " + json);
         }
@@ -123,55 +186,38 @@ public class ItemDatabaseConfig : ScriptableObject
 
                 if (itemDict.ContainsKey(id))
                 {
-                    ItemDefinition itemDef = itemDict[id];
+                    ItemDefinition item = itemDict[id];
 
                     bool setDirty = false;
 
-                    if (string.Compare(itemDef.Description, row.Description) != 0)
+                    if (string.Compare(item.Name, row.Name) != 0)
                     {
-                        itemDef.Description = row.Description;
+                        item.Name = row.Name;
                         setDirty = true;
                     }
 
-                    if (string.Compare(itemDef.Name, row.Name) != 0)
+                    if (string.Compare(item.Description, row.Description) != 0)
                     {
-                        itemDef.Name = row.Name;
-                        setDirty = true;
-                    }
-
-                    GroupId groupId = Enum.Parse<GroupId>(row.Group);
-
-                    if (itemDef.GroupId != groupId)
-                    {
-                        itemDef.GroupId = groupId;
-                        setDirty = true;
-                    }
-
-                    BranchId branchId = Enum.Parse<BranchId>(row.Branch);
-
-                    if (itemDef.BranchId != branchId)
-                    {
-                        itemDef.BranchId = branchId;
+                        item.Description = row.Description;
                         setDirty = true;
                     }
 
                     if (setDirty)
                     {
-                        EditorUtility.SetDirty(itemDef);
+                        EditorUtility.SetDirty(item);
                     }
 
-                    items.Add(itemDef);
+                    items.Add(item);
                 }
                 else
                 {
                     ItemDefinition itemDef = CreateInstance<ItemDefinition>();
                     itemDef.Id = id;
-                    itemDef.Name = row.Id;
+                    itemDef.Name = row.Name;
                     itemDef.Description = row.Description;
-                    itemDef.GroupId = Enum.Parse<GroupId>(row.Group);
-                    itemDef.BranchId = Enum.Parse<BranchId>(row.Branch);
 
-                    string assetPath = Path.Combine(itemFolderPath, $"{row.Id}.asset");
+                    string folderPath = AssetDatabase.GetAssetPath(itemDefinitionFolder);
+                    string assetPath = Path.Combine(folderPath, $"{row.Id}.asset");
 
                     AssetDatabase.CreateAsset(itemDef, assetPath);
 
@@ -196,11 +242,171 @@ public class ItemDatabaseConfig : ScriptableObject
     }
 
     [Button]
+    async void UpdateCategories()
+    {
+        List<string> invalid = new();
+
+        Debug.Log("Updating...");
+
+        string url = appsScriptUrl + "?type=Categories";
+
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        await request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            string json = request.downloadHandler.text;
+            json = "{\"Rows\":" + json + "}";
+            var sheet = JsonUtility.FromJson<CategoriesSheet>(json);
+
+            Dictionary<CategoryId, CategoryDefinition> categoryDict = new();
+
+            for (int i = 0; i < Categories.Length; i++)
+            {
+                if (Items[i] == null) continue;
+                categoryDict.Add(Categories[i].Id, Categories[i]);
+            }
+
+            List<CategoryDefinition> categories = new();
+
+            foreach (var row in sheet.Rows)
+            {
+                CategoryId id = Enum.Parse<CategoryId>(row.Id);
+
+                if (categoryDict.ContainsKey(id))
+                {
+                    CategoryDefinition category = categoryDict[id];
+
+                    bool setDirty = false;
+
+                    if (string.Compare(category.Name, row.Name) != 0)
+                    {
+                        category.Name = row.Name;
+                        setDirty = true;
+                    }
+
+                    string itemsString = "";
+
+                    for (int c = 0; c < category.Items.Length; c++)
+                    {
+                        itemsString += $"{category.Items[c]}";
+                        if (c < category.Items.Length - 1)
+                        {
+                            itemsString += ",";
+                        }
+                    }
+
+                    if (string.Compare(itemsString, row.Items) != 0)
+                    {
+                        List<ItemId> itemIds = new();
+                        string[] items = row.Items.Split(",");
+
+                        foreach (var item in items)
+                        {
+                            if (Enum.TryParse(item, out ItemId itemId))
+                            {
+                                itemIds.Add(itemId);
+                            }
+                            else
+                            {
+                                Debug.LogError($"Invalid item id: {id} {item}");
+
+                                if (!invalid.Contains(item))
+                                {
+                                    invalid.Add(item);
+                                }
+                            }
+                        }
+
+                        category.Items = itemIds.ToArray();
+
+                        setDirty = true;
+                    }
+
+                    if (setDirty)
+                    {
+                        EditorUtility.SetDirty(category);
+                    }
+
+                    categories.Add(category);
+                }
+                else
+                {
+                    CategoryDefinition category = CreateInstance<CategoryDefinition>();
+                    category.Id = id;
+                    category.Name = row.Name;
+
+                    List<ItemId> itemIds = new();
+                    string[] items = row.Items.Split(',');
+
+                    foreach (var item in items)
+                    {
+                        if (Enum.TryParse(item, out ItemId itemId))
+                        {
+                            itemIds.Add(itemId);
+                        }
+                        else
+                        {
+                            Debug.LogError($"Invalid item id: {id} {item}");
+
+                            if (!invalid.Contains(item))
+                            {
+                                invalid.Add(item);
+                            }
+                        }
+                    }
+
+                    category.Items = itemIds.ToArray();
+
+                    string folderPath = AssetDatabase.GetAssetPath(categoryDefinitionFolder);
+                    string assetPath = Path.Combine(folderPath, $"{row.Id}.asset");
+
+                    AssetDatabase.CreateAsset(category, assetPath);
+
+                    categories.Add(category);
+                }
+            }
+
+            Categories = categories.ToArray();
+            EditorUtility.SetDirty(this);
+
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+
+            Debug.Log("Load Success: " + json);
+        }
+        else
+        {
+            Debug.LogError("Load Failed: " + request.error);
+        }
+
+        Debug.Log("Update Success");
+
+        string invalidMessage = "";
+
+        for (int i = 0; i < invalid.Count; i++)
+        {
+            invalidMessage += invalid[i];
+
+            if (i < invalid.Count - 1)
+            {
+                invalidMessage += ", ";
+            }
+        }
+
+        if (!string.IsNullOrEmpty(invalidMessage))
+        {
+            Debug.LogError(invalidMessage);
+        }
+    }
+
+    [Button]
     async void UpdateRecipes()
     {
         Debug.Log("Updating...");
 
-        string url = appsScriptUrl + "?type=MergeMap";
+        string url = appsScriptUrl + "?type=Recipes";
 
         UnityWebRequest request = UnityWebRequest.Get(url);
 
@@ -211,20 +417,52 @@ public class ItemDatabaseConfig : ScriptableObject
             string json = request.downloadHandler.text;
             json = "{\"Rows\":" + json + "}";
 
-            var sheet = JsonUtility.FromJson<MergeMapSheet>(json);
+            var sheet = JsonUtility.FromJson<RecipesSheet>(json);
 
-            Recipes = new MergeRecipe[sheet.Rows.Length];
+            List<MergeRecipe> recipes = new List<MergeRecipe>(Recipes);
 
-            for (int i = 0; i < sheet.Rows.Length; i++)
+            foreach (var row in sheet.Rows)
             {
-                Recipes[i] = new MergeRecipe
+                if (!Enum.TryParse(row.ResultItemId, out ItemId resultItemId))
                 {
-                    Id = int.Parse(sheet.Rows[i].Id),
-                    ItemAId = Enum.Parse<ItemId>(sheet.Rows[i].ItemAId),
-                    ItemBId = Enum.Parse<ItemId>(sheet.Rows[i].ItemBId),
-                    ResultItemId = Enum.Parse<ItemId>(sheet.Rows[i].ResultItemId)
-                };
+                    Debug.LogError("Invalid result item id: " + row.ResultItemId);
+                    continue;
+                }
+
+                if (string.IsNullOrEmpty(row.Recipes))
+                {
+                    Debug.LogError("Empty recipes " + row.ResultItemId);
+                    continue;
+                }
+
+                string[] lines = row.Recipes.Split("\n");
+                foreach (var line in lines)
+                {
+                    string[] itemIds = line.Split("+");
+
+                    if (Enum.TryParse(itemIds[0], out ItemId itemAId) &&
+                        Enum.TryParse(itemIds[1], out ItemId itemBId))
+                    {
+                        MergeRecipe recipe = new MergeRecipe()
+                        {
+                            Id = recipes.Count,
+                            ItemAId = itemAId,
+                            ItemBId = itemBId,
+                            ResultItemId = resultItemId
+                        };
+
+                        recipes.Add(recipe);
+                    }
+                    else
+                    {
+                        Debug.LogError("Invalid recipe " + line);
+                    }
+                }
             }
+
+            Recipes = recipes.ToArray();
+
+            Debug.Log("Recipes length: " + Recipes.Length);
 
             Debug.Log("Load Success: " + json);
         }
@@ -233,212 +471,40 @@ public class ItemDatabaseConfig : ScriptableObject
             Debug.LogError("Load Failed: " + request.error);
         }
 
-        Debug.Log("Update Success");
+        Debug.Log("Update Success ");
     }
 
     [Button]
-    void CheckItemsMissingRecipes()
+    void GetSpriteReferences()
     {
-        HashSet<ItemId> basicItems = new HashSet<ItemId>()
-        {
-            ItemId.Fire,
-            ItemId.Water,
-            ItemId.Earth,
-            ItemId.Air,
-            ItemId.Wood,
-            ItemId.Time,
-        };
-
-        List<ItemId> itemIds = new();
-
-        for (int i = 0; i < Items.Length; i++)
-        {
-            if (basicItems.Contains(Items[i].Id)) continue;
-
-            itemIds.Add(Items[i].Id);
-        }
-
-        for (int i = 0; i < Recipes.Length; i++)
-        {
-            if (itemIds.Contains(Recipes[i].ResultItemId))
-            {
-                itemIds.Remove(Recipes[i].ResultItemId);
-            }
-        }
-
-        string message = "Items missing recipes: ";
-
-        for (int i = 0; i < itemIds.Count; i++)
-        {
-            message += itemIds[i].ToString();
-
-            if (i < itemIds.Count - 1)
-            {
-                message += ", ";
-            }
-        }
-
-        Debug.Log(message);
-    }
-
-    [Button]
-    void CheckDuplicatedRecipes()
-    {
-        List<MergeKey> keys = new List<MergeKey>();
-
-        for (int i = 0; i < Recipes.Length; i++)
-        {
-            keys.Add(new MergeKey(Recipes[i].ItemAId, Recipes[i].ItemBId));
-        }
-
-        HashSet<MergeKey> seen = new HashSet<MergeKey>();
-        List<MergeKey> duplicates = new();
-
-        for (int i = 0; i < keys.Count; i++)
-        {
-            MergeKey key = keys[i];
-
-            if (!seen.Add(key))
-            {
-                if (!duplicates.Contains(key))
-                {
-                    duplicates.Add(key);
-                }
-            }
-        }
-
-        Dictionary<MergeKey, List<ItemId>> dict = new();
-
-        foreach (var dup in duplicates)
-        {
-            dict[dup] = new List<ItemId>();
-
-            for (int i = 0; i < keys.Count; i++)
-            {
-                MergeKey key = keys[i];
-
-                if (dup.Equals(key))
-                {
-                    MergeRecipe recipe = Recipes[i];
-
-                    dict[dup].Add(recipe.ResultItemId);
-                }
-            }
-        }
-
-        string message = "";
-
-        foreach (var pair in dict)
-        {
-            message += $"{pair.Key.A} + {pair.Key.B} = ";
-
-            for (int i = 0; i < pair.Value.Count; i++)
-            {
-                message += pair.Value[i].ToString();
-                message += i < pair.Value.Count - 1 ? ", " : "\n";
-            }
-        }
-
-        if (string.IsNullOrEmpty(message))
-        {
-            message = "No duplicates found";
-        }
-
-        Debug.Log(message);
-    }
-
-    [Button]
-    void UpdateTier()
-    {
-        List<ItemDefinition> remainingItems = new();
         Dictionary<ItemId, ItemDefinition> itemDict = new();
-        Dictionary<ItemId, MergeRecipe> resultMap = new();
-
         for (int i = 0; i < Items.Length; i++)
         {
-            if (Items[i].Tier <= 0)
-            {
-                remainingItems.Add(Items[i]);
-            }
-
             itemDict.Add(Items[i].Id, Items[i]);
         }
 
-        for (int i = 0; i < Recipes.Length; i++)
+        string folderPath = AssetDatabase.GetAssetPath(itemSpriteFolder);
+        string[] spriteGuids = AssetDatabase.FindAssets("t:Sprite", new[] { folderPath });
+        foreach (string guid in spriteGuids)
         {
-            resultMap.Add(Recipes[i].ResultItemId, Recipes[i]);
-        }
-
-        int loop = 0;
-
-        while (remainingItems.Count > 0 && loop < 1000000)
-        {
-            for (int i = remainingItems.Count - 1; i >= 0; i--)
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
+            if (sprite == null) continue;
+            string spriteName = sprite.name;
+            if (Enum.TryParse<ItemId>(spriteName, out ItemId itemId))
             {
-                ItemDefinition item = remainingItems[i];
-                MergeRecipe recipe = resultMap[item.Id];
-
-                ItemDefinition itemA = itemDict[recipe.ItemAId];
-                ItemDefinition itemB = itemDict[recipe.ItemBId];
-
-                if (itemA.Tier <= 0 || itemB.Tier <= 0) continue;
-
-                item.Tier = itemA.Tier + itemB.Tier;
+                ItemDefinition item = itemDict[itemId];
+                item.Icon = sprite;
                 EditorUtility.SetDirty(item);
-                remainingItems.RemoveAt(i);
             }
-
-            loop++;
-        }
-
-        Debug.Log(loop);
-
-        for (int i = 0; i < remainingItems.Count; i++)
-        {
-            Debug.Log(remainingItems[i].Id);
+            else
+            {
+                Debug.LogError("Invalid sprite name: " + spriteName);
+            }
         }
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
-    }
-
-    [Button]
-    void ListItems()
-    {
-        string str = "Items: ";
-
-        for (int i = 0; i < Items.Length; i++)
-        {
-            if (Items[i].GroupId != GroupId.G1) continue;
-            
-            str += Items[i].Id.ToString();
-            str += ", ";
-        }
-
-        Debug.Log(str);
-    }
-
-    [Button]
-    void ListRecipes()
-    {
-        Dictionary<ItemId, ItemDefinition> itemDict = new();
-
-        for (int i = 0; i < Items.Length; i++)
-        {
-            itemDict.Add(Items[i].Id, Items[i]);
-        }
-
-        string str = "Recipes: \n";
-
-        for (int i = 0; i < Recipes.Length; i++)
-        {
-            if (itemDict[Recipes[i].ResultItemId].GroupId != GroupId.G1) continue;
-
-            str += $"{Recipes[i].ItemAId} + {Recipes[i].ItemBId} = {Recipes[i].ResultItemId}";
-            str += "\n";
-        }
-
-        Debug.Log(str);
     }
 #endif
 }
