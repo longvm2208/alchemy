@@ -531,6 +531,28 @@ public class ItemDatabaseConfig : ScriptableObject
     }
 
     [Button]
+    void RemoveDuplicatedRecipes()
+    {
+        List<MergeRecipe> unique = Recipes
+            .GroupBy(x => new {x.ItemAId, x.ItemBId, x.ResultItemId})
+            .Select(g => g.First())
+            .ToList();
+
+        for (int i = 0; i < unique.Count; i++)
+        {
+            unique[i].Id = i;
+        }
+
+        Recipes = unique.ToArray();
+
+        EditorUtility.SetDirty(this);
+        AssetDatabase.SaveAssetIfDirty(this);
+        AssetDatabase.Refresh();
+
+        Debug.Log("Count: " + Recipes.Length);
+    }
+
+    [Button]
     void Check()
     {
         List<ItemId> itemIds = new();

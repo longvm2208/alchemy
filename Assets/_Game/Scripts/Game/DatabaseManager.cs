@@ -42,7 +42,14 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
             MergeKey key = new MergeKey(recipe.ItemAId, recipe.ItemBId);
             if (mergeMap.ContainsKey(key))
             {
-                mergeMap[key].Add(recipe);
+                if (mergeMap[key].Contains(recipe))
+                {
+                    Debug.LogError("Duplicated recipe");
+                }
+                else
+                {
+                    mergeMap[key].Add(recipe);
+                }
             }
             else
             {
@@ -105,7 +112,7 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
         return categories[categoryId];
     }
 
-    public bool TryGetMergeResult(ItemId itemAId, ItemId itemBId, out List<MergeRecipe> recipes)
+    public bool TryGetRecipes(ItemId itemAId, ItemId itemBId, out List<MergeRecipe> recipes)
     {
         MergeKey key = new MergeKey(itemAId, itemBId);
         return mergeMap.TryGetValue(key, out recipes);

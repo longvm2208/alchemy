@@ -17,6 +17,7 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
     [SerializeField] RectTransform mergeBoard;
     [SerializeField] RectTransform bottomAnchor;
     [SerializeField] RectTransform bottomFollower;
+    [SerializeField] PosConfig posConfig;
     [SerializeField] Canvas canvas;
     public float ScaleFactor => canvas.scaleFactor;
 
@@ -24,7 +25,8 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
     public List<ItemView> ItemViews => itemViews;
     Dictionary<CategoryId, LevelTargetState> targetDict;
     public Dictionary<CategoryId, LevelTargetState> TargetDict => targetDict;
-    HashSet<ItemId> newItemIds;
+    HashSet<ItemId> availableItems;
+    public HashSet<ItemId> AvailableItems => availableItems;
 
     public void UpdateBoardPosAndSize()
     {
@@ -58,8 +60,13 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             };
         }
 
-        newItemIds ??= new HashSet<ItemId>();
-        newItemIds.Clear();
+        availableItems ??= new HashSet<ItemId>();
+        availableItems.Clear();
+        ItemId[] startItems = LevelManager.Ins.CurrentLevel.StartItems;
+        for (int i = 0; i < startItems.Length; i++)
+        {
+            availableItems.Add(startItems[i]);
+        }
 
         targetItemMenu.Init();
         startItemMenu.Init();
@@ -118,7 +125,7 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
     public bool TryMerge(ItemView itemViewA, ItemView itemViewB)
     {
-        if (DatabaseManager.Ins.TryGetMergeResult(itemViewA.Id, itemViewB.Id, out List<MergeRecipe> recipes))
+        if (DatabaseManager.Ins.TryGetRecipes(itemViewA.Id, itemViewB.Id, out List<MergeRecipe> recipes))
         {
             RemoveItem(itemViewA);
             RemoveItem(itemViewB);
@@ -136,34 +143,37 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
                     Recipe = recipe,
                 };
 
-                for (int j = 0; j < item.Categories.Length; j++)
+                if (!item.Categories.IsNullOrEmpty())
                 {
-                    CategoryId categoryId = item.Categories[j];
-
-                    if (targetDict.ContainsKey(categoryId) && targetDict[categoryId].Collected.Add(resultItemId))
+                    for (int j = 0; j < item.Categories.Length; j++)
                     {
-                        targetDict[categoryId].Count--;
+                        CategoryId categoryId = item.Categories[j];
 
-                        if (targetDict[categoryId].Count == 0)
+                        if (targetDict.ContainsKey(categoryId) && targetDict[categoryId].Collected.Add(resultItemId))
                         {
-                            targetDict.Remove(categoryId);
+                            targetDict[categoryId].Count--;
+
+                            if (targetDict[categoryId].Count == 0)
+                            {
+                                targetDict.Remove(categoryId);
+                            }
+
+                            result.IsTarget = true;
+
+                            if (result.TargetCategories == null)
+                            {
+                                result.TargetCategories = new List<CategoryId>();
+                            }
+
+                            result.TargetCategories.Add(categoryId);
                         }
-
-                        result.IsTarget = true;
-
-                        if (result.TargetCategories == null)
-                        {
-                            result.TargetCategories = new List<CategoryId>();
-                        }
-
-                        result.TargetCategories.Add(categoryId);
                     }
                 }
 
                 results.Add(result);
             }
 
-            //BoosterManager.Ins.UpdateHint();
+            BoosterManager.Ins.UpdateHint();
 
             if (targetDict.Count == 0)
             {
@@ -187,11 +197,12 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         for (int i = 0; i < results.Count; i++)
         {
             ItemView resultItem = SpawnItem(results[i].Recipe.ResultItemId);
-            resultItem.rect.anchoredPosition = posB;
             resultItem.rect.localScale = Vector3.zero;
             resultItem.rect.SetAsLastSibling();
             resultItems.Add(resultItem);
         }
+
+        Arrange(posB, resultItems);
 
         Sequence seq = DOTween.Sequence();
 
@@ -237,6 +248,16 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         });
     }
 
+    void Arrange(Vector2 center, List<ItemView> itemViews)
+    {
+        Vector2[] posArray = posConfig.Value[itemViews.Count - 1].Array;
+
+        for (int i = 0; i < itemViews.Count; i++)
+        {
+            itemViews[i].rect.anchoredPosition = center + posArray[i];
+        }
+    }
+
     void OnMergeComplete(List<MergeResult> results, List<ItemView> resultItems)
     {
         for (int i = 0; i < results.Count; i++)
@@ -245,9 +266,9 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             MergeRecipe recipe = result.Recipe;
             ItemView resultItem = resultItems[i];
 
-            if (!newItemIds.Contains(recipe.ResultItemId))
+            if (!availableItems.Contains(recipe.ResultItemId))
             {
-                newItemIds.Add(recipe.ResultItemId);
+                availableItems.Add(recipe.ResultItemId);
                 startItemMenu.AddItem(recipe.ResultItemId);
             }
 

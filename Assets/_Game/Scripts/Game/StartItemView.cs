@@ -19,6 +19,7 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
     [SerializeField] Image iconImage;
     [SerializeField] TMP_Text nameText;
     [SerializeField] RectTransform dragRect;
+    [SerializeField] TMP_Text tempNameText;
 
     ItemId id;
     StartItemMenu menu;
@@ -38,7 +39,10 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
 
         if (itemDefinition == null) return;
 
+        iconImage.gameObject.SetActive(itemDefinition.Icon != null);
         iconImage.sprite = itemDefinition.Icon;
+        tempNameText.gameObject.SetActive(itemDefinition.Icon == null);
+        tempNameText.text = itemDefinition.Name;
         iconImage.gameObject.SetActive(itemDefinition.Icon != null);
         nameText.text = itemDefinition.Name;
     }

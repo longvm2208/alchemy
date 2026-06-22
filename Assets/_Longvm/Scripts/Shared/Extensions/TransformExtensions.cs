@@ -230,8 +230,8 @@ public static class TransformExtensions
     public static Vector2 GetRandomPoint(this RectTransform rect, float padding)
     {
         return new Vector2(
-            Random.Range(rect.rect.xMin + padding, rect.rect.xMax - padding),
-            Random.Range(rect.rect.yMin + padding, rect.rect.yMax - padding)
+            Random.Range(-rect.rect.width * 0.5f + padding, rect.rect.width * 0.5f - padding),
+            Random.Range(-rect.rect.height * 0.5f + padding, rect.rect.height * 0.5f - padding)
         );
     }
 }

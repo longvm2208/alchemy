@@ -1,6 +1,5 @@
 ﻿using DG.Tweening;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
@@ -14,7 +13,8 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
     ItemView hintItemB;
 
     List<ItemView> itemViews => BoardManager.Ins.ItemViews;
-    //Dictionary<CategoryKey, TargetState> targets => BoardManager.Ins.TargetDict;
+    Dictionary<CategoryId, LevelTargetState> targetDict => BoardManager.Ins.TargetDict;
+    HashSet<ItemId> availableItems => BoardManager.Ins.AvailableItems;
 
     public void Init()
     {
@@ -26,108 +26,154 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
 
     public bool ExecuteHint()
     {
-        //if (CanHint())
-        //{
-        //    hintId = targets.First().Key;
+        if (CanHint())
+        {
+            MergeRecipe recipe = FindHintRecipe();
 
-        //    if (!DatabaseManager.Ins.TryGetRecipesFor(hintId, out List<MergeRecipe> recipes))
-        //    {
-        //        Debug.LogError($"No recipe found for target item {hintId}");
-        //        return false;
-        //    }
+            if (recipe == null)
+            {
+                Debug.LogError("No hint found");
+                return false;
+            }
 
-        //    MergeRecipe recipe = recipes[0];
+            if (!itemViews.IsNullOrEmpty())
+            {
+                for (int i = 0; i < itemViews.Count; i++)
+                {
+                    if (itemViews[i].Id == recipe.ItemAId)
+                    {
+                        hintItemA = itemViews[i];
+                    }
+                    else if (itemViews[i].Id == recipe.ItemBId)
+                    {
+                        hintItemB = itemViews[i];
+                    }
+                    if (hintItemA != null && hintItemB != null)
+                    {
+                        break;
+                    }
+                }
+            }
 
-        //    if (!itemViews.IsNullOrEmpty())
-        //    {
-        //        for (int i = 0; i < itemViews.Count; i++)
-        //        {
-        //            if (itemViews[i].Id == recipe.ItemAId)
-        //            {
-        //                hintItemA = itemViews[i];
-        //            }
-        //            else if (itemViews[i].Id == recipe.ItemBId)
-        //            {
-        //                hintItemB = itemViews[i];
-        //            }
-        //            if (hintItemA != null && hintItemB != null)
-        //            {
-        //                break;
-        //            }
-        //        }
-        //    }
+            if (hintItemA == null)
+            {
+                hintItemA = BoardManager.Ins.SpawnItem(recipe.ItemAId);
+                float padding = Mathf.Max(hintItemA.rect.sizeDelta.x, hintItemA.rect.sizeDelta.y) * 0.5f + 60;
+                hintItemA.rect.anchoredPosition = new Vector2
+                    (
+                        Random.Range(-0.5f * mergeBoard.rect.width + padding, -padding),
+                        Random.Range(-0.5f * mergeBoard.rect.height + padding, -padding)
+                    );
+                hintItemA.rect.localScale = Vector3.zero;
+                hintItemA.rect.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutBack);
+            }
 
-        //    if (hintItemA == null)
-        //    {
-        //        hintItemA = BoardManager.Ins.SpawnItem(recipe.ItemAId);
-        //        float padding = Mathf.Max(hintItemA.rect.sizeDelta.x, hintItemA.rect.sizeDelta.y) * 0.5f;
-        //        hintItemA.rect.anchoredPosition = mergeBoard.GetRandomPoint(padding);
-        //        hintItemA.rect.localScale = Vector3.zero;
-        //        hintItemA.rect.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutBack);
-        //    }
+            if (hintItemB == null)
+            {
+                hintItemB = BoardManager.Ins.SpawnItem(recipe.ItemBId);
+                hintItemB.rect.anchoredPosition = new Vector2
+                    (
+                        -hintItemA.rect.anchoredPosition.x,
+                        -hintItemA.rect.anchoredPosition.y
+                    );
+                hintItemB.rect.localScale = Vector3.zero;
+                hintItemB.rect.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutBack);
+            }
 
-        //    if (hintItemB == null)
-        //    {
-        //        hintItemB = BoardManager.Ins.SpawnItem(recipe.ItemBId);
-        //        hintItemB.rect.anchoredPosition = GetRandomNonOverlappingPoint(mergeBoard, hintItemB.rect, hintItemA.rect);
-        //        hintItemB.rect.localScale = Vector3.zero;
-        //        hintItemB.rect.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutBack);
-        //    }
+            hintItemA.StartHint();
+            hintItemB.StartHint();
+            hintItemA.rect.SetAsLastSibling();
+            hintItemB.rect.SetAsLastSibling();
 
-        //    hintItemA.StartHint();
-        //    hintItemB.StartHint();
-        //    hintItemA.rect.SetAsLastSibling();
-        //    hintItemB.rect.SetAsLastSibling();
-
-        //    return true;
-        //}
+            return true;
+        }
 
         return false;
     }
 
     bool CanHint()
     {
-        //return targets.Count > 0 && (hintItemA == null || hintItemB == null);
-        return false;
+        return !targetDict.IsNullOrEmpty() && (hintItemA == null || hintItemB == null);
     }
 
-    Vector2 GetRandomNonOverlappingPoint(RectTransform parent, RectTransform target, RectTransform other, int maxAttempts = 100)
+    MergeRecipe FindHintRecipe()
     {
-        float padding = Mathf.Max(target.sizeDelta.x, target.sizeDelta.y) * 0.5f;
-        Vector2 pos = parent.GetRandomPoint(padding);
-        Vector2 size = target.sizeDelta;
+        Queue<ItemId> queue = new();
+        HashSet<ItemId> visited = new();
 
-        for (int i = 0; i < maxAttempts; i++)
+        foreach (var pair in targetDict)
         {
-            pos = parent.GetRandomPoint(padding);
-            Rect rect = new Rect(pos - size * 0.5f, size);
-            if (!rect.Overlaps(other.rect))
+            CategoryId categoryId = pair.Key;
+            LevelTargetState targetState = pair.Value;
+            CategoryDefinition category = DatabaseManager.Ins.GetCategoryDefinition(categoryId);
+
+            for (int i = 0; i < category.Items.Length; i++)
             {
-                break;
+                if (targetState.Collected.Contains(category.Items[i])) continue;
+
+                queue.Enqueue(category.Items[i]);
             }
         }
 
-        return pos;
+        while (queue.Count > 0)
+        {
+            ItemId itemId = queue.Dequeue();
+
+            if (!DatabaseManager.Ins.TryGetRecipesFor(itemId, out List<MergeRecipe> recipes)) continue;
+
+            for (int i = 0; i < recipes.Count; i++)
+            {
+                MergeRecipe recipe = recipes[i];
+                ItemId itemAId = recipe.ItemAId;
+                ItemId itemBId = recipe.ItemBId;
+
+                if (availableItems.Contains(itemAId) && availableItems.Contains(itemBId))
+                {
+                    return recipe;
+                }
+                else if (availableItems.Contains(itemAId) && visited.Add(itemBId))
+                {
+                    queue.Enqueue(itemBId);
+                }
+                else if (availableItems.Contains(itemBId) && visited.Add(itemAId))
+                {
+                    queue.Enqueue(itemAId);
+                }
+                else
+                {
+                    if (visited.Add(itemAId))
+                    {
+                        queue.Enqueue(itemAId);
+                    }
+                    if (visited.Add(itemBId))
+                    {
+                        queue.Enqueue(itemBId);
+                    }
+                }
+            }
+        }
+
+        return null;
     }
 
     public void UpdateHint()
     {
-        //hintItemA = itemViews != null && itemViews.Contains(hintItemA) ? hintItemA : null;
-        //hintItemB = itemViews != null && itemViews.Contains(hintItemB) ? hintItemB : null;
+        hintItemA = itemViews != null && itemViews.Contains(hintItemA) ? hintItemA : null;
+        hintItemB = itemViews != null && itemViews.Contains(hintItemB) ? hintItemB : null;
 
-        //if (!targets.ContainsKey(hintId))
-        //{
-        //    if (hintItemA != null)
-        //    {
-        //        hintItemA.StopHint();
-        //        hintItemA = null;
-        //    }
-        //    if (hintItemB != null)
-        //    {
-        //        hintItemB.StopHint();
-        //        hintItemB = null;
-        //    }
-        //}
+        if (!availableItems.Contains(hintId))
+        {
+            if (hintItemA != null)
+            {
+                hintItemA.StopHint();
+                hintItemA = null;
+            }
+            if (hintItemB != null)
+            {
+                hintItemB.StopHint();
+                hintItemB = null;
+            }
+        }
     }
 
     bool CanExtraTime()
