@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Unity.VisualScripting;
+using System.Text;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -72,6 +72,22 @@ public class ItemDatabaseConfig : ScriptableObject
         public string Items;
     }
 
+    [Serializable]
+    class TableCategory
+    {
+        public CategoryId Category;
+        public string Name;
+        [TableList]
+        public TableItem[] Items;
+    }
+
+    [Serializable]
+    class TableItem
+    {
+        public ItemId ItemId;
+        public int Tier;
+    }
+
     [Header("Editor")]
     [SerializeField] string appsScriptUrl;
     [InlineButton(nameof(UpdateItemIds), "Update")]
@@ -81,6 +97,8 @@ public class ItemDatabaseConfig : ScriptableObject
     [SerializeField] DefaultAsset itemDefinitionFolder;
     [SerializeField] DefaultAsset categoryDefinitionFolder;
     [SerializeField] DefaultAsset itemSpriteFolder;
+    [TableList]
+    [SerializeField] TableCategory[] tableCategories;
 
     async void UpdateItemIds()
     {
@@ -280,6 +298,7 @@ public class ItemDatabaseConfig : ScriptableObject
 
                     bool setDirty = false;
 
+                    category.Name = ToPascalCase(category.Name);
                     if (string.Compare(category.Name, row.Name) != 0)
                     {
                         category.Name = row.Name;
@@ -304,17 +323,18 @@ public class ItemDatabaseConfig : ScriptableObject
 
                         foreach (var item in items)
                         {
-                            if (Enum.TryParse(item, out ItemId itemId))
+                            string pascalCaseItem = ToPascalCase(item);
+                            if (Enum.TryParse(pascalCaseItem, out ItemId itemId))
                             {
                                 itemIds.Add(itemId);
                             }
                             else
                             {
-                                Debug.LogError($"Invalid item id: {id} {item}");
+                                Debug.LogError($"Invalid item id: {id} {pascalCaseItem}");
 
-                                if (!invalid.Contains(item))
+                                if (!invalid.Contains(pascalCaseItem))
                                 {
-                                    invalid.Add(item);
+                                    invalid.Add(pascalCaseItem);
                                 }
                             }
                         }
@@ -534,7 +554,7 @@ public class ItemDatabaseConfig : ScriptableObject
     void RemoveDuplicatedRecipes()
     {
         List<MergeRecipe> unique = Recipes
-            .GroupBy(x => new {x.ItemAId, x.ItemBId, x.ResultItemId})
+            .GroupBy(x => new { x.ItemAId, x.ItemBId, x.ResultItemId })
             .Select(g => g.First())
             .ToList();
 
@@ -689,6 +709,98 @@ public class ItemDatabaseConfig : ScriptableObject
                 unuseDict[tier] = new List<ItemId> { id };
             }
         }
+    }
+
+    public static string ToPascalCase(string input)
+    {
+        if (string.IsNullOrWhiteSpace(input))
+            return string.Empty;
+
+        string[] words = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+        StringBuilder result = new StringBuilder();
+
+        foreach (string word in words)
+        {
+            if (word.Length == 0)
+                continue;
+
+            result.Append(char.ToUpper(word[0]));
+
+            if (word.Length > 1)
+                result.Append(word.Substring(1));
+        }
+
+        return result.ToString();
+    }
+
+    [Button]
+    void CheckCategories()
+    {
+        Dictionary<ItemId, int> tierDict = new()
+        {
+            { ItemId.Air, 1 },
+            { ItemId.Fire, 1 },
+            { ItemId.Earth, 1 },
+            { ItemId.Water, 1 },
+            { ItemId.Time, 1 }
+        };
+
+        int loop = 0;
+
+        while (tierDict.Count < Items.Length && loop < 100000)
+        {
+            for (int i = 0; i < Recipes.Length; i++)
+            {
+                MergeRecipe recipe = Recipes[i];
+                ItemId itemA = recipe.ItemAId;
+                ItemId itemB = recipe.ItemBId;
+                ItemId result = recipe.ResultItemId;
+
+                if (tierDict.ContainsKey(itemA) && tierDict.ContainsKey(itemB))
+                {
+                    int tier = tierDict[itemA] + tierDict[itemB];
+
+                    if (tierDict.ContainsKey(result))
+                    {
+                        tierDict[result] = Mathf.Min(tierDict[result], tier);
+                    }
+                    else
+                    {
+                        tierDict.Add(result, tier);
+                    }
+                }
+            }
+
+            loop++;
+        }
+
+        string message = string.Empty;
+
+        tableCategories = new TableCategory[Categories.Length];
+
+        for (int i = 0; i < tableCategories.Length; i++)
+        {
+            CategoryDefinition category = Categories[i];
+            TableCategory tableCategory = new TableCategory();
+            tableCategories[i] = tableCategory;
+
+            tableCategory.Category = category.Id;
+            tableCategory.Name = category.Name;
+            tableCategory.Items = new TableItem[category.Items.Length];
+            for (int j = 0; j < tableCategory.Items.Length; j++)
+            {
+                ItemId itemId = category.Items[j];
+                TableItem tableItem = new TableItem();
+                tableCategory.Items[j] = tableItem;
+                tableItem.ItemId = itemId;
+                tableItem.Tier = tierDict[itemId];
+            }
+
+            Array.Sort(tableCategory.Items, (a, b) => a.Tier.CompareTo(b.Tier));
+        }
+
+        Array.Sort(tableCategories, (a, b) => a.Items.Length.CompareTo(b.Items.Length));
     }
 #endif
 }

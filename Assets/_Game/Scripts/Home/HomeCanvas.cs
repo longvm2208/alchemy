@@ -15,5 +15,10 @@ public class HomeCanvas : SingletonCanvas<HomeCanvas>
 	{
 		SceneController.Ins.ToGame();
 	}
+
+	public void OnClickSettings()
+	{
+		UIManager.Ins.Open<PopupSettings>();
+	}
 	#endregion
 }

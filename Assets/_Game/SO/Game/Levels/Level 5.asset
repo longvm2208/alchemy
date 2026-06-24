@@ -16,5 +16,3 @@ MonoBehaviour:
   Targets:
   - CategoryId: 1
     RequiredAmount: 5
-  - CategoryId: 5
-    RequiredAmount: 5

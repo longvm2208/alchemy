@@ -45,7 +45,7 @@ public class ExtraTimeButton : ExtendedMonoBehaviour
         countText.text = GamePref.Ins.ExtraTimeCount.ToString();
 
         priceObj.SetActive(GamePref.Ins.ExtraTimeCount == 0);
-        priceText.text = $"<sprite=\"coin\" name=\"coin\">{GameConf.Ins.ExtraTimePrice}";
+        priceText.text = $"{GameConf.Ins.ExtraTimePrice}";
     }
 
     public void PlayParticle()

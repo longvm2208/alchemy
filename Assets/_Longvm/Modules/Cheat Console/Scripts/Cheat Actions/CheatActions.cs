@@ -25,9 +25,9 @@ public class CheatLevel : CheatAction
 
     public override void Execute()
     {
-        if (int.TryParse(input.text, out int value))
+        if (int.TryParse(input.text, out int value) && value >= 1)
         {
-            GamePref.Ins.LevelIndex = value;
+            GamePref.Ins.LevelIndex = value - 1;
             SceneController.Ins.ToGame();
         }
     }

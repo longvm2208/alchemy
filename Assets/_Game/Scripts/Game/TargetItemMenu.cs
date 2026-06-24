@@ -10,7 +10,7 @@ public class TargetItemMenu : MonoBehaviour
     [SerializeField] HorizontalLayout horizontalLayout;
     [SerializeField] TargetItemView itemViewPrefab;
     [SerializeField] TargetItemFly itemFlyPrefab;
-    [SerializeField] RectTransform itemFlyHolder;
+    [SerializeField] Transform itemFlyHolder;
 
     Dictionary<CategoryId, TargetItemView> categoryDict;
 

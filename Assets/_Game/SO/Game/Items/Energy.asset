@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Energy
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a4c937a2d476694c977c37f2cfb833e, type: 3}
   Id: 7
   Name: Energy
   Description: 
-  Categories: 0200000003000000
+  Categories: 02000000030000000100000007000000

@@ -13,7 +13,7 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
     {
         int levelIndex = GamePref.Ins.LevelIndex % levelContainer.Levels.Length;
         currentLevel = levelContainer.Levels[levelIndex];
-        GameCanvas.Ins.UpdateBottomPos();
+        GameCanvas.Ins.Init();
         BoardManager.Ins.UpdateBoardPosAndSize();
         DatabaseManager.Ins.Init();
         BoardManager.Ins.Init();

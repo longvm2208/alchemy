@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Explosion
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1b4a40e67d7218d4db69f7b047f425b3, type: 3}
   Id: 31
   Name: Explosion
   Description: 
-  Categories: 020000000e00000026000000030000000f00000027000000
+  Categories: 020000000e00000026000000030000000f00000027000000010000000700000013000000

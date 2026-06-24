@@ -1,15 +1,15 @@
 ﻿using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class LevelTargetState
-{
-    public int Count;
-    public HashSet<ItemId> Collected;
-}
-
 public class BoardManager : SingletonMonoBehaviour<BoardManager>
 {
+    struct MergeResult
+    {
+        public MergeRecipe Recipe;
+        public bool IsTarget;
+        public List<CategoryId> TargetCategories;
+    }
+
     [SerializeField] float mergeRadiusSqr;
     [SerializeField] TargetItemMenu targetItemMenu;
     [SerializeField] StartItemMenu startItemMenu;
@@ -20,6 +20,8 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
     [SerializeField] PosConfig posConfig;
     [SerializeField] Canvas canvas;
     public float ScaleFactor => canvas.scaleFactor;
+    [SerializeField] Transform vfxHolder;
+    [SerializeField] MergeImpact mergeImpact;
 
     List<ItemView> itemViews;
     public List<ItemView> ItemViews => itemViews;
@@ -116,13 +118,6 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         itemView.SetMergeCandidate(candidate);
     }
 
-    public struct MergeResult
-    {
-        public MergeRecipe Recipe;
-        public bool IsTarget;
-        public List<CategoryId> TargetCategories;
-    }
-
     public bool TryMerge(ItemView itemViewA, ItemView itemViewB)
     {
         if (DatabaseManager.Ins.TryGetRecipes(itemViewA.Id, itemViewB.Id, out List<MergeRecipe> recipes))
@@ -214,6 +209,10 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
         seq.AppendCallback(() =>
         {
+            Vector3 impactPos = itemViewB.transform.position;
+            impactPos.z = 0;
+            Impact(impactPos);
+
             itemViewA.Destroy();
             itemViewB.Destroy();
         });
@@ -246,6 +245,13 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         {
             OnMergeComplete(results, resultItems);
         });
+    }
+
+    void Impact(Vector3 pos)
+    {
+        MergeImpact impact = mergeImpact.GetInstance(vfxHolder);
+        impact.transform.position = pos;
+        impact.Play();
     }
 
     void Arrange(Vector2 center, List<ItemView> itemViews)

@@ -45,7 +45,7 @@ public class HintButton : ExtendedMonoBehaviour
         countText.text = GamePref.Ins.HintCount.ToString();
 
         priceObj.SetActive(GamePref.Ins.HintCount == 0);
-        priceText.text = $"<sprite=\"coin\" name=\"coin\">{GameConf.Ins.HintPrice}";
+        priceText.text = $"{GameConf.Ins.HintPrice}";
     }
 
     public void PlayParticle()

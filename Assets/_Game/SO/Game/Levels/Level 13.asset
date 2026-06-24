@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81395d52d27aae24d9fd5a6542b07728, type: 3}
   m_Name: Level 13
   m_EditorClassIdentifier: 
-  StartItems: 010000000200000003000000040000000500000007000000
+  StartItems: 0100000002000000030000000400000005000000
   Targets:
   - CategoryId: 1
-    RequiredAmount: 10
-  - CategoryId: 3
-    RequiredAmount: 10
+    RequiredAmount: 8

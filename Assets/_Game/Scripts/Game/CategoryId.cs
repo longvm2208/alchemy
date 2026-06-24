@@ -42,13 +42,4 @@ public enum CategoryId
     CAT_39 = 39,
     CAT_40 = 40,
     CAT_41 = 41,
-    CAT_42 = 42,
-    CAT_43 = 43,
-    CAT_44 = 44,
-    CAT_45 = 45,
-    CAT_46 = 46,
-    CAT_47 = 47,
-    CAT_48 = 48,
-    CAT_49 = 49,
-    CAT_50 = 50,
 }

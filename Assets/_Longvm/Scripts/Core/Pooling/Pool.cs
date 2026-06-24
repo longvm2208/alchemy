@@ -4,6 +4,7 @@ using UnityEngine;
 public struct Pool<T> where T : ExtendedMonoBehaviour
 {
     Queue<T> pool;
+    List<T> actives;
 
     public T GetInstance(T prefab, Transform parent, bool setParent = false)
     {
@@ -38,6 +39,16 @@ public struct Pool<T> where T : ExtendedMonoBehaviour
             instance = Object.Instantiate(prefab, parent);
         }
 
+        if (actives == null)
+        {
+            actives = new List<T>();
+        }
+
+        if (instance != null && !actives.Contains(instance))
+        {
+            actives.Add(instance);
+        }
+
         return instance;
     }
 
@@ -62,6 +73,29 @@ public struct Pool<T> where T : ExtendedMonoBehaviour
             }
 
             instance.gameObject.SetActive(false);
+        }
+
+        if (actives != null && instance != null && actives.Contains(instance))
+        {
+            actives.Remove(instance);
+        }
+    }
+
+    public void RecycleAll()
+    {
+        if (!actives.IsNullOrEmpty())
+        {
+            for (int i = 0; i < actives.Count; i++)
+            {
+                T instance = actives[i];
+
+                if (!pool.Contains(instance))
+                {
+                    pool.Enqueue(instance);
+                }
+
+                instance.gameObject.SetActive(false);
+            }
         }
     }
 }

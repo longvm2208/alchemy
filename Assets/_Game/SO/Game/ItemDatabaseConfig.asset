@@ -774,15 +774,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e3f8511312c5bfe44ba0875deead4810, type: 2}
   - {fileID: 11400000, guid: f5fec792d9776754fb4a093a4c56d607, type: 2}
   - {fileID: 11400000, guid: b029674284f9c09439e411e5c7f0bd0c, type: 2}
-  - {fileID: 11400000, guid: d7eec367a7312c744abee546ed7b2bbb, type: 2}
-  - {fileID: 11400000, guid: 659599db55adc824899b8f8fda614406, type: 2}
-  - {fileID: 11400000, guid: 5197f894296fae0498ebe25306d31241, type: 2}
-  - {fileID: 11400000, guid: b41631a89e4720f49a1a8d0ca4ad1d43, type: 2}
-  - {fileID: 11400000, guid: f1aa1425ff513b64082202a4b02c0292, type: 2}
-  - {fileID: 11400000, guid: a1af2cdeece1d314f82de81c470895cf, type: 2}
-  - {fileID: 11400000, guid: f8d69f2924c77dc4695adec67cf99895, type: 2}
-  - {fileID: 11400000, guid: c99984b2c2be22b4fb7c7b85c669a74a, type: 2}
-  - {fileID: 11400000, guid: e317123d79b36684485231021244ed96, type: 2}
   Recipes:
   - Id: 0
     ItemAId: 2
@@ -14984,3 +14975,2107 @@ MonoBehaviour:
   itemDefinitionFolder: {fileID: 102900000, guid: 74af958c6a1f54a4b80442a415de216b, type: 3}
   categoryDefinitionFolder: {fileID: 102900000, guid: 43f65d596194e2e40a02dd568875c588, type: 3}
   itemSpriteFolder: {fileID: 102900000, guid: 205f03b3c2b4ef545ada031e7fc48602, type: 3}
+  tableCategories:
+  - Category: 9
+    Name: Entropy
+    Items:
+    - ItemId: 6
+      Tier: 2
+    - ItemId: 61
+      Tier: 5
+    - ItemId: 141
+      Tier: 13
+  - Category: 40
+    Name: Science fiction
+    Items:
+    - ItemId: 164
+      Tier: 11
+    - ItemId: 150
+      Tier: 16
+    - ItemId: 194
+      Tier: 21
+    - ItemId: 246
+      Tier: 25
+    - ItemId: 434
+      Tier: 33
+  - Category: 12
+    Name: States
+    Items:
+    - ItemId: 36
+      Tier: 5
+    - ItemId: 196
+      Tier: 19
+    - ItemId: 298
+      Tier: 22
+    - ItemId: 322
+      Tier: 22
+    - ItemId: 467
+      Tier: 26
+  - Category: 16
+    Name: Electrictity
+    Items:
+    - ItemId: 77
+      Tier: 8
+    - ItemId: 134
+      Tier: 10
+    - ItemId: 145
+      Tier: 12
+    - ItemId: 123
+      Tier: 16
+    - ItemId: 172
+      Tier: 19
+    - ItemId: 287
+      Tier: 26
+    - ItemId: 389
+      Tier: 32
+  - Category: 31
+    Name: Valuables
+    Items:
+    - ItemId: 53
+      Tier: 8
+    - ItemId: 344
+      Tier: 19
+    - ItemId: 409
+      Tier: 19
+    - ItemId: 351
+      Tier: 24
+    - ItemId: 489
+      Tier: 27
+    - ItemId: 641
+      Tier: 36
+    - ItemId: 717
+      Tier: 46
+  - Category: 41
+    Name: Insects
+    Items:
+    - ItemId: 230
+      Tier: 13
+    - ItemId: 185
+      Tier: 17
+    - ItemId: 388
+      Tier: 25
+    - ItemId: 329
+      Tier: 26
+    - ItemId: 505
+      Tier: 30
+    - ItemId: 390
+      Tier: 32
+    - ItemId: 587
+      Tier: 45
+  - Category: 13
+    Name: Pressure
+    Items:
+    - ItemId: 12
+      Tier: 2
+    - ItemId: 15
+      Tier: 2
+    - ItemId: 20
+      Tier: 3
+    - ItemId: 27
+      Tier: 3
+    - ItemId: 28
+      Tier: 3
+    - ItemId: 19
+      Tier: 4
+    - ItemId: 46
+      Tier: 6
+    - ItemId: 484
+      Tier: 16
+  - Category: 35
+    Name: Fish
+    Items:
+    - ItemId: 203
+      Tier: 10
+    - ItemId: 293
+      Tier: 11
+    - ItemId: 357
+      Tier: 12
+    - ItemId: 370
+      Tier: 17
+    - ItemId: 326
+      Tier: 20
+    - ItemId: 447
+      Tier: 20
+    - ItemId: 360
+      Tier: 22
+    - ItemId: 240
+      Tier: 23
+    - ItemId: 287
+      Tier: 26
+    - ItemId: 345
+      Tier: 27
+  - Category: 30
+    Name: Protection
+    Items:
+    - ItemId: 51
+      Tier: 7
+    - ItemId: 99
+      Tier: 12
+    - ItemId: 594
+      Tier: 22
+    - ItemId: 266
+      Tier: 24
+    - ItemId: 316
+      Tier: 32
+    - ItemId: 600
+      Tier: 50
+    - ItemId: 605
+      Tier: 53
+    - ItemId: 666
+      Tier: 55
+    - ItemId: 682
+      Tier: 60
+    - ItemId: 604
+      Tier: 80
+  - Category: 28
+    Name: Reptiles
+    Items:
+    - ItemId: 205
+      Tier: 11
+    - ItemId: 216
+      Tier: 12
+    - ItemId: 280
+      Tier: 13
+    - ItemId: 283
+      Tier: 13
+    - ItemId: 245
+      Tier: 14
+    - ItemId: 465
+      Tier: 14
+    - ItemId: 253
+      Tier: 16
+    - ItemId: 333
+      Tier: 24
+    - ItemId: 236
+      Tier: 29
+    - ItemId: 494
+      Tier: 30
+  - Category: 8
+    Name: Time
+    Items:
+    - ItemId: 86
+      Tier: 5
+    - ItemId: 121
+      Tier: 8
+    - ItemId: 136
+      Tier: 9
+    - ItemId: 170
+      Tier: 9
+    - ItemId: 155
+      Tier: 10
+    - ItemId: 153
+      Tier: 17
+    - ItemId: 241
+      Tier: 24
+    - ItemId: 174
+      Tier: 25
+    - ItemId: 248
+      Tier: 27
+    - ItemId: 279
+      Tier: 27
+    - ItemId: 286
+      Tier: 33
+    - ItemId: 641
+      Tier: 36
+  - Category: 15
+    Name: Air
+    Items:
+    - ItemId: 14
+      Tier: 2
+    - ItemId: 38
+      Tier: 6
+    - ItemId: 76
+      Tier: 8
+    - ItemId: 102
+      Tier: 9
+    - ItemId: 161
+      Tier: 17
+    - ItemId: 338
+      Tier: 22
+    - ItemId: 458
+      Tier: 23
+    - ItemId: 264
+      Tier: 24
+    - ItemId: 635
+      Tier: 29
+    - ItemId: 547
+      Tier: 42
+    - ItemId: 649
+      Tier: 42
+    - ItemId: 661
+      Tier: 51
+  - Category: 37
+    Name: Death
+    Items:
+    - ItemId: 156
+      Tier: 8
+    - ItemId: 192
+      Tier: 11
+    - ItemId: 207
+      Tier: 11
+    - ItemId: 260
+      Tier: 12
+    - ItemId: 302
+      Tier: 12
+    - ItemId: 362
+      Tier: 12
+    - ItemId: 294
+      Tier: 13
+    - ItemId: 303
+      Tier: 13
+    - ItemId: 385
+      Tier: 18
+    - ItemId: 221
+      Tier: 19
+    - ItemId: 299
+      Tier: 20
+    - ItemId: 546
+      Tier: 28
+    - ItemId: 533
+      Tier: 38
+  - Category: 5
+    Name: Drinks
+    Items:
+    - ItemId: 110
+      Tier: 6
+    - ItemId: 595
+      Tier: 20
+    - ItemId: 442
+      Tier: 20
+    - ItemId: 433
+      Tier: 22
+    - ItemId: 503
+      Tier: 23
+    - ItemId: 481
+      Tier: 25
+    - ItemId: 532
+      Tier: 33
+    - ItemId: 633
+      Tier: 33
+    - ItemId: 640
+      Tier: 34
+    - ItemId: 584
+      Tier: 36
+    - ItemId: 609
+      Tier: 45
+    - ItemId: 673
+      Tier: 45
+    - ItemId: 693
+      Tier: 46
+    - ItemId: 685
+      Tier: 63
+  - Category: 7
+    Name: Forces
+    Items:
+    - ItemId: 7
+      Tier: 2
+    - ItemId: 18
+      Tier: 3
+    - ItemId: 23
+      Tier: 3
+    - ItemId: 31
+      Tier: 4
+    - ItemId: 38
+      Tier: 6
+    - ItemId: 69
+      Tier: 7
+    - ItemId: 132
+      Tier: 7
+    - ItemId: 104
+      Tier: 8
+    - ItemId: 77
+      Tier: 8
+    - ItemId: 160
+      Tier: 15
+    - ItemId: 123
+      Tier: 16
+    - ItemId: 217
+      Tier: 20
+    - ItemId: 330
+      Tier: 24
+    - ItemId: 214
+      Tier: 37
+    - ItemId: 479
+      Tier: 41
+  - Category: 32
+    Name: Light
+    Items:
+    - ItemId: 97
+      Tier: 8
+    - ItemId: 81
+      Tier: 11
+    - ItemId: 139
+      Tier: 13
+    - ItemId: 71
+      Tier: 14
+    - ItemId: 122
+      Tier: 16
+    - ItemId: 154
+      Tier: 18
+    - ItemId: 159
+      Tier: 21
+    - ItemId: 213
+      Tier: 25
+    - ItemId: 317
+      Tier: 26
+    - ItemId: 291
+      Tier: 34
+    - ItemId: 214
+      Tier: 37
+    - ItemId: 365
+      Tier: 41
+    - ItemId: 320
+      Tier: 42
+    - ItemId: 683
+      Tier: 45
+    - ItemId: 335
+      Tier: 57
+  - Category: 6
+    Name: Minerals
+    Items:
+    - ItemId: 22
+      Tier: 3
+    - ItemId: 24
+      Tier: 3
+    - ItemId: 33
+      Tier: 4
+    - ItemId: 52
+      Tier: 5
+    - ItemId: 61
+      Tier: 5
+    - ItemId: 100
+      Tier: 6
+    - ItemId: 114
+      Tier: 10
+    - ItemId: 271
+      Tier: 12
+    - ItemId: 256
+      Tier: 16
+    - ItemId: 327
+      Tier: 16
+    - ItemId: 274
+      Tier: 17
+    - ItemId: 452
+      Tier: 17
+    - ItemId: 471
+      Tier: 23
+    - ItemId: 467
+      Tier: 26
+    - ItemId: 586
+      Tier: 29
+  - Category: 23
+    Name: Furniture
+    Items:
+    - ItemId: 70
+      Tier: 6
+    - ItemId: 92
+      Tier: 9
+    - ItemId: 258
+      Tier: 16
+    - ItemId: 153
+      Tier: 17
+    - ItemId: 296
+      Tier: 17
+    - ItemId: 483
+      Tier: 19
+    - ItemId: 213
+      Tier: 25
+    - ItemId: 279
+      Tier: 27
+    - ItemId: 538
+      Tier: 31
+    - ItemId: 608
+      Tier: 32
+    - ItemId: 579
+      Tier: 33
+    - ItemId: 552
+      Tier: 33
+    - ItemId: 401
+      Tier: 34
+    - ItemId: 405
+      Tier: 44
+    - ItemId: 717
+      Tier: 46
+    - ItemId: 653
+      Tier: 60
+  - Category: 10
+    Name: Biology
+    Items:
+    - ItemId: 95
+      Tier: 6
+    - ItemId: 132
+      Tier: 7
+    - ItemId: 163
+      Tier: 8
+    - ItemId: 167
+      Tier: 8
+    - ItemId: 152
+      Tier: 9
+    - ItemId: 176
+      Tier: 12
+    - ItemId: 222
+      Tier: 15
+    - ItemId: 198
+      Tier: 16
+    - ItemId: 348
+      Tier: 17
+    - ItemId: 352
+      Tier: 17
+    - ItemId: 407
+      Tier: 17
+    - ItemId: 457
+      Tier: 17
+    - ItemId: 232
+      Tier: 19
+    - ItemId: 444
+      Tier: 22
+    - ItemId: 358
+      Tier: 23
+    - ItemId: 477
+      Tier: 24
+  - Category: 36
+    Name: Machine
+    Items:
+    - ItemId: 98
+      Tier: 11
+    - ItemId: 164
+      Tier: 11
+    - ItemId: 484
+      Tier: 16
+    - ItemId: 172
+      Tier: 19
+    - ItemId: 323
+      Tier: 19
+    - ItemId: 194
+      Tier: 21
+    - ItemId: 403
+      Tier: 23
+    - ItemId: 186
+      Tier: 24
+    - ItemId: 437
+      Tier: 27
+    - ItemId: 279
+      Tier: 27
+    - ItemId: 275
+      Tier: 32
+    - ItemId: 581
+      Tier: 47
+    - ItemId: 655
+      Tier: 61
+    - ItemId: 555
+      Tier: 73
+    - ItemId: 707
+      Tier: 84
+    - ItemId: 665
+      Tier: 114
+    - ItemId: 705
+      Tier: 155
+  - Category: 1
+    Name: Temperature
+    Items:
+    - ItemId: 7
+      Tier: 2
+    - ItemId: 9
+      Tier: 2
+    - ItemId: 15
+      Tier: 2
+    - ItemId: 27
+      Tier: 3
+    - ItemId: 19
+      Tier: 4
+    - ItemId: 31
+      Tier: 4
+    - ItemId: 40
+      Tier: 4
+    - ItemId: 190
+      Tier: 13
+    - ItemId: 238
+      Tier: 14
+    - ItemId: 273
+      Tier: 14
+    - ItemId: 312
+      Tier: 14
+    - ItemId: 183
+      Tier: 16
+    - ItemId: 212
+      Tier: 25
+    - ItemId: 524
+      Tier: 28
+    - ItemId: 552
+      Tier: 33
+    - ItemId: 569
+      Tier: 35
+    - ItemId: 414
+      Tier: 37
+    - ItemId: 693
+      Tier: 46
+  - Category: 19
+    Name: Events
+    Items:
+    - ItemId: 18
+      Tier: 3
+    - ItemId: 27
+      Tier: 3
+    - ItemId: 19
+      Tier: 4
+    - ItemId: 31
+      Tier: 4
+    - ItemId: 38
+      Tier: 6
+    - ItemId: 43
+      Tier: 7
+    - ItemId: 97
+      Tier: 8
+    - ItemId: 111
+      Tier: 8
+    - ItemId: 63
+      Tier: 9
+    - ItemId: 134
+      Tier: 10
+    - ItemId: 135
+      Tier: 11
+    - ItemId: 87
+      Tier: 11
+    - ItemId: 71
+      Tier: 14
+    - ItemId: 122
+      Tier: 16
+    - ItemId: 82
+      Tier: 17
+    - ItemId: 597
+      Tier: 40
+    - ItemId: 719
+      Tier: 44
+    - ItemId: 699
+      Tier: 66
+  - Category: 2
+    Name: Weather
+    Items:
+    - ItemId: 10
+      Tier: 2
+    - ItemId: 15
+      Tier: 2
+    - ItemId: 28
+      Tier: 3
+    - ItemId: 38
+      Tier: 6
+    - ItemId: 76
+      Tier: 8
+    - ItemId: 97
+      Tier: 8
+    - ItemId: 111
+      Tier: 8
+    - ItemId: 63
+      Tier: 9
+    - ItemId: 140
+      Tier: 9
+    - ItemId: 127
+      Tier: 9
+    - ItemId: 114
+      Tier: 10
+    - ItemId: 87
+      Tier: 11
+    - ItemId: 165
+      Tier: 11
+    - ItemId: 145
+      Tier: 12
+    - ItemId: 166
+      Tier: 13
+    - ItemId: 238
+      Tier: 14
+    - ItemId: 183
+      Tier: 16
+    - ItemId: 122
+      Tier: 16
+    - ItemId: 426
+      Tier: 16
+  - Category: 4
+    Name: Water
+    Items:
+    - ItemId: 13
+      Tier: 2
+    - ItemId: 20
+      Tier: 3
+    - ItemId: 25
+      Tier: 3
+    - ItemId: 32
+      Tier: 4
+    - ItemId: 60
+      Tier: 5
+    - ItemId: 64
+      Tier: 5
+    - ItemId: 110
+      Tier: 6
+    - ItemId: 94
+      Tier: 6
+    - ItemId: 68
+      Tier: 8
+    - ItemId: 76
+      Tier: 8
+    - ItemId: 140
+      Tier: 9
+    - ItemId: 114
+      Tier: 10
+    - ItemId: 195
+      Tier: 11
+    - ItemId: 107
+      Tier: 16
+    - ItemId: 82
+      Tier: 17
+    - ItemId: 184
+      Tier: 17
+    - ItemId: 503
+      Tier: 23
+    - ItemId: 469
+      Tier: 26
+    - ItemId: 486
+      Tier: 27
+  - Category: 29
+    Name: Birds
+    Items:
+    - ItemId: 162
+      Tier: 8
+    - ItemId: 182
+      Tier: 10
+    - ItemId: 284
+      Tier: 11
+    - ItemId: 336
+      Tier: 11
+    - ItemId: 285
+      Tier: 14
+    - ItemId: 465
+      Tier: 14
+    - ItemId: 356
+      Tier: 15
+    - ItemId: 278
+      Tier: 16
+    - ItemId: 379
+      Tier: 16
+    - ItemId: 373
+      Tier: 18
+    - ItemId: 339
+      Tier: 18
+    - ItemId: 337
+      Tier: 19
+    - ItemId: 341
+      Tier: 23
+    - ItemId: 499
+      Tier: 26
+    - ItemId: 311
+      Tier: 27
+    - ItemId: 279
+      Tier: 27
+    - ItemId: 415
+      Tier: 27
+    - ItemId: 343
+      Tier: 30
+    - ItemId: 456
+      Tier: 35
+  - Category: 26
+    Name: Weapons
+    Items:
+    - ItemId: 42
+      Tier: 6
+    - ItemId: 45
+      Tier: 7
+    - ItemId: 47
+      Tier: 7
+    - ItemId: 54
+      Tier: 8
+    - ItemId: 89
+      Tier: 10
+    - ItemId: 85
+      Tier: 11
+    - ItemId: 108
+      Tier: 11
+    - ItemId: 149
+      Tier: 12
+    - ItemId: 126
+      Tier: 12
+    - ItemId: 133
+      Tier: 13
+    - ItemId: 146
+      Tier: 13
+    - ItemId: 124
+      Tier: 14
+    - ItemId: 117
+      Tier: 18
+    - ItemId: 231
+      Tier: 22
+    - ItemId: 594
+      Tier: 22
+    - ItemId: 197
+      Tier: 23
+    - ItemId: 394
+      Tier: 27
+    - ItemId: 509
+      Tier: 30
+    - ItemId: 507
+      Tier: 34
+    - ItemId: 518
+      Tier: 47
+  - Category: 14
+    Name: Place
+    Items:
+    - ItemId: 25
+      Tier: 3
+    - ItemId: 44
+      Tier: 5
+    - ItemId: 80
+      Tier: 6
+    - ItemId: 93
+      Tier: 7
+    - ItemId: 68
+      Tier: 8
+    - ItemId: 88
+      Tier: 8
+    - ItemId: 130
+      Tier: 10
+    - ItemId: 207
+      Tier: 11
+    - ItemId: 302
+      Tier: 12
+    - ItemId: 303
+      Tier: 13
+    - ItemId: 177
+      Tier: 16
+    - ItemId: 107
+      Tier: 16
+    - ItemId: 79
+      Tier: 17
+    - ItemId: 255
+      Tier: 18
+    - ItemId: 488
+      Tier: 18
+    - ItemId: 112
+      Tier: 24
+    - ItemId: 667
+      Tier: 26
+    - ItemId: 297
+      Tier: 27
+    - ItemId: 571
+      Tier: 27
+    - ItemId: 138
+      Tier: 30
+    - ItemId: 157
+      Tier: 30
+    - ItemId: 268
+      Tier: 30
+    - ItemId: 638
+      Tier: 30
+    - ItemId: 502
+      Tier: 31
+    - ItemId: 574
+      Tier: 43
+    - ItemId: 120
+      Tier: 48
+    - ItemId: 686
+      Tier: 64
+  - Category: 20
+    Name: Information
+    Items:
+    - ItemId: 207
+      Tier: 11
+    - ItemId: 288
+      Tier: 21
+    - ItemId: 211
+      Tier: 22
+    - ItemId: 368
+      Tier: 30
+    - ItemId: 638
+      Tier: 30
+    - ItemId: 439
+      Tier: 31
+    - ItemId: 275
+      Tier: 32
+    - ItemId: 342
+      Tier: 32
+    - ItemId: 708
+      Tier: 38
+    - ItemId: 565
+      Tier: 39
+    - ItemId: 654
+      Tier: 48
+    - ItemId: 661
+      Tier: 51
+    - ItemId: 431
+      Tier: 52
+    - ItemId: 645
+      Tier: 56
+    - ItemId: 612
+      Tier: 58
+    - ItemId: 713
+      Tier: 61
+    - ItemId: 699
+      Tier: 66
+    - ItemId: 515
+      Tier: 66
+    - ItemId: 636
+      Tier: 67
+    - ItemId: 700
+      Tier: 67
+    - ItemId: 555
+      Tier: 73
+    - ItemId: 690
+      Tier: 83
+    - ItemId: 707
+      Tier: 84
+    - ItemId: 715
+      Tier: 94
+    - ItemId: 617
+      Tier: 97
+    - ItemId: 665
+      Tier: 114
+    - ItemId: 705
+      Tier: 155
+  - Category: 11
+    Name: Space
+    Items:
+    - ItemId: 35
+      Tier: 6
+    - ItemId: 41
+      Tier: 7
+    - ItemId: 66
+      Tier: 7
+    - ItemId: 121
+      Tier: 8
+    - ItemId: 56
+      Tier: 9
+    - ItemId: 57
+      Tier: 9
+    - ItemId: 67
+      Tier: 9
+    - ItemId: 73
+      Tier: 9
+    - ItemId: 102
+      Tier: 9
+    - ItemId: 91
+      Tier: 10
+    - ItemId: 135
+      Tier: 11
+    - ItemId: 90
+      Tier: 11
+    - ItemId: 106
+      Tier: 11
+    - ItemId: 65
+      Tier: 12
+    - ItemId: 105
+      Tier: 13
+    - ItemId: 131
+      Tier: 14
+    - ItemId: 78
+      Tier: 16
+    - ItemId: 150
+      Tier: 16
+    - ItemId: 169
+      Tier: 18
+    - ItemId: 144
+      Tier: 21
+    - ItemId: 364
+      Tier: 22
+    - ItemId: 83
+      Tier: 24
+    - ItemId: 168
+      Tier: 25
+    - ItemId: 472
+      Tier: 30
+    - ItemId: 191
+      Tier: 36
+    - ItemId: 128
+      Tier: 48
+    - ItemId: 171
+      Tier: 96
+  - Category: 34
+    Name: Decorations
+    Items:
+    - ItemId: 70
+      Tier: 6
+    - ItemId: 137
+      Tier: 9
+    - ItemId: 207
+      Tier: 11
+    - ItemId: 309
+      Tier: 15
+    - ItemId: 237
+      Tier: 18
+    - ItemId: 193
+      Tier: 20
+    - ItemId: 542
+      Tier: 20
+    - ItemId: 354
+      Tier: 22
+    - ItemId: 458
+      Tier: 23
+    - ItemId: 292
+      Tier: 23
+    - ItemId: 317
+      Tier: 26
+    - ItemId: 436
+      Tier: 28
+    - ItemId: 635
+      Tier: 29
+    - ItemId: 482
+      Tier: 30
+    - ItemId: 393
+      Tier: 30
+    - ItemId: 432
+      Tier: 30
+    - ItemId: 663
+      Tier: 31
+    - ItemId: 495
+      Tier: 33
+    - ItemId: 552
+      Tier: 33
+    - ItemId: 592
+      Tier: 34
+    - ItemId: 616
+      Tier: 35
+    - ItemId: 647
+      Tier: 37
+    - ItemId: 649
+      Tier: 42
+    - ItemId: 424
+      Tier: 57
+    - ItemId: 530
+      Tier: 58
+    - ItemId: 674
+      Tier: 62
+    - ItemId: 700
+      Tier: 67
+  - Category: 17
+    Name: Plants
+    Items:
+    - ItemId: 80
+      Tier: 6
+    - ItemId: 225
+      Tier: 15
+    - ItemId: 374
+      Tier: 16
+    - ItemId: 301
+      Tier: 16
+    - ItemId: 371
+      Tier: 16
+    - ItemId: 252
+      Tier: 16
+    - ItemId: 348
+      Tier: 17
+    - ItemId: 350
+      Tier: 17
+    - ItemId: 328
+      Tier: 18
+    - ItemId: 420
+      Tier: 18
+    - ItemId: 262
+      Tier: 19
+    - ItemId: 359
+      Tier: 19
+    - ItemId: 438
+      Tier: 19
+    - ItemId: 454
+      Tier: 20
+    - ItemId: 378
+      Tier: 21
+    - ItemId: 307
+      Tier: 21
+    - ItemId: 314
+      Tier: 21
+    - ItemId: 497
+      Tier: 22
+    - ItemId: 354
+      Tier: 22
+    - ItemId: 369
+      Tier: 22
+    - ItemId: 471
+      Tier: 23
+    - ItemId: 292
+      Tier: 23
+    - ItemId: 276
+      Tier: 23
+    - ItemId: 422
+      Tier: 24
+    - ItemId: 477
+      Tier: 24
+    - ItemId: 496
+      Tier: 25
+    - ItemId: 402
+      Tier: 26
+    - ItemId: 466
+      Tier: 27
+    - ItemId: 265
+      Tier: 30
+    - ItemId: 393
+      Tier: 30
+    - ItemId: 267
+      Tier: 33
+    - ItemId: 401
+      Tier: 34
+    - ItemId: 544
+      Tier: 39
+    - ItemId: 646
+      Tier: 45
+    - ItemId: 669
+      Tier: 47
+  - Category: 18
+    Name: Materials
+    Items:
+    - ItemId: 16
+      Tier: 3
+    - ItemId: 21
+      Tier: 4
+    - ItemId: 33
+      Tier: 4
+    - ItemId: 30
+      Tier: 5
+    - ItemId: 53
+      Tier: 8
+    - ItemId: 137
+      Tier: 9
+    - ItemId: 260
+      Tier: 12
+    - ItemId: 362
+      Tier: 12
+    - ItemId: 459
+      Tier: 14
+    - ItemId: 485
+      Tier: 16
+    - ItemId: 161
+      Tier: 17
+    - ItemId: 318
+      Tier: 18
+    - ItemId: 173
+      Tier: 20
+    - ItemId: 338
+      Tier: 22
+    - ItemId: 276
+      Tier: 23
+    - ItemId: 324
+      Tier: 23
+    - ItemId: 591
+      Tier: 23
+    - ItemId: 189
+      Tier: 24
+    - ItemId: 264
+      Tier: 24
+    - ItemId: 500
+      Tier: 24
+    - ItemId: 540
+      Tier: 25
+    - ItemId: 467
+      Tier: 26
+    - ItemId: 622
+      Tier: 26
+    - ItemId: 498
+      Tier: 27
+    - ItemId: 562
+      Tier: 28
+    - ItemId: 353
+      Tier: 33
+    - ItemId: 490
+      Tier: 36
+    - ItemId: 526
+      Tier: 36
+    - ItemId: 414
+      Tier: 37
+    - ItemId: 671
+      Tier: 44
+    - ItemId: 607
+      Tier: 45
+    - ItemId: 688
+      Tier: 49
+    - ItemId: 537
+      Tier: 49
+    - ItemId: 645
+      Tier: 56
+    - ItemId: 335
+      Tier: 57
+    - ItemId: 612
+      Tier: 58
+  - Category: 39
+    Name: Vehicles
+    Items:
+    - ItemId: 98
+      Tier: 11
+    - ItemId: 251
+      Tier: 14
+    - ItemId: 476
+      Tier: 15
+    - ItemId: 187
+      Tier: 15
+    - ItemId: 539
+      Tier: 19
+    - ItemId: 363
+      Tier: 19
+    - ItemId: 599
+      Tier: 20
+    - ItemId: 429
+      Tier: 21
+    - ItemId: 589
+      Tier: 21
+    - ItemId: 594
+      Tier: 22
+    - ItemId: 186
+      Tier: 24
+    - ItemId: 658
+      Tier: 24
+    - ItemId: 598
+      Tier: 24
+    - ItemId: 658
+      Tier: 24
+    - ItemId: 168
+      Tier: 25
+    - ItemId: 246
+      Tier: 25
+    - ItemId: 536
+      Tier: 27
+    - ItemId: 559
+      Tier: 27
+    - ItemId: 514
+      Tier: 28
+    - ItemId: 391
+      Tier: 28
+    - ItemId: 478
+      Tier: 28
+    - ItemId: 576
+      Tier: 30
+    - ItemId: 585
+      Tier: 31
+    - ItemId: 560
+      Tier: 32
+    - ItemId: 521
+      Tier: 36
+    - ItemId: 462
+      Tier: 37
+    - ItemId: 597
+      Tier: 40
+    - ItemId: 525
+      Tier: 41
+    - ItemId: 525
+      Tier: 41
+    - ItemId: 504
+      Tier: 43
+    - ItemId: 670
+      Tier: 47
+    - ItemId: 632
+      Tier: 51
+    - ItemId: 431
+      Tier: 52
+    - ItemId: 660
+      Tier: 54
+    - ItemId: 702
+      Tier: 67
+    - ItemId: 624
+      Tier: 68
+    - ItemId: 696
+      Tier: 85
+  - Category: 21
+    Name: Containers
+    Items:
+    - ItemId: 46
+      Tier: 6
+    - ItemId: 70
+      Tier: 6
+    - ItemId: 99
+      Tier: 12
+    - ItemId: 302
+      Tier: 12
+    - ItemId: 303
+      Tier: 13
+    - ItemId: 258
+      Tier: 16
+    - ItemId: 349
+      Tier: 18
+    - ItemId: 344
+      Tier: 19
+    - ItemId: 304
+      Tier: 20
+    - ItemId: 263
+      Tier: 22
+    - ItemId: 331
+      Tier: 22
+    - ItemId: 396
+      Tier: 22
+    - ItemId: 372
+      Tier: 25
+    - ItemId: 419
+      Tier: 25
+    - ItemId: 402
+      Tier: 26
+    - ItemId: 583
+      Tier: 28
+    - ItemId: 505
+      Tier: 30
+    - ItemId: 398
+      Tier: 31
+    - ItemId: 634
+      Tier: 32
+    - ItemId: 511
+      Tier: 38
+    - ItemId: 533
+      Tier: 38
+    - ItemId: 405
+      Tier: 44
+    - ItemId: 516
+      Tier: 45
+    - ItemId: 580
+      Tier: 45
+    - ItemId: 628
+      Tier: 49
+    - ItemId: 520
+      Tier: 50
+    - ItemId: 600
+      Tier: 50
+    - ItemId: 577
+      Tier: 50
+    - ItemId: 508
+      Tier: 54
+    - ItemId: 513
+      Tier: 61
+    - ItemId: 620
+      Tier: 64
+    - ItemId: 515
+      Tier: 66
+    - ItemId: 531
+      Tier: 66
+    - ItemId: 636
+      Tier: 67
+    - ItemId: 697
+      Tier: 71
+    - ItemId: 679
+      Tier: 72
+    - ItemId: 610
+      Tier: 83
+    - ItemId: 690
+      Tier: 83
+    - ItemId: 701
+      Tier: 92
+  - Category: 3
+    Name: Geology
+    Items:
+    - ItemId: 8
+      Tier: 2
+    - ItemId: 9
+      Tier: 2
+    - ItemId: 11
+      Tier: 2
+    - ItemId: 17
+      Tier: 3
+    - ItemId: 18
+      Tier: 3
+    - ItemId: 20
+      Tier: 3
+    - ItemId: 26
+      Tier: 3
+    - ItemId: 27
+      Tier: 3
+    - ItemId: 19
+      Tier: 4
+    - ItemId: 32
+      Tier: 4
+    - ItemId: 34
+      Tier: 4
+    - ItemId: 37
+      Tier: 4
+    - ItemId: 64
+      Tier: 5
+    - ItemId: 62
+      Tier: 5
+    - ItemId: 44
+      Tier: 5
+    - ItemId: 60
+      Tier: 5
+    - ItemId: 35
+      Tier: 6
+    - ItemId: 49
+      Tier: 6
+    - ItemId: 94
+      Tier: 6
+    - ItemId: 58
+      Tier: 7
+    - ItemId: 43
+      Tier: 7
+    - ItemId: 50
+      Tier: 7
+    - ItemId: 167
+      Tier: 8
+    - ItemId: 88
+      Tier: 8
+    - ItemId: 91
+      Tier: 10
+    - ItemId: 90
+      Tier: 11
+    - ItemId: 115
+      Tier: 13
+    - ItemId: 294
+      Tier: 13
+    - ItemId: 82
+      Tier: 17
+    - ItemId: 206
+      Tier: 17
+    - ItemId: 457
+      Tier: 17
+    - ItemId: 488
+      Tier: 18
+    - ItemId: 420
+      Tier: 18
+    - ItemId: 409
+      Tier: 19
+    - ItemId: 313
+      Tier: 19
+    - ItemId: 570
+      Tier: 22
+    - ItemId: 324
+      Tier: 23
+    - ItemId: 469
+      Tier: 26
+    - ItemId: 486
+      Tier: 27
+    - ItemId: 268
+      Tier: 30
+    - ItemId: 493
+      Tier: 33
+    - ItemId: 517
+      Tier: 41
+    - ItemId: 549
+      Tier: 42
+    - ItemId: 564
+      Tier: 42
+    - ItemId: 656
+      Tier: 80
+  - Category: 38
+    Name: Legends
+    Items:
+    - ItemId: 162
+      Tier: 8
+    - ItemId: 133
+      Tier: 13
+    - ItemId: 283
+      Tier: 13
+    - ItemId: 280
+      Tier: 13
+    - ItemId: 124
+      Tier: 14
+    - ItemId: 465
+      Tier: 14
+    - ItemId: 160
+      Tier: 15
+    - ItemId: 150
+      Tier: 16
+    - ItemId: 249
+      Tier: 18
+    - ItemId: 385
+      Tier: 18
+    - ItemId: 376
+      Tier: 19
+    - ItemId: 221
+      Tier: 19
+    - ItemId: 299
+      Tier: 20
+    - ItemId: 326
+      Tier: 20
+    - ItemId: 340
+      Tier: 20
+    - ItemId: 254
+      Tier: 20
+    - ItemId: 295
+      Tier: 21
+    - ItemId: 269
+      Tier: 21
+    - ItemId: 204
+      Tier: 23
+    - ItemId: 333
+      Tier: 24
+    - ItemId: 246
+      Tier: 25
+    - ItemId: 489
+      Tier: 27
+    - ItemId: 377
+      Tier: 27
+    - ItemId: 546
+      Tier: 28
+    - ItemId: 381
+      Tier: 28
+    - ItemId: 418
+      Tier: 29
+    - ItemId: 380
+      Tier: 29
+    - ItemId: 494
+      Tier: 30
+    - ItemId: 368
+      Tier: 30
+    - ItemId: 492
+      Tier: 30
+    - ItemId: 443
+      Tier: 31
+    - ItemId: 692
+      Tier: 33
+    - ItemId: 434
+      Tier: 33
+    - ItemId: 567
+      Tier: 34
+    - ItemId: 448
+      Tier: 34
+    - ItemId: 501
+      Tier: 34
+    - ItemId: 282
+      Tier: 35
+    - ItemId: 425
+      Tier: 35
+    - ItemId: 708
+      Tier: 38
+    - ItemId: 325
+      Tier: 39
+    - ItemId: 597
+      Tier: 40
+    - ItemId: 417
+      Tier: 43
+    - ItemId: 578
+      Tier: 44
+    - ItemId: 602
+      Tier: 52
+    - ItemId: 411
+      Tier: 56
+    - ItemId: 424
+      Tier: 57
+  - Category: 27
+    Name: Animals
+    Items:
+    - ItemId: 151
+      Tier: 9
+    - ItemId: 235
+      Tier: 10
+    - ItemId: 210
+      Tier: 11
+    - ItemId: 224
+      Tier: 11
+    - ItemId: 308
+      Tier: 12
+    - ItemId: 294
+      Tier: 13
+    - ItemId: 181
+      Tier: 14
+    - ItemId: 187
+      Tier: 15
+    - ItemId: 215
+      Tier: 15
+    - ItemId: 361
+      Tier: 17
+    - ItemId: 188
+      Tier: 18
+    - ItemId: 250
+      Tier: 18
+    - ItemId: 376
+      Tier: 19
+    - ItemId: 300
+      Tier: 19
+    - ItemId: 270
+      Tier: 20
+    - ItemId: 383
+      Tier: 20
+    - ItemId: 340
+      Tier: 20
+    - ItemId: 386
+      Tier: 21
+    - ItemId: 277
+      Tier: 21
+    - ItemId: 269
+      Tier: 21
+    - ItemId: 463
+      Tier: 23
+    - ItemId: 446
+      Tier: 23
+    - ItemId: 347
+      Tier: 24
+    - ItemId: 281
+      Tier: 24
+    - ItemId: 445
+      Tier: 25
+    - ItemId: 441
+      Tier: 25
+    - ItemId: 475
+      Tier: 25
+    - ItemId: 272
+      Tier: 25
+    - ItemId: 642
+      Tier: 27
+    - ItemId: 321
+      Tier: 27
+    - ItemId: 680
+      Tier: 28
+    - ItemId: 381
+      Tier: 28
+    - ItemId: 418
+      Tier: 29
+    - ItemId: 443
+      Tier: 31
+    - ItemId: 588
+      Tier: 31
+    - ItemId: 625
+      Tier: 32
+    - ItemId: 448
+      Tier: 34
+    - ItemId: 421
+      Tier: 34
+    - ItemId: 501
+      Tier: 34
+    - ItemId: 430
+      Tier: 37
+    - ItemId: 392
+      Tier: 38
+    - ItemId: 468
+      Tier: 39
+    - ItemId: 573
+      Tier: 43
+    - ItemId: 572
+      Tier: 46
+    - ItemId: 631
+      Tier: 49
+    - ItemId: 411
+      Tier: 56
+    - ItemId: 630
+      Tier: 60
+    - ItemId: 676
+      Tier: 62
+  - Category: 22
+    Name: Construction
+    Items:
+    - ItemId: 29
+      Tier: 5
+    - ItemId: 39
+      Tier: 6
+    - ItemId: 48
+      Tier: 7
+    - ItemId: 75
+      Tier: 9
+    - ItemId: 96
+      Tier: 9
+    - ItemId: 55
+      Tier: 12
+    - ItemId: 125
+      Tier: 12
+    - ItemId: 141
+      Tier: 13
+    - ItemId: 289
+      Tier: 13
+    - ItemId: 105
+      Tier: 13
+    - ItemId: 113
+      Tier: 15
+    - ItemId: 259
+      Tier: 16
+    - ItemId: 129
+      Tier: 17
+    - ItemId: 116
+      Tier: 18
+    - ItemId: 483
+      Tier: 19
+    - ItemId: 304
+      Tier: 20
+    - ItemId: 72
+      Tier: 20
+    - ItemId: 143
+      Tier: 20
+    - ItemId: 542
+      Tier: 20
+    - ItemId: 307
+      Tier: 21
+    - ItemId: 331
+      Tier: 22
+    - ItemId: 239
+      Tier: 23
+    - ItemId: 266
+      Tier: 24
+    - ItemId: 545
+      Tier: 24
+    - ItemId: 212
+      Tier: 25
+    - ItemId: 310
+      Tier: 25
+    - ItemId: 506
+      Tier: 26
+    - ItemId: 583
+      Tier: 28
+    - ItemId: 470
+      Tier: 28
+    - ItemId: 491
+      Tier: 28
+    - ItemId: 412
+      Tier: 30
+    - ItemId: 482
+      Tier: 30
+    - ItemId: 492
+      Tier: 30
+    - ItemId: 157
+      Tier: 30
+    - ItemId: 502
+      Tier: 31
+    - ItemId: 538
+      Tier: 31
+    - ItemId: 567
+      Tier: 34
+    - ItemId: 425
+      Tier: 35
+    - ItemId: 647
+      Tier: 37
+    - ItemId: 691
+      Tier: 38
+    - ItemId: 511
+      Tier: 38
+    - ItemId: 556
+      Tier: 39
+    - ItemId: 710
+      Tier: 39
+    - ItemId: 548
+      Tier: 41
+    - ItemId: 320
+      Tier: 42
+    - ItemId: 575
+      Tier: 48
+    - ItemId: 431
+      Tier: 52
+    - ItemId: 672
+      Tier: 68
+    - ItemId: 704
+      Tier: 72
+    - ItemId: 637
+      Tier: 78
+  - Category: 25
+    Name: People
+    Items:
+    - ItemId: 158
+      Tier: 10
+    - ItemId: 243
+      Tier: 11
+    - ItemId: 202
+      Tier: 11
+    - ItemId: 234
+      Tier: 14
+    - ItemId: 227
+      Tier: 14
+    - ItemId: 242
+      Tier: 15
+    - ItemId: 201
+      Tier: 15
+    - ItemId: 226
+      Tier: 15
+    - ItemId: 249
+      Tier: 18
+    - ItemId: 384
+      Tier: 18
+    - ItemId: 385
+      Tier: 18
+    - ItemId: 175
+      Tier: 18
+    - ItemId: 223
+      Tier: 19
+    - ItemId: 179
+      Tier: 19
+    - ItemId: 208
+      Tier: 19
+    - ItemId: 221
+      Tier: 19
+    - ItemId: 254
+      Tier: 20
+    - ItemId: 326
+      Tier: 20
+    - ItemId: 209
+      Tier: 20
+    - ItemId: 200
+      Tier: 20
+    - ItemId: 228
+      Tier: 20
+    - ItemId: 247
+      Tier: 21
+    - ItemId: 269
+      Tier: 21
+    - ItemId: 288
+      Tier: 21
+    - ItemId: 295
+      Tier: 21
+    - ItemId: 180
+      Tier: 21
+    - ItemId: 194
+      Tier: 21
+    - ItemId: 204
+      Tier: 23
+    - ItemId: 453
+      Tier: 23
+    - ItemId: 178
+      Tier: 23
+    - ItemId: 220
+      Tier: 24
+    - ItemId: 460
+      Tier: 24
+    - ItemId: 408
+      Tier: 24
+    - ItemId: 346
+      Tier: 25
+    - ItemId: 199
+      Tier: 26
+    - ItemId: 440
+      Tier: 26
+    - ItemId: 377
+      Tier: 27
+    - ItemId: 381
+      Tier: 28
+    - ItemId: 418
+      Tier: 29
+    - ItemId: 416
+      Tier: 29
+    - ItemId: 480
+      Tier: 29
+    - ItemId: 261
+      Tier: 30
+    - ItemId: 443
+      Tier: 31
+    - ItemId: 410
+      Tier: 31
+    - ItemId: 406
+      Tier: 31
+    - ItemId: 316
+      Tier: 32
+    - ItemId: 332
+      Tier: 32
+    - ItemId: 387
+      Tier: 33
+    - ItemId: 623
+      Tier: 33
+    - ItemId: 567
+      Tier: 34
+    - ItemId: 425
+      Tier: 35
+    - ItemId: 282
+      Tier: 35
+    - ItemId: 677
+      Tier: 36
+    - ItemId: 423
+      Tier: 37
+    - ItemId: 644
+      Tier: 38
+    - ItemId: 325
+      Tier: 39
+    - ItemId: 512
+      Tier: 42
+    - ItemId: 578
+      Tier: 44
+    - ItemId: 593
+      Tier: 46
+    - ItemId: 675
+      Tier: 49
+    - ItemId: 621
+      Tier: 49
+    - ItemId: 602
+      Tier: 52
+    - ItemId: 698
+      Tier: 66
+    - ItemId: 694
+      Tier: 88
+  - Category: 33
+    Name: Food
+    Items:
+    - ItemId: 100
+      Tier: 6
+    - ItemId: 257
+      Tier: 12
+    - ItemId: 305
+      Tier: 13
+    - ItemId: 334
+      Tier: 17
+    - ItemId: 218
+      Tier: 20
+    - ItemId: 529
+      Tier: 21
+    - ItemId: 366
+      Tier: 21
+    - ItemId: 378
+      Tier: 21
+    - ItemId: 464
+      Tier: 22
+    - ItemId: 450
+      Tier: 22
+    - ItemId: 522
+      Tier: 22
+    - ItemId: 591
+      Tier: 23
+    - ItemId: 543
+      Tier: 23
+    - ItemId: 428
+      Tier: 23
+    - ItemId: 315
+      Tier: 23
+    - ItemId: 397
+      Tier: 23
+    - ItemId: 618
+      Tier: 24
+    - ItemId: 451
+      Tier: 24
+    - ItemId: 422
+      Tier: 24
+    - ItemId: 563
+      Tier: 24
+    - ItemId: 540
+      Tier: 25
+    - ItemId: 613
+      Tier: 26
+    - ItemId: 557
+      Tier: 26
+    - ItemId: 402
+      Tier: 26
+    - ItemId: 399
+      Tier: 26
+    - ItemId: 622
+      Tier: 26
+    - ItemId: 681
+      Tier: 27
+    - ItemId: 553
+      Tier: 27
+    - ItemId: 466
+      Tier: 27
+    - ItemId: 716
+      Tier: 28
+    - ItemId: 487
+      Tier: 29
+    - ItemId: 603
+      Tier: 29
+    - ItemId: 265
+      Tier: 30
+    - ItemId: 551
+      Tier: 33
+    - ItemId: 550
+      Tier: 33
+    - ItemId: 692
+      Tier: 33
+    - ItemId: 569
+      Tier: 35
+    - ItemId: 652
+      Tier: 35
+    - ItemId: 400
+      Tier: 37
+    - ItemId: 691
+      Tier: 38
+    - ItemId: 714
+      Tier: 39
+    - ItemId: 689
+      Tier: 40
+    - ItemId: 558
+      Tier: 40
+    - ItemId: 650
+      Tier: 41
+    - ItemId: 629
+      Tier: 41
+    - ItemId: 548
+      Tier: 41
+    - ItemId: 627
+      Tier: 42
+    - ItemId: 527
+      Tier: 42
+    - ItemId: 614
+      Tier: 43
+    - ItemId: 719
+      Tier: 44
+    - ItemId: 607
+      Tier: 45
+    - ItemId: 709
+      Tier: 46
+    - ItemId: 703
+      Tier: 46
+    - ItemId: 718
+      Tier: 49
+    - ItemId: 510
+      Tier: 49
+    - ItemId: 688
+      Tier: 49
+    - ItemId: 711
+      Tier: 50
+    - ItemId: 712
+      Tier: 50
+    - ItemId: 639
+      Tier: 51
+    - ItemId: 611
+      Tier: 57
+    - ItemId: 706
+      Tier: 61
+    - ItemId: 713
+      Tier: 61
+    - ItemId: 695
+      Tier: 62
+    - ItemId: 684
+      Tier: 62
+    - ItemId: 678
+      Tier: 75
+  - Category: 24
+    Name: Tools
+    Items:
+    - ItemId: 59
+      Tier: 5
+    - ItemId: 86
+      Tier: 5
+    - ItemId: 84
+      Tier: 9
+    - ItemId: 103
+      Tier: 9
+    - ItemId: 148
+      Tier: 10
+    - ItemId: 81
+      Tier: 11
+    - ItemId: 109
+      Tier: 11
+    - ItemId: 74
+      Tier: 12
+    - ItemId: 118
+      Tier: 12
+    - ItemId: 244
+      Tier: 13
+    - ItemId: 139
+      Tier: 13
+    - ItemId: 142
+      Tier: 13
+    - ItemId: 219
+      Tier: 14
+    - ItemId: 382
+      Tier: 14
+    - ItemId: 147
+      Tier: 14
+    - ItemId: 101
+      Tier: 14
+    - ItemId: 309
+      Tier: 15
+    - ItemId: 306
+      Tier: 16
+    - ItemId: 119
+      Tier: 18
+    - ItemId: 319
+      Tier: 18
+    - ItemId: 173
+      Tier: 20
+    - ItemId: 193
+      Tier: 20
+    - ItemId: 367
+      Tier: 21
+    - ItemId: 159
+      Tier: 21
+    - ItemId: 375
+      Tier: 22
+    - ItemId: 233
+      Tier: 22
+    - ItemId: 197
+      Tier: 23
+    - ItemId: 474
+      Tier: 23
+    - ItemId: 290
+      Tier: 23
+    - ItemId: 241
+      Tier: 24
+    - ItemId: 355
+      Tier: 24
+    - ItemId: 189
+      Tier: 24
+    - ItemId: 643
+      Tier: 25
+    - ItemId: 174
+      Tier: 25
+    - ItemId: 419
+      Tier: 25
+    - ItemId: 248
+      Tier: 27
+    - ItemId: 568
+      Tier: 27
+    - ItemId: 562
+      Tier: 28
+    - ItemId: 590
+      Tier: 28
+    - ItemId: 541
+      Tier: 28
+    - ItemId: 380
+      Tier: 29
+    - ItemId: 455
+      Tier: 29
+    - ItemId: 461
+      Tier: 29
+    - ItemId: 601
+      Tier: 30
+    - ItemId: 509
+      Tier: 30
+    - ItemId: 596
+      Tier: 31
+    - ItemId: 389
+      Tier: 32
+    - ItemId: 608
+      Tier: 32
+    - ItemId: 473
+      Tier: 32
+    - ItemId: 659
+      Tier: 32
+    - ItemId: 579
+      Tier: 33
+    - ItemId: 687
+      Tier: 33
+    - ItemId: 353
+      Tier: 33
+    - ItemId: 286
+      Tier: 33
+    - ItemId: 291
+      Tier: 34
+    - ItemId: 554
+      Tier: 38
+    - ItemId: 565
+      Tier: 39
+    - ItemId: 561
+      Tier: 40
+    - ItemId: 427
+      Tier: 40
+    - ItemId: 365
+      Tier: 41
+    - ItemId: 525
+      Tier: 41
+    - ItemId: 404
+      Tier: 41
+    - ItemId: 525
+      Tier: 41
+    - ItemId: 528
+      Tier: 42
+    - ItemId: 449
+      Tier: 43
+    - ItemId: 435
+      Tier: 44
+    - ItemId: 615
+      Tier: 44
+    - ItemId: 535
+      Tier: 45
+    - ItemId: 683
+      Tier: 45
+    - ItemId: 651
+      Tier: 46
+    - ItemId: 670
+      Tier: 47
+    - ItemId: 619
+      Tier: 47
+    - ItemId: 582
+      Tier: 50
+    - ItemId: 519
+      Tier: 50
+    - ItemId: 605
+      Tier: 53
+    - ItemId: 664
+      Tier: 53
+    - ItemId: 648
+      Tier: 56
+    - ItemId: 606
+      Tier: 56
+    - ItemId: 534
+      Tier: 58
+    - ItemId: 523
+      Tier: 60
+    - ItemId: 653
+      Tier: 60
+    - ItemId: 657
+      Tier: 66
+    - ItemId: 668
+      Tier: 66
+    - ItemId: 626
+      Tier: 68
+    - ItemId: 672
+      Tier: 68
+    - ItemId: 624
+      Tier: 68
+    - ItemId: 662
+      Tier: 91

@@ -59,11 +59,24 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
             {
                 hintItemA = BoardManager.Ins.SpawnItem(recipe.ItemAId);
                 float padding = Mathf.Max(hintItemA.rect.sizeDelta.x, hintItemA.rect.sizeDelta.y) * 0.5f + 60;
-                hintItemA.rect.anchoredPosition = new Vector2
-                    (
-                        Random.Range(-0.5f * mergeBoard.rect.width + padding, -padding),
-                        Random.Range(-0.5f * mergeBoard.rect.height + padding, -padding)
-                    );
+                Vector2 pos = Vector2.zero;
+                if (hintItemB != null)
+                {
+                    pos = new Vector2
+                        (
+                            -hintItemB.rect.anchoredPosition.x,
+                            -hintItemB.rect.anchoredPosition.y
+                        );
+                }
+                else
+                {
+                    pos = new Vector2
+                        (
+                            Random.Range(-0.5f * mergeBoard.rect.width + padding, -padding),
+                            Random.Range(-0.5f * mergeBoard.rect.height + padding, -padding)
+                        );
+                }
+                hintItemA.rect.anchoredPosition = pos;
                 hintItemA.rect.localScale = Vector3.zero;
                 hintItemA.rect.DOScale(Vector3.one, 0.25f).SetEase(Ease.OutBack);
             }
