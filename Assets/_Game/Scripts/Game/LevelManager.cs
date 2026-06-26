@@ -15,7 +15,6 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
         currentLevel = levelContainer.Levels[levelIndex];
         GameCanvas.Ins.Init();
         BoardManager.Ins.UpdateBoardPosAndSize();
-        DatabaseManager.Ins.Init();
         BoardManager.Ins.Init();
         BoosterManager.Ins.Init();
         GameCanvas.Ins.Timer.Init(levelIndex);

@@ -33,33 +33,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0043b9b0944ff614bbb05eb67e5d5ec1, type: 2}
   - {fileID: 11400000, guid: 735a44c73cad43d4fb57befa7f53ae07, type: 2}
   - {fileID: 11400000, guid: 96ae57c6b00b4714d88415ed8a87e55b, type: 2}
-  - {fileID: 11400000, guid: baf5d62e5fd01724a9d9c9d9d6906b70, type: 2}
-  - {fileID: 11400000, guid: 2685c1e859fee5f488e1f990514c6b3c, type: 2}
-  - {fileID: 11400000, guid: 857817f7014fe3b43bf6634bc87ed046, type: 2}
-  - {fileID: 11400000, guid: fe267eb47272e7c4bafc246ad78061a7, type: 2}
-  - {fileID: 11400000, guid: 0fc1a3d5be8121e41a72cffa2eaceb26, type: 2}
-  - {fileID: 11400000, guid: d3c3fc6608d0d5742af6c31fa04b6d26, type: 2}
-  - {fileID: 11400000, guid: 29a7d2b2e50aaff46a296539cb2f68b8, type: 2}
-  - {fileID: 11400000, guid: 4276b0fd17df2514e8a835e5a4d8e90f, type: 2}
-  - {fileID: 11400000, guid: 3cc66f19ee888af459a21eba765a7841, type: 2}
-  - {fileID: 11400000, guid: ab73cd39ac97b014c8dbf8cb941d34f2, type: 2}
-  - {fileID: 11400000, guid: d0500767363c2424eb95072ecdbce5a4, type: 2}
-  - {fileID: 11400000, guid: 1a760e8aeaadbfd4bbffbcfebfe72ef1, type: 2}
-  - {fileID: 11400000, guid: 3c7e97ae22a88ba4d938781c2c048332, type: 2}
-  - {fileID: 11400000, guid: b43fa810d6632dc44aa7b3e321b1853a, type: 2}
-  - {fileID: 11400000, guid: 9312470b0f1ffc44cbac95c7b1d0b8f8, type: 2}
-  - {fileID: 11400000, guid: f3e81a452a1beb0488e5884eb94f678f, type: 2}
-  - {fileID: 11400000, guid: 3e85951bbc797d44b9df0377c5f78a80, type: 2}
-  - {fileID: 11400000, guid: a845eaf190da1b940a22499f763913b9, type: 2}
-  - {fileID: 11400000, guid: 3cbc6d42b79cd934cbc5bb758d276fec, type: 2}
-  - {fileID: 11400000, guid: 80c3a737505410442994a5e147a79cdc, type: 2}
-  - {fileID: 11400000, guid: 80ba658ccbee35e4e9b6505c27013591, type: 2}
-  - {fileID: 11400000, guid: e1a6be4186b3b5246a75812757caca0d, type: 2}
-  - {fileID: 11400000, guid: 8040316ceeb4bca40be67fa904438d23, type: 2}
-  - {fileID: 11400000, guid: 8c4ea16404ad80146b32725920338d89, type: 2}
-  - {fileID: 11400000, guid: e0cea6f0c64144e4ebba51af0c3e6e29, type: 2}
-  - {fileID: 11400000, guid: bceaa9e303e464b4ba5bd54e101b5ff4, type: 2}
-  - {fileID: 11400000, guid: a3fce70ddbcc6d844b0c80893e08329c, type: 2}
-  - {fileID: 11400000, guid: 21a8983029acb9146b51d72e02d45119, type: 2}
-  - {fileID: 11400000, guid: 0509db756bcdbcd41b854917d8389147, type: 2}
-  - {fileID: 11400000, guid: aec0eca4e6799714586beae78efbc70d, type: 2}
+  itemDatabaseConfig: {fileID: 11400000, guid: 7ed314c9c3d8e4c46bdc313665986d6e, type: 2}
+  maxDepth: 2
+  level: 1

@@ -5457,7 +5457,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1871202185}
   - component: {fileID: 1871202186}
-  - component: {fileID: 1871202189}
   - component: {fileID: 1871202187}
   - component: {fileID: 1871202188}
   m_Layer: 0
@@ -5535,19 +5534,6 @@ MonoBehaviour:
   mergeBoard: {fileID: 352229619}
   hintButton: {fileID: 719702663}
   extraTimeButton: {fileID: 845250947}
---- !u!114 &1871202189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871202184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b4aa3d0a1adaf546a136f483cc00b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: 7ed314c9c3d8e4c46bdc313665986d6e, type: 2}
 --- !u!1 &1875822692
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,6 +6248,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1164659737777418455, guid: d9438a7398d3b264f85fbdedb3c07c5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892107652526992629, guid: d9438a7398d3b264f85fbdedb3c07c5c, type: 3}
+      propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892107652526992629, guid: d9438a7398d3b264f85fbdedb3c07c5c, type: 3}

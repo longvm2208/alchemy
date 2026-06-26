@@ -15,4 +15,4 @@ MonoBehaviour:
   StartItems: 0100000002000000030000000400000005000000
   Targets:
   - CategoryId: 2
-    RequiredAmount: 5
+    RequiredAmount: 4

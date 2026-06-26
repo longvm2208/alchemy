@@ -6,8 +6,11 @@ public class GameConf : ConfBase<GameConf>
 {
     public int HintLevel;
     public int HintPrice;
-    public int ExtraTimeLevel;
-    public int ExtraTimePrice;
+    public int TimeFreezeLevel;
+    public int TimeFreezePrice;
+    public int RevivePrice;
+    public int ReviveSeconds;
+    public int WinReward;
     [TableList]
     public TimeLimit[] TimeLimits;
 

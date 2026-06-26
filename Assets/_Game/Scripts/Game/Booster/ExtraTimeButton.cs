@@ -29,11 +29,11 @@ public class ExtraTimeButton : ExtendedMonoBehaviour
     public void Init()
     {
         int currentLevel = GamePref.Ins.LevelIndex + 1;
-        bool isUnlocked = currentLevel >= GameConf.Ins.ExtraTimeLevel;
+        bool isUnlocked = currentLevel >= GameConf.Ins.TimeFreezeLevel;
 
         button.interactable = isUnlocked;
         lockedObj.SetActive(!isUnlocked);
-        unlockLevelText.text = "Level " + GameConf.Ins.ExtraTimeLevel.ToString();
+        unlockLevelText.text = "Level " + GameConf.Ins.TimeFreezeLevel.ToString();
 
         unlockedObj.SetActive(isUnlocked);
         UpdateView();
@@ -45,7 +45,7 @@ public class ExtraTimeButton : ExtendedMonoBehaviour
         countText.text = GamePref.Ins.ExtraTimeCount.ToString();
 
         priceObj.SetActive(GamePref.Ins.ExtraTimeCount == 0);
-        priceText.text = $"{GameConf.Ins.ExtraTimePrice}";
+        priceText.text = $"{GameConf.Ins.TimeFreezePrice}";
     }
 
     public void PlayParticle()
@@ -77,11 +77,11 @@ public class ExtraTimeButton : ExtendedMonoBehaviour
                 GamePref.Ins.RemoveExtraTime(1, placement, true);
             }
         }
-        else if (GamePref.Ins.CoinCount >= GameConf.Ins.ExtraTimePrice)
+        else if (GamePref.Ins.CoinCount >= GameConf.Ins.TimeFreezePrice)
         {
             if (BoosterManager.Ins.ExecuteExtraTime())
             {
-                GamePref.Ins.RemoveCoin(GameConf.Ins.ExtraTimePrice, placement, "buy_extra_time", true);
+                GamePref.Ins.RemoveCoin(GameConf.Ins.TimeFreezePrice, placement, "buy_extra_time", true);
                 //FloatingResourceManager.Ins.Float(priceObj.transform.position, RenderMode.ScreenSpaceOverlay, new RewardConfig(RewardType.Coin, GameConf.Ins.MagnetPrice));
             }
         }

@@ -932,6 +932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642746485}
   - component: {fileID: 642746486}
+  - component: {fileID: 642746492}
   - component: {fileID: 642746490}
   - component: {fileID: 642746488}
   - component: {fileID: 642746487}
@@ -1062,8 +1063,10 @@ MonoBehaviour:
       data:
         HintLevel: 2
         HintPrice: 100
-        ExtraTimeLevel: 3
-        ExtraTimePrice: 100
+        TimeFreezeLevel: 3
+        TimeFreezePrice: 100
+        RevivePrice: 900
+        ReviveSeconds: 60
         TimeLimits:
         - Level: 1
           Time: 120
@@ -1076,9 +1079,9 @@ MonoBehaviour:
         - Level: 5
           Time: 120
         - Level: 6
-          Time: 35
+          Time: 120
         - Level: 7
-          Time: 35
+          Time: 120
         - Level: 8
           Time: 120
         - Level: 9
@@ -1165,7 +1168,20 @@ MonoBehaviour:
           Time: 120
         - Level: 50
           Time: 120
-        time: 120,120,120,120,120,35,35,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120
+        time: 120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120,120
+--- !u!114 &642746492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642746484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 169e3242f2d6a304f969f7ef53db1bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDatabaseConfig: {fileID: 11400000, guid: 7ed314c9c3d8e4c46bdc313665986d6e, type: 2}
 --- !u!1 &1352364974
 GameObject:
   m_ObjectHideFlags: 0

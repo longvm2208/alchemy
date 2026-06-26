@@ -36,6 +36,8 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
                 return false;
             }
 
+            hintId = recipe.ResultItemId;
+
             if (!itemViews.IsNullOrEmpty())
             {
                 for (int i = 0; i < itemViews.Count; i++)
@@ -122,8 +124,9 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
 
             for (int i = 0; i < category.Items.Length; i++)
             {
-                if (targetState.Collected.Contains(category.Items[i])) continue;
-
+                ItemId itemId = category.Items[i];
+                if (targetState.Collected.Contains(itemId)) continue;
+                if (availableItems.Contains(itemId)) continue;
                 queue.Enqueue(category.Items[i]);
             }
         }
@@ -137,6 +140,7 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
             for (int i = 0; i < recipes.Count; i++)
             {
                 MergeRecipe recipe = recipes[i];
+
                 ItemId itemAId = recipe.ItemAId;
                 ItemId itemBId = recipe.ItemBId;
 

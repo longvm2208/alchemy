@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartItems: 0100000002000000030000000400000005000000
   Targets:
-  - CategoryId: 15
-    RequiredAmount: 6
+  - CategoryId: 9
+    RequiredAmount: 7

@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
+public class DatabaseManager : Singleton<DatabaseManager>
 {
-    [SerializeField] ItemDatabaseConfig config;
-
+    ItemDatabaseConfig config;
     bool isInitialized = false;
     Dictionary<ItemId, ItemDefinition> items;
     Dictionary<MergeKey, List<MergeRecipe>> mergeMap;
@@ -14,9 +13,11 @@ public class DatabaseManager : SingletonMonoBehaviour<DatabaseManager>
     List<ItemDefinition> unlockedItems;
     Dictionary<CategoryId, CategoryDefinition> categories;
 
-    public void Init()
+    public void Init(ItemDatabaseConfig config)
     {
         if (isInitialized) return;
+
+        this.config = config;
 
         isInitialized = true;
 
