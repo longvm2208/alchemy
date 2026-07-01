@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 436
   Name: Lawn
-  Description: 
-  Categories: 110000001200000022000000
+  Description: A neatly manicured green canvas of short grass surrounding a human
+    residential house.
+  Categories: 22000000

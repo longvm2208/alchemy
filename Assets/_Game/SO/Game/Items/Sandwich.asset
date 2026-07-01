@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 714
   Name: Sandwich
-  Description: 
-  Categories: 2e0000002f00000021000000
+  Description: A clever arrangement of unruly fillings held together securely by
+    two bread bouncers.
+  Categories: 21000000

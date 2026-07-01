@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 514
   Name: Boat
-  Description: 
-  Categories: 280000002900000027000000
+  Description: A classic floating water carriage designed to navigate rivers and
+    small lakes without sinking.
+  Categories: 27000000

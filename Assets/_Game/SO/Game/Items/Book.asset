@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 515
   Name: Book
-  Description: 
-  Categories: 30000000310000001400000015000000
+  Description: A bound stack of paper sheets containing text, stories, or logic to
+    upgrade a human's mind.
+  Categories: 1400000015000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 547
   Name: Gust
-  Description: 
+  Description: A sudden, brief rush of wind current capable of stealing a mortal's
+    hat or rustling leaves.
   Categories: 0f000000

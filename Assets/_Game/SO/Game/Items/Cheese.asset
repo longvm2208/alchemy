@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 529
   Name: Cheese
-  Description: 
-  Categories: 1a0000002e0000001b0000002f00000021000000
+  Description: A delicious, solidified dairy block born from the slow, deliberate
+    aging of mammal milk.
+  Categories: 21000000

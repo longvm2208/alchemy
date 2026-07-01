@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 546
-  Name: GrimReaper
-  Description: 
+  Name: Grim Reaper
+  Description: The legendary cloaked phantom carrying a heavy scythe, tasked with
+    harvesting departing souls.
   Categories: 2500000026000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 468
   Name: Rabbit
-  Description: 
-  Categories: 1a0000001b000000
+  Description: A fast-breeding long-eared ground mammal optimized for jumping and
+    munching on carrots.
+  Categories: 1b000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 542
   Name: Fountain
-  Description: 
+  Description: An artistic stone monument engineered to continuously launch water
+    currents into the sky air.
   Categories: 1600000022000000

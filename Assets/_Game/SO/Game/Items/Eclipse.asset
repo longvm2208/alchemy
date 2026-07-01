@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 78
   Name: Eclipse
-  Description: 
-  Categories: 0c0000002d0000000d0000002e0000000b000000
+  Description: A spectacular celestial hide-and-seek game where a moon or planet
+    temporarily steals the sun's light.
+  Categories: 0b000000

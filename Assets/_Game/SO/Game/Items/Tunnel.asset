@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 493
   Name: Tunnel
-  Description: 
+  Description: A dark subterranean highway carved directly through the solid stone
+    belly of a mountain.
   Categories: 03000000

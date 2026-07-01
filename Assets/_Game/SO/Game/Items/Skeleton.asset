@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 362
   Name: Skeleton
-  Description: 
-  Categories: 1f000000200000001200000025000000
+  Description: The complete structural ironwork of bones inside a biological vessel,
+    stripped of its meat coat.
+  Categories: 1200000025000000

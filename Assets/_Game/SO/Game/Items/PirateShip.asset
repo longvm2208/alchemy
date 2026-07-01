@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 462
-  Name: PirateShip
-  Description: 
+  Name: Pirate Ship
+  Description: A wooden maritime cruiser carrying cannons and looking for gold caches
+    under a skull flag.
   Categories: 27000000

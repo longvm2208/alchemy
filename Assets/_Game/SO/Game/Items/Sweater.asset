@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 592
   Name: Sweater
-  Description: 
+  Description: A thick garment knitted from warm wool or cashmere to shield a mortal
+    from winter cold.
   Categories: 22000000

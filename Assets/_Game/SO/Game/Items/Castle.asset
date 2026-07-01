@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 266
   Name: Castle
-  Description: 
+  Description: A massive stone-walled royal fortress built to protect monarchs and
+    survive medieval sieges.
   Categories: 160000001e000000

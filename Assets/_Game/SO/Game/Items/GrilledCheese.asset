@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 718
-  Name: GrilledCheese
-  Description: 
+  Name: Grilled Cheese
+  Description: The ultimate comfort sandwich, where twin slices of toasted bread
+    trap a gooey, golden river of melted dairy.
   Categories: 21000000

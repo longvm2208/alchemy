@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 251
   Name: Airplane
-  Description: 
-  Categories: 2c0000002d00000027000000
+  Description: A massive metal bird engineered to carry humans through the upper
+    atmosphere without flapping wings.
+  Categories: 27000000

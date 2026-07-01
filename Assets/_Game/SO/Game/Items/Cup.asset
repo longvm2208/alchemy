@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 620
   Name: Cup
-  Description: 
+  Description: A small, cylindrical vessel with an attached handle, optimized for
+    delivering warm liquids to mouths.
   Categories: 15000000

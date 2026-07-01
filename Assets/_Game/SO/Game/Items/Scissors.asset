@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 101
   Name: Scissors
-  Description: 
-  Categories: 2100000025000000220000002600000018000000
+  Description: Two crossed iron blades working in perfect symmetry to sever paper,
+    fabric, or hair.
+  Categories: 18000000

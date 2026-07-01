@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 85
   Name: Gun
-  Description: 
-  Categories: 230000002600000024000000270000001a000000
+  Description: An iron tube engineered to project metal shards at high speed using
+    trapped chemical explosions.
+  Categories: 1a000000

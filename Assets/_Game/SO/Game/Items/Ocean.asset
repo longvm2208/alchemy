@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 94
   Name: Ocean
-  Description: 
-  Categories: 010000000900000017000000180000001d0000002800000031000000020000000a000000190000001e00000029000000320000000300000004000000
+  Description: The deep, thundering saltwater abyss that cradles the majority of
+    life on our planet.
+  Categories: 0300000004000000

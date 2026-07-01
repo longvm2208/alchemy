@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 258
   Name: Birdcage
-  Description: 
+  Description: A structured jail of wire bars built to keep a winged sky singer locked
+    inside a human room.
   Categories: 1500000017000000

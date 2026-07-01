@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 552
-  Name: IceSculpture
-  Description: 
+  Name: Ice Sculpture
+  Description: A beautiful, temporary monument sculpted from solid frozen ice blocks,
+    slowly losing to warmth.
   Categories: 010000001700000022000000

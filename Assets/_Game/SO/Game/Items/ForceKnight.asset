@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 204
-  Name: ForceKnight
-  Description: 
+  Name: Force Knight
+  Description: A legendary cosmic warrior who wields a humming energy blade and commands
+    the invisible ether.
   Categories: 1900000026000000

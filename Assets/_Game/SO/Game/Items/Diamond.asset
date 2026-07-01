@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 547a529c544739d479d173becfbbdbb9, type: 3}
   Id: 409
   Name: Diamond
-  Description: 
-  Categories: 0d0000000e000000030000001f000000
+  Description: A stubborn carbon structure that survived intense planetary pressure
+    to become a stone of pure light.
+  Categories: 030000001f000000

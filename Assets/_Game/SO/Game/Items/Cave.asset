@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 268
   Name: Cave
-  Description: 
+  Description: "A mysterious, hollow stone sanctuary bored into mountains\u2014nature's
+    first human apartment."
   Categories: 030000000e000000

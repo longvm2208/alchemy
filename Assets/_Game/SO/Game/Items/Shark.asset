@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 360
   Name: Shark
-  Description: 
-  Categories: 09000000170000001c0000001d0000000a000000180000001e00000023000000
+  Description: The ocean's silver apex hunter, armed with multiple rows of razor
+    teeth and a flawless tracking system.
+  Categories: 23000000

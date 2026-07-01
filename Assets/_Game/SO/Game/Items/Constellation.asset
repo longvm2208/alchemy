@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 191
   Name: Constellation
-  Description: 
+  Description: An astronomical dot-to-dot drawing made by connecting ancient stars
+    across the night void.
   Categories: 0b000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 356
   Name: Seagull
-  Description: 
+  Description: A loud, coastal avian voyager that spends life gliding over tides
+    and stealing french fries from tourists.
   Categories: 1d000000

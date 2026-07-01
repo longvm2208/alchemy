@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 331
   Name: Nest
-  Description: 
-  Categories: 190000001a0000001500000016000000
+  Description: A cozy woven cradle of twigs, mud, and grass built by avians to house
+    future eggs.
+  Categories: 1500000016000000

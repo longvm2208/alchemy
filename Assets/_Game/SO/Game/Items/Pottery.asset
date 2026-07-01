@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 349
   Name: Pottery
-  Description: 
+  Description: Clay mud shaped by human geometry and hardened into enduring stone
+    by furnace flames.
   Categories: 15000000

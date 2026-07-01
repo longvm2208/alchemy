@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 203
   Name: Fish
-  Description: 
-  Categories: 0900000017000000180000001d0000000a000000190000001e00000023000000
+  Description: Slender, scaly aquatic swimmers that mastered the art of breathing
+    underwater long before it was cool.
+  Categories: 23000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 502
   Name: Zoo
-  Description: 
+  Description: A structured stone and wire sanctuary where humans gather to spy on
+    exotic wild animals.
   Categories: 0e00000016000000

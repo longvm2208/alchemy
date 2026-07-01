@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 216
   Name: Lizard
-  Description: 
-  Categories: 160000001f00000017000000200000001c000000
+  Description: A small, sun-loving scaled reptile that looks like a miniature dragon
+    without the wings.
+  Categories: 1c000000

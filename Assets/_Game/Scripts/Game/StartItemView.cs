@@ -67,12 +67,16 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
     #region Handle Input
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (!GameTut.Ins.CanUseStartItem(this)) return;
+
         UIManager.Ins.EnableBlocker(true);
         LevelManager.Ins.OnUserInteract();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (!GameTut.Ins.CanUseStartItem(this)) return;
+
         dragDirection = Direction.None;
         dragStartPos = eventData.position;
         dragRect.anchoredPosition = Vector2.zero;
@@ -81,6 +85,8 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (!GameTut.Ins.CanUseStartItem(this)) return;
+
         if (itemView != null)
         {
             itemView.OnDrag(eventData);
@@ -120,6 +126,8 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (!GameTut.Ins.CanUseStartItem(this)) return;
+
         if (itemView != null)
         {
             itemView.OnEndDrag(eventData);
@@ -136,6 +144,8 @@ public class StartItemView : PooledMonoBehaviour<StartItemView>,
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (!GameTut.Ins.CanUseStartItem(this)) return;
+
         UIManager.Ins.EnableBlocker(false);
     }
     #endregion

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 480
   Name: Snowboarder
-  Description: 
+  Description: A daring winter balance-master who glides down frozen alpine slopes
+    on a single waxed board.
   Categories: 19000000

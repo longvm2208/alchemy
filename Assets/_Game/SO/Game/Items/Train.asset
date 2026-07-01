@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 599
   Name: Train
-  Description: 
-  Categories: 27000000290000002a000000280000002b000000
+  Description: A long iron snake of linked carriages pulled along a track line by
+    a heavy steam or electric engine.
+  Categories: 27000000

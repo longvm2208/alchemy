@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 505
-  Name: AntFarm
-  Description: 
+  Name: Ant Farm
+  Description: A transparent observation tank trapping a miniature, hard-working
+    colony of insects.
   Categories: 1500000029000000

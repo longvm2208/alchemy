@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 466b2c984ea88bc448d87ea51dab587f, type: 3}
   Id: 61
   Name: Rust
-  Description: 
-  Categories: 0d0000000e0000000600000009000000
+  Description: The slow, reddish decay that creeps over iron when it plays with air
+    and moisture.
+  Categories: 0600000009000000

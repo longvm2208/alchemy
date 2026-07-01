@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 442
   Name: Milk
-  Description: 
-  Categories: 1b0000001c00000005000000
+  Description: A vital, nutrient-dense white fluid gifted by mammal mothers to nourish
+    their young.
+  Categories: 05000000

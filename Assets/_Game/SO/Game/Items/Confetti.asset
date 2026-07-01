@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 616
   Name: Confetti
-  Description: 
+  Description: Thousands of tiny, colorful paper shards launched into the air to
+    celebrate human milestones.
   Categories: 22000000

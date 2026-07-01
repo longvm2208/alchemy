@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 676
   Name: Armadillo
-  Description: 
+  Description: A small, armored rolling mammal that transforms into a solid tectonic
+    pebble when frightened.
   Categories: 1b000000

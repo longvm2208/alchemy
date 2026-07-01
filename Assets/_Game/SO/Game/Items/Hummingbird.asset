@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 311
   Name: Hummingbird
-  Description: 
+  Description: A minuscule avian helicopter that blurs its wings to hover over flowers
+    and sip sugary nectar.
   Categories: 1d000000

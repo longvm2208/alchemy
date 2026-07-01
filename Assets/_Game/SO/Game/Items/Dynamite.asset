@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 197
   Name: Dynamite
-  Description: 
+  Description: A highly volatile stick of concentrated chemical tension waiting to
+    violently expand space.
   Categories: 180000001a000000

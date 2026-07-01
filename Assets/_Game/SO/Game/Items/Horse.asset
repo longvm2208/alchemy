@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 210
   Name: Horse
-  Description: 
-  Categories: 1b000000270000001c00000028000000
+  Description: "A majestic, four-legged muscle machine that served as humanity\u2019s
+    primary vehicle for eras."
+  Categories: 1b000000

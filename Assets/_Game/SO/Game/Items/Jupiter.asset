@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 131
   Name: Jupiter
-  Description: 
+  Description: A colossal gas giant of our solar family, famous for its massive storm
+    eye and gravity shield.
   Categories: 0b000000

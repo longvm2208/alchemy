@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 416
   Name: Engineer
-  Description: 
+  Description: A logical mortal who solves physical problems by assembling equations,
+    gears, and materials.
   Categories: 19000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 565
   Name: Pencil
-  Description: 
+  Description: A slender wooden rod holding a graphite carbon core, used for sketching
+    thoughts onto paper sheets.
   Categories: 1400000018000000

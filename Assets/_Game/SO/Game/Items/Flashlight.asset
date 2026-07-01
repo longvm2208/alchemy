@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 291
   Name: Flashlight
-  Description: 
+  Description: A handheld electronic torch that projects a convenient beam of synthetic
+    sunshine upon command.
   Categories: 1800000020000000

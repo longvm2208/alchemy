@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 601
-  Name: WaterPipe
-  Description: 
+  Name: Water Pipe
+  Description: A plumbing line of hollow metal or plastic tubes engineered to circulate
+    fresh water through a city.
   Categories: 18000000

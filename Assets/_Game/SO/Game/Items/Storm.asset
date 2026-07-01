@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 145
   Name: Storm
-  Description: 
-  Categories: 06000000070000000200000010000000
+  Description: A violent elemental meeting of dark clouds, howling wind currents,
+    and liquid downpours.
+  Categories: 0200000010000000

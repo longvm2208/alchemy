@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 467
   Name: Quicksilver
-  Description: 
+  Description: The elusive liquid metal that walks between states of matter; famously
+    known as mercury.
   Categories: 060000000c00000012000000

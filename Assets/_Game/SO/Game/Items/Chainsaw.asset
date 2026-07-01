@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 528
   Name: Chainsaw
-  Description: 
+  Description: A loud, terrifying mechanical monster with a rotating iron tooth chain
+    built to rip through wood.
   Categories: 18000000

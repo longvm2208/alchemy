@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 644
   Name: Musician
-  Description: 
+  Description: A specialized audio alchemist who coordinates sound currents to invoke
+    deep human emotions.
   Categories: 19000000

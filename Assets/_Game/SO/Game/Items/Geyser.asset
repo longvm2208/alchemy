@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Geyser
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 983c45244bcd39a4392099439056c80c, type: 3}
   Id: 20
   Name: Geyser
-  Description: 
-  Categories: 01000000040000000200000005000000030000000d000000
+  Description: A naturally engineered hot spring that shoots boiling waters into
+    the air at scheduled times.
+  Categories: 03000000040000000d000000

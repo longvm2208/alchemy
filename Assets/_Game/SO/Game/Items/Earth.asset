@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 1ed0d5311ae1b0142a65a1462a4c4dc7, type: 3}
   Id: 2
   Name: Earth
-  Description: 
+  Description: The terrestrial soil and ground that defines the third rock from the
+    sun.
   Categories: 

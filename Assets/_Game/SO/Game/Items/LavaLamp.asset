@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 317
-  Name: LavaLamp
-  Description: 
+  Name: Lava Lamp
+  Description: A psychedelic light tube filled with colorful wax globs dancing slow-motion
+    inside heated fluid.
   Categories: 2000000022000000

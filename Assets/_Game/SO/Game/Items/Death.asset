@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 156
   Name: Death
-  Description: 
+  Description: The inevitable cosmic full-stop that politely asks the life spark
+    to leave the physical vessel.
   Categories: 25000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 551
-  Name: IceCream
-  Description: 
+  Name: Ice Cream
+  Description: A delicious frozen dairy cream confection traditionally enjoyed during
+    intense hot summer days.
   Categories: 21000000

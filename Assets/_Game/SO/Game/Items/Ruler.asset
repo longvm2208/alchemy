@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 657
   Name: Ruler
-  Description: 
+  Description: A straight, hard stick printed with numbers used to measure physical
+    geometry bounds.
   Categories: 18000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 614
   Name: Chocolate
-  Description: 
-  Categories: 2e0000002f00000021000000
+  Description: A sweet, dark organic confection harvested from distant beans; the
+    ultimate cure for bad moods.
+  Categories: 21000000

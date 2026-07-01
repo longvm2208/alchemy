@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 2cbfd49bfb243f04eb91b920e7e5cb1f, type: 3}
   Id: 34
   Name: Mountain
-  Description: 
-  Categories: 03000000070000000400000008000000
+  Description: A monumental pile of tectonic rock that dared to reach all the way
+    for the clouds.
+  Categories: 03000000

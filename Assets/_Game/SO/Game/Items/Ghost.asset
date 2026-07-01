@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 299
   Name: Ghost
-  Description: 
+  Description: The translucent, lingering ethereal echo of a person who forgot to
+    vacate the premises after death.
   Categories: 2500000026000000

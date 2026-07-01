@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 97
   Name: Rainbow
-  Description: 
+  Description: A beautiful, temporary arch of colored light painted across the sky
+    by rain and sun.
   Categories: 020000001300000020000000

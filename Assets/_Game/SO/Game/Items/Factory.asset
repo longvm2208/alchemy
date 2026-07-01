@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 79
   Name: Factory
-  Description: 
-  Categories: 290000002b0000002a0000002c0000000e000000
+  Description: A loud, smokey playground of gears and machines built to mass-produce
+    human desires.
+  Categories: 0e000000

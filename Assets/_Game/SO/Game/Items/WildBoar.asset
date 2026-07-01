@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 383
-  Name: WildBoar
-  Description: 
+  Name: Wild Boar
+  Description: The fierce, tusked wild ancestor of the farm pig, roaming forest depths
+    with an angry attitude.
   Categories: 1b000000

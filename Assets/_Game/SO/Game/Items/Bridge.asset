@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 75
   Name: Bridge
-  Description: 
-  Categories: 24000000270000002a00000025000000280000002b00000016000000
+  Description: A structural pathway built to conquer voids, rivers, or chasms by
+    linking two separated lands.
+  Categories: 16000000

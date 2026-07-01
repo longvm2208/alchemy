@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 575
-  Name: RollerCoaster
-  Description: 
+  Name: Roller Coaster
+  Description: A massive iron track machine engineered to send mortals screaming
+    through high-speed drops and loops.
   Categories: 16000000

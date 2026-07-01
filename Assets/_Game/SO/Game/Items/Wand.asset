@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 380
   Name: Wand
-  Description: 
+  Description: A slender wooden rod favored by wizards to focus and project magical
+    intent into the material world.
   Categories: 1800000026000000

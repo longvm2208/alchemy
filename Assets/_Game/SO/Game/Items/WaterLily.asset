@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 496
-  Name: WaterLily
-  Description: 
+  Name: Water Lily
+  Description: A beautiful aquatic blossom that floats peacefully atop the surface
+    of quiet ponds.
   Categories: 11000000

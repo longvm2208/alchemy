@@ -41,12 +41,15 @@ public class TargetItemMenu : MonoBehaviour
 
     public void CollectTarget(ItemId itemId, CategoryId categoryId, Vector3 pos)
     {
-        TargetItemFly itemFly = itemFlyPrefab.GetInstance(itemFlyHolder);
-        itemFly.Init(itemId, pos);
-        itemFly.Move(categoryDict[categoryId].transform.position, () =>
+        this.Invoke(0.25f, () =>
         {
-            itemFly.Destroy();
-            categoryDict[categoryId].UpdateProgress();
+            TargetItemFly itemFly = itemFlyPrefab.GetInstance(itemFlyHolder);
+            itemFly.Init(itemId, pos);
+            itemFly.Move(categoryDict[categoryId].transform.position, () =>
+            {
+                itemFly.Destroy();
+                categoryDict[categoryId].UpdateProgress();
+            });
         });
     }
 }

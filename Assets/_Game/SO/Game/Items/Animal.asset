@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 151
   Name: Animal
-  Description: 
+  Description: A multicellular living creature that breathes, moves, and follows
+    its primal instincts.
   Categories: 1b000000

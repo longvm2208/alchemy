@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 176
   Name: Allergy
-  Description: 
+  Description: An over-dramatic immune response where the body treats harmless dust
+    or pollen like a deadly invasion.
   Categories: 0a000000

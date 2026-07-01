@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 597
   Name: Titanic
-  Description: 
+  Description: A colossal, legendary steamboat that famously lost a battle against
+    a floating arctic iceberg.
   Categories: 130000002600000027000000

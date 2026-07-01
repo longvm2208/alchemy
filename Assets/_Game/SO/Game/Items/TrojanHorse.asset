@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 492
-  Name: TrojanHorse
-  Description: 
+  Name: Trojan Horse
+  Description: A massive hollow wooden stallion used to hide elite warriors and deliver
+    a sneaky historical surprise.
   Categories: 1600000026000000

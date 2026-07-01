@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 324
   Name: Magma
-  Description: 
-  Categories: 00000000020000000500000001000000030000000600000012000000
+  Description: The blindingly hot, pressurized molten rock hidden directly within
+    the earth's mantle.
+  Categories: 0300000012000000

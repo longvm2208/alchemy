@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 424
   Name: Gnome
-  Description: 
+  Description: A tiny, bearded mythological stone dweller traditionally tasked with
+    guarding garden plots.
   Categories: 2200000026000000

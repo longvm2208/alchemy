@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 321
   Name: Lion
-  Description: 
-  Categories: 1c0000001d0000001b000000
+  Description: A majestic, maned feline king who claims absolute sovereignty over
+    the open savannah.
+  Categories: 1b000000

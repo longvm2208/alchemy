@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 263
   Name: Cage
-  Description: 
+  Description: An uncompromising box of iron or wooden bars designed to suspend the
+    freedom of dynamic fauna.
   Categories: 15000000

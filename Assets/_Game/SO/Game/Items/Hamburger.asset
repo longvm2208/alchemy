@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 629
   Name: Hamburger
-  Description: 
+  Description: A classic round culinary sandwich featuring a savory steak patty trapped
+    between two bread discs.
   Categories: 21000000

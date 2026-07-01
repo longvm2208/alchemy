@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 642
   Name: Mouse
-  Description: 
-  Categories: 1a0000001b000000
+  Description: A small, fast-moving mammal with large ears and a habit of evading
+    cats to steal cheese.
+  Categories: 1b000000

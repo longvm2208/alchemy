@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 336
   Name: Ostrich
-  Description: 
+  Description: A colossal, flightless bird that runs like a racehorse and allegedly
+    buries its head in sand.
   Categories: 1d000000

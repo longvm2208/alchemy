@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 454
   Name: Palm
-  Description: 
+  Description: A tropical botanical survivor capable of leaning with hurricane winds
+    while dropping coconuts.
   Categories: 11000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 399
-  Name: ChickenSoup
-  Description: 
+  Name: Chicken Soup
+  Description: A warm, comforting botanical broth of poultry essence, traditionally
+    brewed to battle colds.
   Categories: 21000000

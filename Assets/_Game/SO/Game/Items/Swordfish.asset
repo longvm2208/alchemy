@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 370
   Name: Swordfish
-  Description: 
-  Categories: 170000001800000023000000
+  Description: A high-speed ocean glided armed with a long, bony sword bill used
+    to slice through prey.
+  Categories: 23000000

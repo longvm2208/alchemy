@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 449
   Name: Net
-  Description: 
+  Description: An interlocking grid of threads engineered to capture multiple fish
+    or insects at once.
   Categories: 18000000

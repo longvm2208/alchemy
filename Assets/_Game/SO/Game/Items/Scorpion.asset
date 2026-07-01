@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 230
   Name: Scorpion
-  Description: 
-  Categories: 1400000023000000150000002400000029000000
+  Description: A desert-dwelling crawler armed with twin front pinches and a poison
+    needle on its tail.
+  Categories: 29000000

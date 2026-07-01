@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 458
   Name: Perfume
-  Description: 
-  Categories: 0e000000130000000f0000001400000022000000
+  Description: A distilled liquid mixture of fragrant flower essences designed to
+    upgrade a mortal's scent profile.
+  Categories: 0f00000022000000

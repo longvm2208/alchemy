@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 90
   Name: Mars
-  Description: 
+  Description: Our rust-hued celestial neighbor, a cold desert world named after
+    the ancient god of war.
   Categories: 030000000b000000

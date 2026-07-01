@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 150
   Name: Alien
-  Description: 
-  Categories: 2d0000002e0000000b0000002600000028000000
+  Description: A mysterious visitor from distant cosmic spheres, unbound by our terrestrial
+    laws.
+  Categories: 0b0000002600000028000000

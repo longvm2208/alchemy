@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 444
   Name: Mold
-  Description: 
-  Categories: 0f00000010000000110000000a000000
+  Description: A fuzzy, microscopic network of decay that claims organic foods left
+    too long in the dark.
+  Categories: 0a000000

@@ -13,12 +13,16 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
     {
         int levelIndex = GamePref.Ins.LevelIndex % levelContainer.Levels.Length;
         currentLevel = levelContainer.Levels[levelIndex];
+
+        GameTut.Ins.Init();
         GameCanvas.Ins.Init();
         BoardManager.Ins.UpdateBoardPosAndSize();
         BoardManager.Ins.Init();
         BoosterManager.Ins.Init();
         GameCanvas.Ins.Timer.Init(levelIndex);
         isFirstInteraction = true;
+
+        GameTut.Ins.NextMergeStep();
     }
 
     public void OnUserInteract()
@@ -32,14 +36,7 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
 
     public void LoseLevel()
     {
-        if (GamePref.Ins.LevelIndex > 0)
-        {
-            SceneController.Ins.ToHome();
-        }
-        else
-        {
-            SceneController.Ins.ToGame();
-        }
+
     }
 
     public void ReviveLevel()

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Mist
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 9e7efb6bd356b3549a7202177782cc5a, type: 3}
+  Icon: {fileID: 21300000, guid: 17c7cc077e5b6684d8d34d478a3d9e57, type: 3}
   Id: 10
   Name: Mist
-  Description: 
-  Categories: 00000000010000000400000006000000020000000500000007000000
+  Description: The minor sibling of low fog, famous for drifting low and masking
+    hidden creatures.
+  Categories: 02000000

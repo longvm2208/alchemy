@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 579
   Name: Scarecrow
-  Description: 
+  Description: A fake straw golem dressed in old human clothes, built to trick and
+    frighten crop-stealing crows.
   Categories: 1700000018000000

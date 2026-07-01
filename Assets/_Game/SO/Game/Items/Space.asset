@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 144
   Name: Space
-  Description: 
-  Categories: 0c0000002d0000000d0000002e0000000b000000
+  Description: The vast, quiet and dark infinite canvas where stars burn and planets
+    perform their orbits.
+  Categories: 0b000000

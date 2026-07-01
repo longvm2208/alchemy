@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 5473b54bad6d2d646980c5782402ecbb, type: 3}
   Id: 37
   Name: Sand
-  Description: 
-  Categories: 000000000300000008000000010000000400000009000000
+  Description: The pulverized dust of crushed boulders; nature's favorite countdown
+    timer filler.
+  Categories: 03000000

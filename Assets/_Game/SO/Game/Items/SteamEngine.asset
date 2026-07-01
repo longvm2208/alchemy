@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 484
-  Name: SteamEngine
-  Description: 
-  Categories: 290000002a0000002b0000000d00000024000000
+  Name: Steam Engine
+  Description: An iconic iron apparatus that harvests water steam pressure to spin
+    mechanical wheels.
+  Categories: 0d00000024000000

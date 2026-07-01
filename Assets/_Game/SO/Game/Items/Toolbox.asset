@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 372
   Name: Toolbox
-  Description: 
+  Description: A sturdy metal or plastic chest designed to keep a human's mechanical
+    tools organized and ready.
   Categories: 15000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 149
-  Name: WaterGun
-  Description: 
+  Name: Water Gun
+  Description: A harmless plastic weapon that projects streams of liquid water for
+    minor backyard warfare.
   Categories: 1a000000

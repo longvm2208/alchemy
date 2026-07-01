@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 510
   Name: Banana
-  Description: 
-  Categories: 1e0000001f00000021000000
+  Description: A curved, bright yellow tropical fruit packed with potassium that
+    peels easily for hungry primates.
+  Categories: 21000000

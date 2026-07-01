@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 391
   Name: Bicycle
-  Description: 
-  Categories: 2700000028000000
+  Description: A two-wheeled mechanical contraption fueled entirely by human leg
+    stamina and balance.
+  Categories: 27000000

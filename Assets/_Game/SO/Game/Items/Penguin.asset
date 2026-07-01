@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 341
   Name: Penguin
-  Description: 
-  Categories: 0b00000017000000190000000c000000180000001a0000001d000000
+  Description: An avian gentleman dressed in a permanent tuxedo, fully optimized
+    for swimming instead of flying.
+  Categories: 1d000000

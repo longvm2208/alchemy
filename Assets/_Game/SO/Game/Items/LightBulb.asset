@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 159
-  Name: LightBulb
-  Description: 
-  Categories: 2b000000300000002c000000310000001800000020000000
+  Name: Light Bulb
+  Description: A fragile glass bubble holding a captured electrical spark to instantly
+    banish shadows.
+  Categories: 1800000020000000

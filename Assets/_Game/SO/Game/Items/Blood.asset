@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 184
   Name: Blood
-  Description: 
-  Categories: 200000002100000004000000
+  Description: The heavy, iron-rich crimson fluid that serves as the highway of vitality
+    within a vessel.
+  Categories: 04000000

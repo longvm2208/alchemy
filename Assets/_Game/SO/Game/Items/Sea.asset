@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 13ce96fd2116dd444a61880a88c7302c, type: 3}
   Id: 64
   Name: Sea
-  Description: 
-  Categories: 010000000900000017000000180000001d00000028000000020000000a000000190000001e000000290000000300000004000000
+  Description: A grand, salt-heavy expansion of water, though smaller than a full
+    ocean abyss.
+  Categories: 0300000004000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 29f90bf5c609c7448a6ef7f1aa002cca, type: 3}
   Id: 38
   Name: Tornado
-  Description: 
-  Categories: 0600000007000000020000000f00000013000000
+  Description: A highly destructive, spinning funnel of high-speed wind that acts
+    like a sky vacuum.
+  Categories: 02000000070000000f00000013000000

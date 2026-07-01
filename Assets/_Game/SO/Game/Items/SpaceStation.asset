@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 105
-  Name: SpaceStation
-  Description: 
+  Name: Space Station
+  Description: A high-tech human bird cage drifting permanently in the cosmic void
+    to watch the world.
   Categories: 0b00000016000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 478
   Name: Skateboard
-  Description: 
+  Description: A wooden plank mounted on four miniature wheels, used by urban youth
+    to challenge friction and gravity.
   Categories: 27000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 77
   Name: Current
-  Description: 
-  Categories: 0100000002000000040000000900000003000000050000000a0000000700000010000000
+  Description: The invisible, continuous flow of energy or fluids pushing in a specific
+    direction.
+  Categories: 0700000010000000

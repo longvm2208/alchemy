@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 392
   Name: Big
-  Description: 
-  Categories: 31000000320000001b000000
+  Description: A conceptual cosmic modifier that expands any form, making it monumentally
+    larger.
+  Categories: 1b000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 400
-  Name: ChickenWing
-  Description: 
+  Name: Chicken Wing
+  Description: A finger-licking, crispy cut of poultry wing flesh, highly coveted
+    during sports viewings.
   Categories: 21000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 705
   Name: Smartphone
-  Description: 
+  Description: A pocket-sized glass and silicon wizard slate that compresses cameras,
+    computers, and internet logic together.
   Categories: 1400000024000000

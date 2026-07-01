@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 301
   Name: Grass
-  Description: 
-  Categories: 11000000140000001b0000002200000012000000150000001c00000023000000
+  Description: The humble, green carpet of the world that keeps the soil anchored
+    and fuels herbivorous fauna.
+  Categories: 11000000

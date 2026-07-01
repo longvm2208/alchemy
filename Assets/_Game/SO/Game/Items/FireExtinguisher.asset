@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 419
-  Name: FireExtinguisher
-  Description: 
+  Name: Fire Extinguisher
+  Description: A metal bottle containing compressed cold foam engineered to choke
+    out angry flames.
   Categories: 1500000018000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 371
   Name: Tobacco
-  Description: 
+  Description: An agricultural leaf dried and burned by mortals to inhale its relaxing,
+    intoxicating smoke.
   Categories: 11000000

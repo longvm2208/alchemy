@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 223
   Name: Painter
-  Description: 
+  Description: A visual alchemist who turns sticky mineral colors into timeless expressions
+    on fabric sheets.
   Categories: 19000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 596
   Name: Thermometer
-  Description: 
+  Description: A glass tube containing an elusive fluid line that rises or falls
+    to measure environmental heat.
   Categories: 18000000

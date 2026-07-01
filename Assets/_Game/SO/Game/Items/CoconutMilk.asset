@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 532
-  Name: CoconutMilk
-  Description: 
+  Name: Coconut Milk
+  Description: The rich, white liquid essence squeezed directly from the delicious
+    meat of a coconut vault.
   Categories: 05000000

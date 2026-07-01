@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 680
   Name: Bat
-  Description: 
-  Categories: 1a0000001b000000
+  Description: A nocturnal flying mammal that navigates the dark ether using sound
+    reflections instead of eyes.
+  Categories: 1b000000

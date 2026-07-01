@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Granite
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: c870af23fe5aa8745be8cf17fcf94510, type: 3}
   Id: 21
   Name: Granite
-  Description: 
-  Categories: 0300000007000000040000000800000012000000
+  Description: A rock so exceptionally solid and stubborn that even time struggles
+    to wear it away.
+  Categories: 12000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 205
   Name: Frog
-  Description: 
-  Categories: 15000000160000001c000000
+  Description: A jumping amphibian that starts as a swimming tail and ends up croaking
+    on a lily pad.
+  Categories: 1c000000

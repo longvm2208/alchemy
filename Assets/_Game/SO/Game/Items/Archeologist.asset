@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 178
   Name: Archeologist
-  Description: 
+  Description: A specialized scholar who spends time playing in the dirt just to
+    read the garbage of ancient empires.
   Categories: 19000000

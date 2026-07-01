@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 559
-  Name: MoonRover
-  Description: 
+  Name: Moon Rover
+  Description: A highly specialized mechanical space cart built to roll across the
+    moon star's silent dust.
   Categories: 27000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 568
   Name: Pitchfork
-  Description: 
+  Description: A long-handled agricultural tool with sharp iron prongs, ideal for
+    moving hay or leading angry mobs.
   Categories: 18000000

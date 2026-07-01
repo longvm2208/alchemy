@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7b6de8a238abf4d975054115fdac36, type: 3}
+  m_Name: Time
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Id: 8
+  Name: Time
+  Items: 560000007900000088000000990000009b000000aa000000ae000000f1000000f8000000170100001e01000081020000

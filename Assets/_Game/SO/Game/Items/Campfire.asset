@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 524
   Name: Campfire
-  Description: 
-  Categories: 120000001300000001000000
+  Description: A cozy, controlled wooden fire source traditionally used for telling
+    stories and warming travelers.
+  Categories: 01000000

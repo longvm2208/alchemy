@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 631
   Name: Hedgehog
-  Description: 
+  Description: A tiny, cautious crawling mammal that rolls into a ball of protective
+    needles when startled.
   Categories: 1b000000

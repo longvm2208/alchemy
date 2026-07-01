@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: SolarSystem
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 158965485c0ce1d4dbb2a678036e6af2, type: 3}
   Id: 65
-  Name: SolarSystem
-  Description: 
-  Categories: 0c0000002d0000000d0000002e0000000b000000
+  Name: Solar System
+  Description: A cosmic family of planets, moons, and rocks all dancing around one
+    central star mother.
+  Categories: 0b000000

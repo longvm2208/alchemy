@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 668
-  Name: VacuumCleaner
-  Description: 
+  Name: Vacuum Cleaner
+  Description: A loud mechanical monster that harvests wind suction to swallow dust
+    dandruff from textiles.
   Categories: 18000000

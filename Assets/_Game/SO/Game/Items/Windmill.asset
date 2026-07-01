@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 113
   Name: Windmill
-  Description: 
-  Categories: 290000002a00000016000000
+  Description: A traditional tower with large sails that captures the wind to grind
+    grain or pump water.
+  Categories: 16000000

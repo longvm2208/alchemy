@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 555
   Name: Laptop
-  Description: 
+  Description: A compact, foldable computer machine designed to let mortals access
+    internet data anywhere.
   Categories: 1400000024000000

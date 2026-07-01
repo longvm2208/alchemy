@@ -29,6 +29,7 @@ public class StartItemMenu : MonoBehaviour
 
         for (int i = 0; i < itemIds.Length; i++)
         {
+            if (!GamePref.Ins.DiscoveredItems.Contains(itemIds[i])) continue;
             StartItemView itemView = itemViewPrefab.GetInstance(scroll.content);
             itemView.Init(itemIds[i], this);
             itemViews.Add(itemView);
@@ -61,4 +62,16 @@ public class StartItemMenu : MonoBehaviour
     {
         scroll.OnEndDrag(eventData);
     }
+
+    #region GameTut
+    public StartItemView GetStartItem1()
+    {
+        return itemViews[1];
+    }
+
+    public StartItemView GetStartItem2()
+    {
+        return itemViews[2];
+    }
+    #endregion
 }

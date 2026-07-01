@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 455
   Name: Parachute
-  Description: 
+  Description: A wide fabric umbrella engineered to catch wind currents and slow
+    a mortal's gravitational fall.
   Categories: 18000000

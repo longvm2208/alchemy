@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Grenade
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9b7cc7ddccaad74479d05a3d69d2043f, type: 3}
   Id: 54
   Name: Grenade
-  Description: 
+  Description: A handheld package of pure explosive tension that shatters into metallic
+    shards when triggered.
   Categories: 1a000000

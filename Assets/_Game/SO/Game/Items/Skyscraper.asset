@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 143
   Name: Skyscraper
-  Description: 
-  Categories: 240000002f000000250000003000000016000000
+  Description: A ridiculously tall tower of steel and concrete built to literally
+    scrape the upper clouds.
+  Categories: 16000000

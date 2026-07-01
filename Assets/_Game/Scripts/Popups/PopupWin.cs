@@ -6,6 +6,7 @@ public class PopupWin : Popup
 {
     [SerializeField] TMP_Text winRewardText;
     [SerializeField] ParticleImage coinParticle;
+    [SerializeField] GameObject claimX2;
 
     public override void Open()
     {
@@ -18,11 +19,15 @@ public class PopupWin : Popup
         coinParticle.onLastParticleFinish.AddListener(OnLastParticle);
 
         winRewardText.text = $"+{GameConf.Ins.WinReward}";
+
+        claimX2.SetActive(GamePref.Ins.LevelIndex > 10);
     }
 
     void Claim(int x)
     {
         GamePref.Ins.AddCoin(x * GameConf.Ins.WinReward, "");
+        coinParticle.Play();
+        UIManager.Ins.EnableBlocker(true);
     }
 
     void OnFirstParticle()
@@ -32,6 +37,7 @@ public class PopupWin : Popup
 
     void OnLastParticle()
     {
+        UIManager.Ins.EnableBlocker(false);
         SceneController.Ins.ToHome();
         Close();
     }

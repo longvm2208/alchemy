@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 701
-  Name: PaperCup
-  Description: 
+  Name: Paper Cup
+  Description: A temporary, disposable liquid container folded from processed paper
+    fibers, ideal for picnics.
   Categories: 15000000

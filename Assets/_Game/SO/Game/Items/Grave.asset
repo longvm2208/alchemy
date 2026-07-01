@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 302
   Name: Grave
-  Description: 
+  Description: A quiet, six-foot-deep subterranean slot reserved as a permanent resting
+    place for a human vessel.
   Categories: 0e0000001500000025000000

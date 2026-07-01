@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 658
   Name: Sailboat
-  Description: 
-  Categories: 280000002900000027000000
+  Description: A traditional water vessel equipped with wide fabric wings to surf
+    tides using wind currents.
+  Categories: 27000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 1b1942889c35c4b49af8c9723510753a, type: 3}
   Id: 39
   Name: Wall
-  Description: 
-  Categories: 240000002500000016000000
+  Description: A solid vertical barrier of brick or stone built to mark boundaries
+    and keep the wild outside.
+  Categories: 16000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 80
   Name: Field
-  Description: 
-  Categories: 22000000230000000e00000011000000
+  Description: A wide, open canvas of fertile earth waiting for crops to grow or
+    cows to graze.
+  Categories: 0e00000011000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 244
   Name: Tool
-  Description: 
-  Categories: 0d0000001e000000210000000e0000001f0000002200000018000000
+  Description: An extension of human intent forged to shape materials, build structures,
+    or fix broken items.
+  Categories: 18000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 208
   Name: Hacker
-  Description: 
+  Description: A digital rogue who speaks fluent binary and slips past protective
+    virtual firewalls for fun.
   Categories: 19000000

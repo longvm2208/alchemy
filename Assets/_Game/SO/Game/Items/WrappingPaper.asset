@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 674
-  Name: WrappingPaper
-  Description: 
+  Name: Wrapping Paper
+  Description: Colorful, decorative sheets utilized exclusively to hide gifts and
+    prolong holiday mystery.
   Categories: 22000000

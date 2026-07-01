@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 606
   Name: Bandage
-  Description: 
-  Categories: 300000003100000018000000
+  Description: A sterile fabric strip applied to hold leaking crimson fluid inside
+    a damaged biological vessel.
+  Categories: 18000000

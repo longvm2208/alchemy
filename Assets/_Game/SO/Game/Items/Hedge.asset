@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 307
   Name: Hedge
-  Description: 
-  Categories: 110000001200000016000000
+  Description: A living wall engineered by planting a row of green bushes closely
+    together.
+  Categories: 1100000016000000

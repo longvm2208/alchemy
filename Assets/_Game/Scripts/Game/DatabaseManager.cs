@@ -13,6 +13,8 @@ public class DatabaseManager : Singleton<DatabaseManager>
     List<ItemDefinition> unlockedItems;
     Dictionary<CategoryId, CategoryDefinition> categories;
 
+    public CategoryDefinition[] Categories => config.Categories;
+
     public void Init(ItemDatabaseConfig config)
     {
         if (isInitialized) return;
@@ -111,6 +113,11 @@ public class DatabaseManager : Singleton<DatabaseManager>
     public CategoryDefinition GetCategoryDefinition(CategoryId categoryId)
     {
         return categories[categoryId];
+    }
+
+    public MergeRecipe[] GetMergeRecipes()
+    {
+        return config.Recipes;
     }
 
     public bool TryGetRecipes(ItemId itemAId, ItemId itemBId, out List<MergeRecipe> recipes)

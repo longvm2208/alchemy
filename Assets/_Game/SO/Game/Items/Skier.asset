@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 234
   Name: Skier
-  Description: 
+  Description: A mortal balance-master who fastens twin wooden planks to their feet
+    to slide down frozen peaks.
   Categories: 19000000

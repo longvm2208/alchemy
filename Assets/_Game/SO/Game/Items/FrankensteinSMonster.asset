@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 295
-  Name: FrankensteinSMonster
-  Description: 
+  Name: Frankenstein's Monster
+  Description: A tragic, non-traditional homunculus assembled from discarded meat
+    parts and brought to life by electricity.
   Categories: 1900000026000000

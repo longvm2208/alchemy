@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 166
   Name: Snow
-  Description: 
-  Categories: 0b0000000c00000002000000
+  Description: Thousands of tiny, frozen white stars falling softly from the heavens
+    to freeze the landscape.
+  Categories: 02000000

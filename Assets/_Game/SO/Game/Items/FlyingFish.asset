@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 293
-  Name: FlyingFish
-  Description: 
-  Categories: 1700000019000000180000001a00000023000000
+  Name: Flying Fish
+  Description: An ambitious marine swimmer that uses elongated fins to briefly catch
+    flights over the waves.
+  Categories: 23000000

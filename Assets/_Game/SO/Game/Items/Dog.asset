@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 281
   Name: Dog
-  Description: 
-  Categories: 1c0000001d0000001b000000
+  Description: Humanity's loyal four-legged companion, optimized for fetching sticks
+    and offering unconditional love.
+  Categories: 1b000000

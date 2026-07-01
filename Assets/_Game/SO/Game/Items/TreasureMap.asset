@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 708
-  Name: TreasureMap
-  Description: 
+  Name: Treasure Map
+  Description: An old paper sketch carrying cryptic clues and an "X" mark to guide
+    pirates toward gold caches.
   Categories: 1400000026000000

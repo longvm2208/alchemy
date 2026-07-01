@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 427
   Name: Harp
-  Description: 
+  Description: A large geometric frame string instrument that produces celestial
+    melodies when plucked.
   Categories: 18000000

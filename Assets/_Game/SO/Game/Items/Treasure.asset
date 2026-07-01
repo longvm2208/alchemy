@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 717
   Name: Treasure
-  Description: 
+  Description: A cache of precious objects locked in a box, casting a golden glow
+    reflected in a pirate's eyes.
   Categories: 170000001f000000

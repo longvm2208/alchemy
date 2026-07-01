@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 272
   Name: Chicken
-  Description: 
-  Categories: 190000001a0000001b000000
+  Description: A flightless domestic bird kept by humanity primarily for its delicious
+    eggs and savory meat.
+  Categories: 1b000000

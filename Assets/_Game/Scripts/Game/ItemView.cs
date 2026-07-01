@@ -16,6 +16,7 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
     [SerializeField] RectTransform glowRect;
     [SerializeField] Image glowImage;
 
+    bool isFresh;
     RectTransform _rect;
     public RectTransform rect => _rect ? _rect : _rect = GetComponent<RectTransform>();
     ItemId id;
@@ -34,6 +35,8 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
         iconImage.sprite = itemDefinition.Icon;
         tempNameText.gameObject.SetActive(itemDefinition.Icon == null);
         tempNameText.text = itemDefinition.Name;
+
+        isFresh = true;
     }
 
     public void SetMergeCandidate(ItemView nextCandidate)
@@ -133,7 +136,6 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -144,7 +146,6 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
 
     public void OnEndDrag(PointerEventData eventData)
     {
-
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -153,6 +154,11 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
 
         if (BoardManager.Ins.IsFullyInside(rect))
         {
+            if (isFresh)
+            {
+                GameTut.Ins.NextMergeStep();
+            }
+
             if (mergeCandidate != null)
             {
                 if (!BoardManager.Ins.TryMerge(this, mergeCandidate))
@@ -175,6 +181,8 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
         {
             if (mergeCandidate != null)
             {
+                GameTut.Ins.NextMergeStep();
+
                 if (!BoardManager.Ins.TryMerge(this, mergeCandidate))
                 {
                     RemoveAndUpdateHint();
@@ -188,6 +196,8 @@ public class ItemView : PooledMonoBehaviour<ItemView>,
                 RemoveAndUpdateHint();
             }
         }
+
+        isFresh = false;
 
         void RemoveAndUpdateHint()
         {

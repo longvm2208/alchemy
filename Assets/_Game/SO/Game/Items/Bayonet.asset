@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 117
   Name: Bayonet
-  Description: 
+  Description: A sharp dagger attached to the end of a gun, combining piercing and
+    shooting intents.
   Categories: 1a000000

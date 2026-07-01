@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 286
-  Name: EggTimer
-  Description: 
+  Name: Egg Timer
+  Description: A dedicated miniature chronological tracker designed to prevent the
+    tragic overcooking of eggs.
   Categories: 0800000018000000

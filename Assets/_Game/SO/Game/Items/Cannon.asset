@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 394
   Name: Cannon
-  Description: 
-  Categories: 230000002600000024000000270000001a000000
+  Description: A heavy iron cylinder designed to violently eject heavy stone or iron
+    balls via gunpowder.
+  Categories: 1a000000

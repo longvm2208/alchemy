@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 504
   Name: Ambulance
-  Description: 
+  Description: A fast, noisy emergency chariot packed with medical gear to rescue
+    damaged human vessels.
   Categories: 27000000

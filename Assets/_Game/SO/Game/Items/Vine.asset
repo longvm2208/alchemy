@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 669
   Name: Vine
-  Description: 
+  Description: A creeping, winding botanical traveler that hangs onto trees or walls
+    to seek higher light rays.
   Categories: 11000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 323
   Name: Machine
-  Description: 
-  Categories: 290000002a0000002b0000002c00000024000000
+  Description: A coordinated team of gears, pistons, and circuits built to multiply
+    human labor.
+  Categories: 24000000

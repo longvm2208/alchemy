@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 413
   Name: Drone
-  Description: 
-  Tier: 0
+  Description: A mechanical flying insect armed with propellers and eyes, controlled
+    remotely from afar.
+  Categories: 

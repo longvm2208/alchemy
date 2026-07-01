@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 716
   Name: Toast
-  Description: 
+  Description: A crispy slice of plain bread that has been intentionally and beautifully
+    singed by fire.
   Categories: 21000000

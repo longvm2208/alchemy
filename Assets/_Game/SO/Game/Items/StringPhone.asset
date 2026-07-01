@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 707
-  Name: StringPhone
-  Description: 
+  Name: String Phone
+  Description: A primitive communication apparatus linking two paper cups via a single
+    high-tension thread line.
   Categories: 1400000024000000

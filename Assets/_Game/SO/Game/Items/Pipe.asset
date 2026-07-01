@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 461
   Name: Pipe
-  Description: 
+  Description: A hollow iron or plastic conduit engineered to move liquid currents
+    safely through structures.
   Categories: 18000000

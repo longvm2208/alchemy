@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 508
   Name: Aviary
-  Description: 
+  Description: A grand, structured bird cage designed to let a large collection of
+    sky singers fly indoors.
   Categories: 15000000

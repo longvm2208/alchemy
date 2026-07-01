@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 262
   Name: Cactus
-  Description: 
-  Categories: 080000000900000011000000
+  Description: A stubborn, prickly desert plant that hoards its own water stash behind
+    rows of protective needles.
+  Categories: 11000000

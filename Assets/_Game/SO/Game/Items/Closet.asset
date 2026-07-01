@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 531
   Name: Closet
-  Description: 
+  Description: A structured wooden cabinet designed to hide a mortal's textile garments
+    and forgotten clutter.
   Categories: 15000000

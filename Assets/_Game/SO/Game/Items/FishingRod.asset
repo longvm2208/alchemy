@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 290
-  Name: FishingRod
-  Description: 
+  Name: Fishing Rod
+  Description: A slender wooden or fiberglass wand utilizing a long string to outsmart
+    unsuspecting aquatic swimmers.
   Categories: 18000000

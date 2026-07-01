@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 140
   Name: Rain
-  Description: 
-  Categories: 0100000004000000060000000b0000000200000005000000070000000c000000
+  Description: Fresh water condensing within heavy clouds and showering down upon
+    the dry landscape.
+  Categories: 0200000004000000

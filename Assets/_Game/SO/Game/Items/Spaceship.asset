@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 168
   Name: Spaceship
-  Description: 
-  Categories: 2c0000002d0000000b00000027000000
+  Description: An advanced iron carriage built by ambitious mortals to travel through
+    the silent celestial void.
+  Categories: 0b00000027000000

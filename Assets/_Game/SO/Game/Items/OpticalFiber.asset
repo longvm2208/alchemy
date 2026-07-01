@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 335
-  Name: OpticalFiber
-  Description: 
+  Name: Optical Fiber
+  Description: A super-thin thread of pure glass that guides laser beams to deliver
+    internet logic at light speed.
   Categories: 1200000020000000

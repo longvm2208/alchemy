@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: f755269ab0bf09b4bb7357427aca4517, type: 3}
   Id: 62
   Name: Sandstone
-  Description: 
+  Description: Millions of tiny sand grains compressed and glued together by time
+    into a solid rock.
   Categories: 03000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 245
   Name: Turtle
-  Description: 
-  Categories: 16000000170000001c000000
+  Description: A patient, long-lived reptile that travels slowly while carrying its
+    own stone-like fortress.
+  Categories: 1c000000

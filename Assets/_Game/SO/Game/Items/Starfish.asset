@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 240
   Name: Starfish
-  Description: 
-  Categories: 180000001900000023000000
+  Description: A five-pointed marine crawler that mirrors the geometry of the high
+    skies on the ocean floor.
+  Categories: 23000000

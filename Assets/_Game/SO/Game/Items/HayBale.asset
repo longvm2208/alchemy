@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 548
-  Name: HayBale
-  Description: 
+  Name: Hay Bale
+  Description: A tightly compressed block or roll of dried field grass, stacked to
+    feed farm livestock later.
   Categories: 1600000021000000

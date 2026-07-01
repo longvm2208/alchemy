@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 636
   Name: Letter
-  Description: 
+  Description: A physical paper sheet carrying customized text messages across geographic
+    distances.
   Categories: 1400000015000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 703
   Name: Pie
-  Description: 
+  Description: A baked fruit or meat treasure trapped inside a flaky, golden pastry
+    crust cage.
   Categories: 21000000

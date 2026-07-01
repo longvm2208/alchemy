@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 609
   Name: Beer
-  Description: 
+  Description: A carbonated, golden distilled liquid essence brewed from grain to
+    relax mortal logic.
   Categories: 05000000

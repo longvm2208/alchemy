@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 667
   Name: Trainyard
-  Description: 
+  Description: A massive web of iron tracks designed to store, organize, and repair
+    resting train snakes.
   Categories: 0e000000

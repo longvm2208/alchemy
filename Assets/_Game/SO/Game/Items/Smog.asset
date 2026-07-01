@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 165
   Name: Smog
-  Description: 
-  Categories: 060000000700000002000000
+  Description: A heavy, toxic grey blanket born from fire and dirty air that chokes
+    human cities.
+  Categories: 02000000

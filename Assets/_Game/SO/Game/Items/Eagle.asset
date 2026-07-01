@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 285
   Name: Eagle
-  Description: 
-  Categories: 190000001a0000001d000000
+  Description: A majestic feathered apex predator possessing razor claws and telescope
+    eyes to rule the sky.
+  Categories: 1d000000

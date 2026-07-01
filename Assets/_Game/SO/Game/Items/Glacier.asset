@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 206
   Name: Glacier
-  Description: 
-  Categories: 0b0000000c00000003000000
+  Description: A massive, slow-moving river of prehistoric ice that carves through
+    solid mountains like butter.
+  Categories: 03000000

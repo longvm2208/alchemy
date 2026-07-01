@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Moon
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 7d80ebe9f09318749a1c63b8dae9e8fb, type: 3}
   Id: 57
   Name: Moon
-  Description: 
-  Categories: 0a0000000c0000002d0000000b0000000d0000002e000000
+  Description: The pale silver mirror of the night sky that governs the ocean's tides
+    and romantic poetry.
+  Categories: 0b000000

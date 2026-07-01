@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 465
   Name: Pterodactyl
-  Description: 
-  Categories: 1f000000200000001c0000001d00000026000000
+  Description: A prehistoric winged reptile that ruled the ancient upper skies during
+    the dinosaur era.
+  Categories: 1c0000001d00000026000000

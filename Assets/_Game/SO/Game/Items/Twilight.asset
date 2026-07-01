@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 170
   Name: Twilight
-  Description: 
-  Categories: 0a0000000b00000008000000
+  Description: The mysterious, brief amber hour between daytime fade and full nighttime
+    fall.
+  Categories: 08000000

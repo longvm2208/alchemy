@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 463
-  Name: PolarBear
-  Description: 
+  Name: Polar Bear
+  Description: A majestic white apex predator built to hunt seals across the shifting
+    arctic ice sheets.
   Categories: 1b000000

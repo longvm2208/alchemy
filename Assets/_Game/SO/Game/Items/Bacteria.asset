@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 152
   Name: Bacteria
-  Description: 
-  Categories: 0f00000010000000110000000a000000
+  Description: The microscopic, single-celled pioneers of life that rule the unseen
+    world.
+  Categories: 0a000000

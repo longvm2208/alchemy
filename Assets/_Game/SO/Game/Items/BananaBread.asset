@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 678
-  Name: BananaBread
-  Description: 
+  Name: Banana Bread
+  Description: A sweet, dense pastry loaf utilizing overripe bananas; a favorite
+    solution for forgotten fruit.
   Categories: 21000000

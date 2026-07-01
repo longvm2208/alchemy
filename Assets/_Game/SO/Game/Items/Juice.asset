@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 433
   Name: Juice
-  Description: 
-  Categories: 2e0000002f00000005000000
+  Description: The tasty liquid essence squeezed directly from the fresh bodies of
+    fruits or vegetables.
+  Categories: 05000000

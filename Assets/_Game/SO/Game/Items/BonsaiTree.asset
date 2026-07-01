@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 393
-  Name: BonsaiTree
-  Description: 
+  Name: Bonsai Tree
+  Description: A grand, century-old botanical giant trapped inside the optical dimensions
+    of a tiny pottery dish.
   Categories: 1100000022000000

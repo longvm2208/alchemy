@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 289
   Name: Firestation
-  Description: 
+  Description: The headquarters where public safety wizards keep big red trucks and
+    wait for emergency alerts.
   Categories: 16000000

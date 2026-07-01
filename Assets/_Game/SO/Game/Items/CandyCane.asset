@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 611
-  Name: CandyCane
-  Description: 
+  Name: Candy Cane
+  Description: A festive, hook-shaped crystalline sugar stick painted in stripes
+    of minty holiday flavor.
   Categories: 21000000

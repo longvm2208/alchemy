@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 343
   Name: Pigeon
-  Description: 
-  Categories: 190000001a0000001d000000
+  Description: A common urban avian wanderer that survived ancient career days as
+    a letter carrier.
+  Categories: 1d000000

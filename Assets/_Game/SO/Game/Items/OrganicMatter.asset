@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 222
-  Name: OrganicMatter
-  Description: 
-  Categories: 0f000000100000002000000011000000210000000a000000
+  Name: Organic Matter
+  Description: Carbon-based biological material belonging to the realm of things
+    that live, grow, or decay.
+  Categories: 0a000000

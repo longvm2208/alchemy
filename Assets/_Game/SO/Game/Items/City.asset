@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 120
   Name: City
-  Description: 
-  Categories: 1e000000240000002f0000001f00000025000000300000000e000000
+  Description: A colossal jungle of stone, steel, and flashing lights where thousands
+    of humans gather.
+  Categories: 0e000000

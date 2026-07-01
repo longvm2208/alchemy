@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 499
   Name: Woodpecker
-  Description: 
+  Description: A hyperactive avian carpenter that uses its beak like a jackhammer
+    to scan tree bark for bugs.
   Categories: 1d000000

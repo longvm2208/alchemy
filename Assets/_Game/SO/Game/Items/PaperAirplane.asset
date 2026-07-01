@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 649
-  Name: PaperAirplane
-  Description: 
-  Categories: 2c0000002d0000000f00000022000000
+  Name: Paper Airplane
+  Description: A micro-thin aerodynamic glider folded from a single paper sheet,
+    challenging wind currents.
+  Categories: 0f00000022000000

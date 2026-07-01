@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 665
   Name: Tablet
-  Description: 
+  Description: A flat slate of glass and silicon logic, acting like a giant, hand-held
+    smartphone screen.
   Categories: 1400000024000000

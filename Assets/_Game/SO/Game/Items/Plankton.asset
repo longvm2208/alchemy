@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 163
   Name: Plankton
-  Description: 
-  Categories: 09000000180000000a00000019000000
+  Description: A microscopic drifting cloud of ocean life that serves as a grand
+    buffet for underwater giants.
+  Categories: 0a000000

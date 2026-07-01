@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 172
-  Name: WindTurbine
-  Description: 
+  Name: Wind Turbine
+  Description: A modern mechanical giant with massive spinning sails that harvests
+    wind to create electricity.
   Categories: 1000000024000000

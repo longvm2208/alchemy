@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 193
-  Name: CrystalBall
-  Description: 
+  Name: Crystal Ball
+  Description: A smooth glass sphere favored by mystics to allegedly stream upcoming
+    events from the ether.
   Categories: 1800000022000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 192
   Name: Corpse
-  Description: 
+  Description: The quiet, abandoned biological vessel left behind after the life
+    spark catches a flight out.
   Categories: 25000000

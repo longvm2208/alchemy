@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Dust
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 8b4102014ce402b4b9c3fdd9446c3af8, type: 3}
+  Icon: {fileID: 21300000, guid: bfc8da815ca2098448d614f66548dbad, type: 3}
   Id: 6
   Name: Dust
-  Description: 
-  Categories: 00000000080000000100000009000000
+  Description: Fine, loose particles of earth floating in the air; basically the
+    planet's dandruff.
+  Categories: 09000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 188
   Name: Cat
-  Description: 
-  Categories: 1a0000001c0000001b0000001d000000
+  Description: A small, fuzzy apex predator that successfully convinced humanity
+    to serve its every whim.
+  Categories: 1b000000

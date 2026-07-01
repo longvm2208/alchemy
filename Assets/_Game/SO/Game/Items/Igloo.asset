@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 212
   Name: Igloo
-  Description: 
+  Description: "A cozy dome engineered out of solid blocks of frozen snow\u2014paradoxically
+    built to keep warmth in."
   Categories: 0100000016000000

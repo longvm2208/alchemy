@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 249
   Name: Wizard
-  Description: 
+  Description: A wise sage who has decoded secret formulas to manifest magic through
+    focused intent.
   Categories: 1900000026000000

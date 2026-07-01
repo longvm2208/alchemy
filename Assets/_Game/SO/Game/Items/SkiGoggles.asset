@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 233
-  Name: SkiGoggles
-  Description: 
+  Name: Ski Goggles
+  Description: Protective lenses worn to defend an alpine traveler's eyes from blinding
+    snow and high winds.
   Categories: 18000000

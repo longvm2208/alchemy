@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 232
   Name: Sickness
-  Description: 
-  Categories: 0e0000001000000014000000300000000f0000001100000015000000310000000a000000
+  Description: A temporary system error within a physical vessel, usually caused
+    by microscopic invaders.
+  Categories: 0a000000

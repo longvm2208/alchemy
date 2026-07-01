@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 623
   Name: Drunk
-  Description: 
+  Description: A mortal who has introduced far too much alcohol liquid essence into
+    their system vessel.
   Categories: 19000000

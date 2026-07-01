@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 573
   Name: Reindeer
-  Description: 
+  Description: A majestic antlered deer engineered to survive freezing arctic storms
+    and navigate snow sheets.
   Categories: 1b000000

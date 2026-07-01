@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 554
   Name: Knife
-  Description: 
+  Description: A small, sharp handheld steel blade used for cutting materials or
+    preparing kitchen organics.
   Categories: 18000000

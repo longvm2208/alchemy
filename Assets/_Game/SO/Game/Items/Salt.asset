@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 9255ca9bc4e4597479cd7d5cbfbdc678, type: 3}
   Id: 100
   Name: Salt
-  Description: 
-  Categories: 090000000a0000000600000021000000
+  Description: White crystals harvested from dried oceans, used by mortals to preserve
+    food and add flavor.
+  Categories: 0600000021000000

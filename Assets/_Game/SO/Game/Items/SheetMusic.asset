@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 715
-  Name: SheetMusic
-  Description: 
+  Name: Sheet Music
+  Description: A series of lines, bars, and geometric dots printed on paper that
+    translate directly into audio melodies.
   Categories: 14000000

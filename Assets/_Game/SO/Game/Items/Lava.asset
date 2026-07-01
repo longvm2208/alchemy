@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 9f60f9b35337bb74d81381ae8a7baa77, type: 3}
   Id: 9
   Name: Lava
-  Description: 
-  Categories: 0000000002000000050000000e0000000100000003000000060000000f000000
+  Description: Red-hot, molten rock freshly liquefied and flowing from the deep underground
+    crucible.
+  Categories: 0100000003000000

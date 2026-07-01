@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 404
-  Name: ComputerMouse
-  Description: 
+  Name: Computer Mouse
+  Description: A palm-sized plastic rodent with clickable buttons, used to navigate
+    the virtual landscape.
   Categories: 18000000

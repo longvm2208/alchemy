@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 357
   Name: Seahorse
-  Description: 
+  Description: A miniature marine equine that drifts upright through underwater kelp
+    forests.
   Categories: 23000000

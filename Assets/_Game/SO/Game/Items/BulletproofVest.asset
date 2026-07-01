@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 682
-  Name: BulletproofVest
-  Description: 
+  Name: Bulletproof Vest
+  Description: A reinforced textile armor shield engineered to catch high-speed metal
+    bullets and defend a mortal heart.
   Categories: 1e000000

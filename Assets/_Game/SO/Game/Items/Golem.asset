@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 425
   Name: Golem
-  Description: 
+  Description: An artificial sentinel sculpted from clay or stone and brought to
+    life via magical text inscriptions.
   Categories: 160000001900000026000000

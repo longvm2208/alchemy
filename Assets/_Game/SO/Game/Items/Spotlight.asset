@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 365
   Name: Spotlight
-  Description: 
+  Description: A highly intense, focused beam of artificial light engineered to demand
+    immediate human attention.
   Categories: 1800000020000000

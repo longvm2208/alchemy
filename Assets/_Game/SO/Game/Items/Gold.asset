@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 4470408f0c91b594eb3e27cc5018bb0c, type: 3}
   Id: 53
   Name: Gold
-  Description: 
-  Categories: 0d0000000e000000120000001f000000
+  Description: A shiny, non-reactive yellow metal that mortals obsess over and trade
+    fortunes for.
+  Categories: 120000001f000000

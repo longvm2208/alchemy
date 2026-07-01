@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 825087408bc8fd04abd7c1f155aead5f, type: 3}
   Id: 35
   Name: Planet
-  Description: 
-  Categories: 2d000000310000002e00000032000000030000000b000000
+  Description: A massive spherical celestial traveler spinning quietly on an orbital
+    path around a star.
+  Categories: 030000000b000000

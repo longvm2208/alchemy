@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 603
   Name: Yogurt
-  Description: 
+  Description: A creamy, tangy dairy confection forged by introducing helpful bacteria
+    to warm mammal milk.
   Categories: 21000000

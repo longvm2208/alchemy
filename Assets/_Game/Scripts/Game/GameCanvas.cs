@@ -28,7 +28,7 @@ public class GameCanvas : SingletonCanvas<GameCanvas>
 
     public void OnClickEncyclopedia()
     {
-        UIManager.Ins.Open<PopupEncyclopedia>();
+        UIManager.Ins.Open<PopupBook>();
     }
     #endregion
 }

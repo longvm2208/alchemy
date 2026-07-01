@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 09410b07a64d2e04c805682395d48340, type: 3}
   Id: 274
   Name: Coal
-  Description: 
+  Description: Black chunks of highly compressed prehistoric swamp flora that burn
+    efficiently when provoked.
   Categories: 06000000

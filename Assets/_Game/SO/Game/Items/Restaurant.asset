@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 574
   Name: Restaurant
-  Description: 
+  Description: A commercial culinary temple where hungry mortals exchange cash for
+    cooked organic meals.
   Categories: 0e000000

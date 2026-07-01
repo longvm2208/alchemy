@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 310
   Name: Hospital
-  Description: 
-  Categories: 2f000000300000003100000016000000
+  Description: A busy stone complex populated by medical wizards trying to fix damaged
+    biological vessels.
+  Categories: 16000000

@@ -1,5 +1,6 @@
 ﻿using DG.Tweening;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
@@ -113,7 +114,7 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
 
     MergeRecipe FindHintRecipe()
     {
-        Queue<ItemId> queue = new();
+        List<ItemId> targetIds = new();
         HashSet<ItemId> visited = new();
 
         foreach (var pair in targetDict)
@@ -122,20 +123,40 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
             LevelTargetState targetState = pair.Value;
             CategoryDefinition category = DatabaseManager.Ins.GetCategoryDefinition(categoryId);
 
+            Debug.Log("Find hint");
+
             for (int i = 0; i < category.Items.Length; i++)
             {
                 ItemId itemId = category.Items[i];
-                if (targetState.Collected.Contains(itemId)) continue;
+                if (targetState.Collected.Contains(itemId))
+                {
+                    visited.Add(itemId);
+                    continue;
+                }
                 if (availableItems.Contains(itemId)) continue;
-                queue.Enqueue(category.Items[i]);
+                targetIds.Add(itemId);
             }
         }
+
+        List<ItemId> startIds = new(availableItems);
+        Dictionary<ItemId, int> mergeCountDict = GetMergeCountDict(startIds);
+        
+        targetIds.Sort((a, b) => mergeCountDict[a].CompareTo(mergeCountDict[b]));
+
+        Queue<ItemId> queue = new(targetIds);
 
         while (queue.Count > 0)
         {
             ItemId itemId = queue.Dequeue();
 
             if (!DatabaseManager.Ins.TryGetRecipesFor(itemId, out List<MergeRecipe> recipes)) continue;
+
+            recipes.Sort((x, y) =>
+            {
+                int mergeCountA = mergeCountDict[x.ItemAId] + mergeCountDict[x.ItemBId];
+                int mergeCountB = mergeCountDict[y.ItemAId] + mergeCountDict[y.ItemBId];
+                return mergeCountA.CompareTo(mergeCountB);
+            });
 
             for (int i = 0; i < recipes.Count; i++)
             {
@@ -148,29 +169,59 @@ public class BoosterManager : SingletonMonoBehaviour<BoosterManager>
                 {
                     return recipe;
                 }
-                else if (availableItems.Contains(itemAId) && visited.Add(itemBId))
-                {
-                    queue.Enqueue(itemBId);
-                }
-                else if (availableItems.Contains(itemBId) && visited.Add(itemAId))
+
+                if (!availableItems.Contains(itemAId) && visited.Add(itemAId))
                 {
                     queue.Enqueue(itemAId);
                 }
-                else
+
+                if (!availableItems.Contains(itemBId) && visited.Add(itemBId))
                 {
-                    if (visited.Add(itemAId))
-                    {
-                        queue.Enqueue(itemAId);
-                    }
-                    if (visited.Add(itemBId))
-                    {
-                        queue.Enqueue(itemBId);
-                    }
+                    queue.Enqueue(itemBId);
                 }
             }
         }
 
         return null;
+    }
+
+    Dictionary<ItemId, int> GetMergeCountDict(List<ItemId> startIds)
+    {
+        MergeRecipe[] recipes = DatabaseManager.Ins.GetMergeRecipes();
+
+        Dictionary<ItemId, int> mergeCountDict = new();
+
+        for (int i = 0; i < startIds.Count; i++)
+        {
+            mergeCountDict.Add(startIds[i], 0);
+        }
+
+        HashSet<ItemId> visited = new(startIds);
+        List<ItemId> next = new();
+
+        int loop = 0;
+
+        do
+        {
+            next.Clear();
+
+            for (int i = 0; i < recipes.Length; i++)
+            {
+                MergeRecipe recipe = recipes[i];
+
+                if (!mergeCountDict.ContainsKey(recipe.ItemAId) ||
+                    !mergeCountDict.ContainsKey(recipe.ItemBId)) continue;
+
+                if (!visited.Add(recipe.ResultItemId)) continue;
+
+                next.Add(recipe.ResultItemId);
+
+                mergeCountDict[recipe.ResultItemId] = 1 + mergeCountDict[recipe.ItemAId] + mergeCountDict[recipe.ItemBId];
+            }
+
+        } while (next.Count > 0 && ++loop < 1000);
+
+        return mergeCountDict;
     }
 
     public void UpdateHint()

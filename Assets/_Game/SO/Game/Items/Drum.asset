@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 535
   Name: Drum
-  Description: 
+  Description: A hollow musical cylinder with a stretched skin surface that produces
+    deep beats when struck.
   Categories: 18000000

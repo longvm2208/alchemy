@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 260
   Name: Bone
-  Description: 
-  Categories: 1c0000001f000000200000001d000000210000001200000025000000
+  Description: A calcified, internal structural shard that remains long after the
+    soft biological vessel turns to dust.
+  Categories: 1200000025000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 109
   Name: Telescope
-  Description: 
-  Categories: 0a0000000c0000002d000000300000000b0000000d0000002e0000003100000018000000
+  Description: An optical tube utilizing aligned lenses or mirrors to bring distant
+    stars into close view.
+  Categories: 18000000

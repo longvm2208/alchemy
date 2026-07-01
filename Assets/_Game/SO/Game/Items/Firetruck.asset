@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 539
   Name: Firetruck
-  Description: 
+  Description: A massive red safety vehicle armed with loud alarms and heavy water
+    hoses to battle volatile fires.
   Categories: 27000000

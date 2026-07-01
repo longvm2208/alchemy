@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 447
   Name: Narwhal
-  Description: 
+  Description: An exotic marine mammal famously known as the unicorn of the deep
+    salt ocean.
   Categories: 23000000

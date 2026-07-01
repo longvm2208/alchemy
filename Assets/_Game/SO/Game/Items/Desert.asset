@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Desert
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 89d0c8c73dff75b409d3963ef225b1bc, type: 3}
   Id: 49
   Name: Desert
-  Description: 
-  Categories: 0300000008000000160000003100000004000000090000001700000032000000
+  Description: A sprawling, sun-baked landscape of endless sand where liquid water
+    is a myth.
+  Categories: 03000000

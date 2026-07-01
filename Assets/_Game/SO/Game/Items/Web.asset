@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 672
   Name: Web
-  Description: 
-  Categories: 14000000150000001600000018000000
+  Description: A complex geometric net woven by a spider from sticky silk threads
+    to trap airborne prey.
+  Categories: 1600000018000000

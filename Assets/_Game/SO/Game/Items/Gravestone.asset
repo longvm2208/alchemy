@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 207
   Name: Gravestone
-  Description: 
+  Description: A solid marker erected in the dirt to remind the living that someone
+    used to occupy this space.
   Categories: 0e000000140000002200000025000000

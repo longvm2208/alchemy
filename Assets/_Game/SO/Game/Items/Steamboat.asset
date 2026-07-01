@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 589
   Name: Steamboat
-  Description: 
-  Categories: 280000002900000027000000
+  Description: A heavy water cruiser propelled across rivers by a massive steam engine
+    spinning wheel.
+  Categories: 27000000

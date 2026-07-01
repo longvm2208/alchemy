@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 98
   Name: Rocket
-  Description: 
-  Categories: 2c0000002d0000002e0000002400000027000000
+  Description: An iron spire propelled by a continuous explosion, designed to breach
+    the sky and enter the void.
+  Categories: 2400000027000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 201
   Name: Farmer
-  Description: 
-  Categories: 1e000000220000002f0000001f000000230000003000000019000000
+  Description: A dedicated terrestrial steward who transmutates plain dirt and seeds
+    into vital sustenance.
+  Categories: 19000000

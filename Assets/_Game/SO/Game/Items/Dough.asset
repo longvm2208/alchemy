@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 622
   Name: Dough
-  Description: 
-  Categories: 2e0000002f0000001200000021000000
+  Description: A thick, moldable mass of flour and water that serves as the biological
+    ancestor of bread.
+  Categories: 1200000021000000

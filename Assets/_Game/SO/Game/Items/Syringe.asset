@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 664
   Name: Syringe
-  Description: 
+  Description: A hollow needle apparatus utilized by doctors to deliver liquid medicine
+    directly into biological veins.
   Categories: 18000000

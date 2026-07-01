@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 544
-  Name: FruitTree
-  Description: 
+  Name: Fruit Tree
+  Description: A mature botanical skyscraper that dedicates its energy to dropping
+    delicious, sweet treats.
   Categories: 11000000

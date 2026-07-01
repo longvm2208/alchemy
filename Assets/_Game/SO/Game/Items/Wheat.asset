@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 497
   Name: Wheat
-  Description: 
-  Categories: 220000002300000011000000
+  Description: The golden grass of civilization, harvested from vast fields to create
+    the foundation of bread.
+  Categories: 11000000

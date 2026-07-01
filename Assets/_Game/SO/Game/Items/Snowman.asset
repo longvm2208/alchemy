@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 239
   Name: Snowman
-  Description: 
-  Categories: 0b0000000c00000016000000
+  Description: A temporary winter golem sculpted from frozen stars, complete with
+    a carrot for a nose.
+  Categories: 16000000

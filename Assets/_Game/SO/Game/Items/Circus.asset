@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 686
   Name: Circus
-  Description: 
+  Description: A traveling tent spectacle filled with agile acrobats, exotic animals,
+    and dramatic performances.
   Categories: 0e000000

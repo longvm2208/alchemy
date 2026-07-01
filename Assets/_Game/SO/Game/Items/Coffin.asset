@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 533
   Name: Coffin
-  Description: 
+  Description: A quiet, plush wooden or metal box sculpted to provide a final resting
+    space for a dead vessel.
   Categories: 1500000025000000

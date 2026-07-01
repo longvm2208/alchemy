@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Continent
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bf1835d8cf9c5747a74c83f968538ef, type: 3}
   Id: 17
   Name: Continent
-  Description: 
-  Categories: 0700000031000000080000003200000003000000
+  Description: A massive tectonic chunk of land, usually carrying a handful of nations
+    on its back.
+  Categories: 03000000

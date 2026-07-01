@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 318
   Name: Leather
-  Description: 
-  Categories: 1b00000020000000250000001c000000210000002600000012000000
+  Description: Animal hide processed and tanned into a durable, flexible sheet for
+    mortal fashion and gear.
+  Categories: 12000000

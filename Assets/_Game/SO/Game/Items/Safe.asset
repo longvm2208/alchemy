@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 99
   Name: Safe
-  Description: 
-  Categories: 2f00000030000000150000001e000000
+  Description: A thick, heavy metal box built to protect gold and secrets from uninvited
+    fingers.
+  Categories: 150000001e000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 3dfb914887a65784e884438efee15782, type: 3}
   Id: 92
   Name: Mirror
-  Description: 
-  Categories: 300000003100000017000000
+  Description: A smooth, reflective glass portal that shows you exactly who is looking
+    at it.
+  Categories: 17000000

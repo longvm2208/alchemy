@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 88
   Name: Island
-  Description: 
-  Categories: 090000001d0000000a0000001e000000030000000e000000
+  Description: A lonely chunk of terrestrial ground completely surrounded and isolated
+    by water.
+  Categories: 030000000e000000

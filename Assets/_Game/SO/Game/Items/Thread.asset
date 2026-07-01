@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 490
   Name: Thread
-  Description: 
-  Categories: 250000002600000012000000
+  Description: A micro-thin strand spun from fibers, used by tailors to bind textiles
+    together.
+  Categories: 12000000

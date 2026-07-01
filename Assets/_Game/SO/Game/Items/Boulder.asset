@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 517
   Name: Boulder
-  Description: 
+  Description: A massive, exceptionally heavy chunk of solid mountain rock that refuses
+    to move easily.
   Categories: 03000000

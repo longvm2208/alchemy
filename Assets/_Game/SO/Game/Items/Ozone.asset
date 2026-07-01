@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 161
   Name: Ozone
-  Description: 
+  Description: The celestial gas shield that protects our atmosphere from the sun's
+    intense radioactive hugs.
   Categories: 0f00000012000000

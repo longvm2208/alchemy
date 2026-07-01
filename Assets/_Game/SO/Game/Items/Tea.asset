@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 595
   Name: Tea
-  Description: 
+  Description: A calming, fragrant beverage brewed by infusing dried botanical leaves
+    inside hot boiling water.
   Categories: 05000000

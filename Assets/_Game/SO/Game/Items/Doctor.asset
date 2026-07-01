@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 410
   Name: Doctor
-  Description: 
-  Categories: 100000001e0000002f00000030000000110000001f0000003100000019000000
+  Description: A licensed biological mechanic who diagnoses system errors and repairs
+    human vessels.
+  Categories: 19000000

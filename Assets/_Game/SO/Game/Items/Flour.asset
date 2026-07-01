@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 540
   Name: Flour
-  Description: 
-  Categories: 220000002e000000230000002f0000001200000021000000
+  Description: Finely pulverized wheat powder; the fundamental alchemical starting
+    point for all bread baking.
+  Categories: 1200000021000000

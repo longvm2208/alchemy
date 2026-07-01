@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 319
   Name: Lens
-  Description: 
+  Description: A curved fragment of clear glass engineered to bend light rays and
+    fix focal issues.
   Categories: 18000000

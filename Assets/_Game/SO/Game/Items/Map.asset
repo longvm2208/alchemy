@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 638
   Name: Map
-  Description: 
-  Categories: 30000000310000000e00000014000000
+  Description: A stylized graphic sketch on paper used by travelers and pirates to
+    find their coordinates.
+  Categories: 0e00000014000000

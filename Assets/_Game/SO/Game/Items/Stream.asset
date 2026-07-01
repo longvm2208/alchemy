@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 486
   Name: Stream
-  Description: 
+  Description: A continuous current of fresh water flowing through the landscape,
+    larger than a rivulet.
   Categories: 0300000004000000

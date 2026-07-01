@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 374
   Name: Tree
-  Description: 
-  Categories: 120000001e000000130000001f00000011000000
+  Description: A woody botanical skyscraper that anchors the soil, drinks groundwater,
+    and lives for centuries.
+  Categories: 11000000

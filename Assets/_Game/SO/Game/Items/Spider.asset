@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 587
   Name: Spider
-  Description: 
-  Categories: 140000001500000029000000
+  Description: A multi-legged crawler that weaves sticky geometry traps to capture
+    flying flies and moths.
+  Categories: 29000000

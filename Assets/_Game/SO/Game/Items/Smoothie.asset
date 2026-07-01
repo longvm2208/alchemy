@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 584
   Name: Smoothie
-  Description: 
+  Description: A cold, thick liquid blend of fresh fruits, ice cream, or milk shake
+    elements.
   Categories: 05000000

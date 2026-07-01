@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 118
   Name: Bell
-  Description: 
+  Description: A hollow metallic cup that rings with a resonant vibration when struck
+    by its heavy heart.
   Categories: 18000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 7281df1df51c9624db6a0535a467dd76, type: 3}
   Id: 29
   Name: Chimney
-  Description: 
-  Categories: 240000002500000016000000
+  Description: A stone or brick conduit designed to safely guide the fire's smokey
+    breath out into the sky.
+  Categories: 16000000

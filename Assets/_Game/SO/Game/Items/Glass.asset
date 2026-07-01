@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Glass
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: fcc7dc1c509fb554593ef19accc2a47d, type: 3}
   Id: 52
   Name: Glass
-  Description: 
-  Categories: 300000003100000006000000
+  Description: Silicate earth or sand melted by high heat and frozen into a clear,
+    solid sheet.
+  Categories: 06000000

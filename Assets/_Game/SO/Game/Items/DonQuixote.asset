@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 282
-  Name: DonQuixote
-  Description: 
+  Name: Don Quixote
+  Description: A delusional romantic knight famous for pick-up fights with innocent
+    agricultural windmills.
   Categories: 1900000026000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 375
   Name: Umbrella
-  Description: 
+  Description: A collapsible fabric dome carried to guard a mortal from sky water
+    or direct solar glare.
   Categories: 18000000

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: River
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9c08c5208b619a94eb228810f78215a9, type: 3}
   Id: 60
   Name: River
-  Description: 
-  Categories: 0100000004000000150000001700000028000000020000000500000016000000180000002900000003000000
+  Description: A restless, winding water highway that keeps traveling until it finds
+    a sea.
+  Categories: 0300000004000000

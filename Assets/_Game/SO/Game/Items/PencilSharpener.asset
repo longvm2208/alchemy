@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 651
-  Name: PencilSharpener
-  Description: 
+  Name: Pencil Sharpener
+  Description: A tiny mechanical blade garage engineered to restore the graphite
+    carbon point of a pencil rod.
   Categories: 18000000

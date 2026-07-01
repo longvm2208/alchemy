@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 634
   Name: Jar
-  Description: 
+  Description: A hollow glass cylinder with a tight-fitting hat, ideal for preserving
+    jam or trapping fireflies.
   Categories: 15000000

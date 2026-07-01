@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 530
-  Name: ChristmasStocking
-  Description: 
+  Name: Christmas Stocking
+  Description: A large decorative textile sock hung by the fireplace in hopes of
+    attracting holiday candies.
   Categories: 22000000

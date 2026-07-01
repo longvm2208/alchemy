@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 333
-  Name: NinjaTurtle
-  Description: 
+  Name: Ninja Turtle
+  Description: A specialized teenage reptile trained in eastern combat arts, heavily
+    driven by a diet of pizza.
   Categories: 1c00000026000000

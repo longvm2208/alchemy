@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -73,6 +74,20 @@ public class ItemDatabaseConfig : ScriptableObject
     }
 
     [Serializable]
+    class LevelsSheet
+    {
+        public LevelsSheetRow[] Rows;
+    }
+
+    [Serializable]
+    class LevelsSheetRow
+    {
+        public string Level;
+        public string Targets;
+        public string Elements;
+    }
+
+    [Serializable]
     class TableCategory
     {
         public CategoryId Category;
@@ -97,6 +112,7 @@ public class ItemDatabaseConfig : ScriptableObject
     [SerializeField] DefaultAsset itemDefinitionFolder;
     [SerializeField] DefaultAsset categoryDefinitionFolder;
     [SerializeField] DefaultAsset itemSpriteFolder;
+    [SerializeField] LevelContainer levelContainer;
     [TableList]
     [SerializeField] TableCategory[] tableCategories;
 
@@ -362,17 +378,18 @@ public class ItemDatabaseConfig : ScriptableObject
 
                     foreach (var item in items)
                     {
-                        if (Enum.TryParse(item, out ItemId itemId))
+                        string pascalCaseItem = ToPascalCase(item);
+                        if (Enum.TryParse(pascalCaseItem, out ItemId itemId))
                         {
                             itemIds.Add(itemId);
                         }
                         else
                         {
-                            Debug.LogError($"Invalid item id: {id} {item}");
+                            Debug.LogError($"Invalid item id: {id} {pascalCaseItem}");
 
-                            if (!invalid.Contains(item))
+                            if (!invalid.Contains(pascalCaseItem))
                             {
-                                invalid.Add(item);
+                                invalid.Add(pascalCaseItem);
                             }
                         }
                     }
@@ -393,6 +410,7 @@ public class ItemDatabaseConfig : ScriptableObject
             Dictionary<ItemId, ItemDefinition> itemDict = new();
             for (int i = 0; i < Items.Length; i++)
             {
+                Items[i].Categories = null;
                 itemDict.Add(Items[i].Id, Items[i]);
             }
 
@@ -402,7 +420,13 @@ public class ItemDatabaseConfig : ScriptableObject
                 {
                     ItemDefinition item = itemDict[itemId];
 
-                    List<CategoryId> categoryIds = new(item.Categories);
+                    List<CategoryId> categoryIds = new();
+
+                    if (item.Categories != null)
+                    {
+                        categoryIds.AddRange(item.Categories);
+                    }
+
                     if (!categoryIds.Contains(category.Id))
                     {
                         categoryIds.Add(category.Id);
@@ -518,6 +542,83 @@ public class ItemDatabaseConfig : ScriptableObject
     }
 
     [Button]
+    async void UpdateLevels()
+    {
+        Debug.Log("Updating...");
+
+        string url = appsScriptUrl + "?type=Levels";
+
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        await request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            string json = request.downloadHandler.text;
+            json = "{\"Rows\":" + json + "}";
+
+            var sheet = JsonUtility.FromJson<LevelsSheet>(json);
+
+            for (int i = 0; i < sheet.Rows.Length; i++)
+            {
+                LevelsSheetRow row = sheet.Rows[i];
+                LevelData level = levelContainer.Levels[i];
+
+                string[] targets = row.Targets.Split(',');
+                level.Targets = new LevelTarget[targets.Length];
+                for (int t = 0; t < targets.Length; t++)
+                {
+                    string target = targets[t];
+                    string[] parts = target.Split(':');
+                    if (Enum.TryParse(parts[0], out CategoryId categoryId) &&
+                        int.TryParse(parts[1], out int requiredAmount))
+                    {
+                        level.Targets[t] = new LevelTarget()
+                        {
+                            CategoryId = categoryId,
+                            RequiredAmount = requiredAmount
+                        };
+                    }
+                    else
+                    {
+                        Debug.LogError($"Invalid target: {target}");
+                    }
+                }
+
+                string[] elements = row.Elements.Split(",");
+                List<ItemId> itemIds = new();
+                for (int e = 0; e < elements.Length; e++)
+                {
+                    string element = elements[e];
+                    element = ToPascalCase(element);
+                    if (Enum.TryParse(element, out ItemId itemId))
+                    {
+                        itemIds.Add(itemId);
+                    }
+                    else
+                    {
+                        Debug.LogError($"Invalid item id: {element}");
+                    }
+                }
+                level.StartItems = itemIds.ToArray();
+
+                EditorUtility.SetDirty(level);
+            }
+
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+
+            Debug.Log("Load Success: " + json);
+        }
+        else
+        {
+            Debug.LogError("Load Failed: " + request.error);
+        }
+
+        Debug.Log("Update Success ");
+    }
+
+    [Button]
     void GetSpriteReferences()
     {
         Dictionary<ItemId, ItemDefinition> itemDict = new();
@@ -533,7 +634,7 @@ public class ItemDatabaseConfig : ScriptableObject
             string path = AssetDatabase.GUIDToAssetPath(guid);
             Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
             if (sprite == null) continue;
-            string spriteName = sprite.name;
+            string spriteName = SanitizeString(sprite.name);
             if (Enum.TryParse<ItemId>(spriteName, out ItemId itemId))
             {
                 ItemDefinition item = itemDict[itemId];
@@ -717,6 +818,31 @@ public class ItemDatabaseConfig : ScriptableObject
             return string.Empty;
 
         string[] words = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+        StringBuilder result = new StringBuilder();
+
+        foreach (string word in words)
+        {
+            if (word.Length == 0)
+                continue;
+
+            result.Append(char.ToUpper(word[0]));
+
+            if (word.Length > 1)
+                result.Append(word.Substring(1));
+        }
+
+        return result.ToString();
+    }
+
+    public static string SanitizeString(string input)
+    {
+        if (string.IsNullOrEmpty(input))
+            return "";
+
+        string[] words = Regex.Split(input, @"[^a-zA-Z]+")
+                .Where(x => !string.IsNullOrEmpty(x))
+                .ToArray();
 
         StringBuilder result = new StringBuilder();
 

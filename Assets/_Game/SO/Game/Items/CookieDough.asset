@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 688
-  Name: CookieDough
-  Description: 
+  Name: Cookie Dough
+  Description: A sweet, moldable matrix of flour, sugar, and butter waiting for the
+    fires of baking transformation.
   Categories: 1200000021000000

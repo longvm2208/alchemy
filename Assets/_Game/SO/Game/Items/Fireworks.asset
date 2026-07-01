@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 81
   Name: Fireworks
-  Description: 
+  Description: Colorful chemical explosions launched into the night sky to make mortals
+    say "ooh" and "aah".
   Categories: 1800000020000000

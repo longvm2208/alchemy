@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 110
   Name: Tide
-  Description: 
-  Categories: 090000000a0000000400000005000000
+  Description: The cyclic breathing of the ocean, constantly pulled back and forth
+    by the moon mirror.
+  Categories: 0400000005000000

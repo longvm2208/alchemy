@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 250
   Name: Wolf
-  Description: 
-  Categories: 1c0000001d0000001b000000
+  Description: A wild, pack-hunting canine of the deep woods that sings vocal harmonies
+    to the moon star.
+  Categories: 1b000000

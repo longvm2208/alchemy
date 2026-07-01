@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 640
-  Name: MilkShake
-  Description: 
+  Name: Milk Shake
+  Description: A thick, sweet liquid whirlwind born from blending cold ice cream
+    with fresh milk currents.
   Categories: 05000000

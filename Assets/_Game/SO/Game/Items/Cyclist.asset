@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 408
   Name: Cyclist
-  Description: 
+  Description: A balanced mortal who uses leg power to spin two wheels and travel
+    along the roadways.
   Categories: 19000000

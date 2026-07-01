@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 181
   Name: Beaver
-  Description: 
-  Categories: 1a0000001b000000
+  Description: "Nature\u2019s premier mammalian engineer, famous for building unauthorized
+    wooden dams with its teeth."
+  Categories: 1b000000

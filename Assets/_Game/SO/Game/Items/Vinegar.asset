@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 709
   Name: Vinegar
-  Description: 
+  Description: A sharp, sour acidic liquid essence born when alcohol drinks are left
+    to ferment for too long.
   Categories: 21000000

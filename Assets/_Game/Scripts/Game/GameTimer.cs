@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
+    [SerializeField] ProgressBar progressBar;
     [SerializeField] TMP_Text timeText;
     [SerializeField] float timeRemaining;
     public float TimeRemaining => timeRemaining;
 
     bool isRunning;
+    float maxTime;
 
     private void Update()
     {
@@ -24,6 +26,7 @@ public class GameTimer : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
             timeText.text = Mathf.CeilToInt(timeRemaining).ToStringCountdown();
+            progressBar.SetProgress(timeRemaining / maxTime);
         }
     }
 
@@ -32,6 +35,9 @@ public class GameTimer : MonoBehaviour
         isRunning = false;
         timeRemaining = GameConf.Ins.TimeLimits[levelIndex].Time;
         timeText.text = Mathf.CeilToInt(timeRemaining).ToStringCountdown();
+
+        maxTime = timeRemaining;
+        progressBar.SetProgress(timeRemaining / maxTime);
     }
 
     public void Play()
@@ -48,6 +54,7 @@ public class GameTimer : MonoBehaviour
     {
         timeRemaining = 60;
         timeText.text = Mathf.CeilToInt(timeRemaining).ToStringCountdown();
+        progressBar.SetProgress(timeRemaining / maxTime);
         Play();
     }
 
@@ -55,5 +62,6 @@ public class GameTimer : MonoBehaviour
     {
         timeRemaining += time;
         timeText.text = Mathf.CeilToInt(timeRemaining).ToStringCountdown();
+        progressBar.SetProgress(timeRemaining / maxTime);
     }
 }

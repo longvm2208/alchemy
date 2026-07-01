@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 474
   Name: Scythe
-  Description: 
+  Description: A long, curved agricultural blade mounted on a pole, historically
+    shared by farmers and Death.
   Categories: 18000000

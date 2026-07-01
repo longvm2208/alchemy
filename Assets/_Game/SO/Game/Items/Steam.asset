@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 3de573bc68ab4654f8573456ed54ca82, type: 3}
   Id: 15
   Name: Steam
-  Description: 
-  Categories: 00000000010000000600000002000000070000000d000000
+  Description: A dramatic mountain forge that vents subterranean wrath, ashes, and
+    molten fire.
+  Categories: 01000000020000000d000000

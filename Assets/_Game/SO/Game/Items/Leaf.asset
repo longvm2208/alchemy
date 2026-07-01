@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 438
   Name: Leaf
-  Description: 
-  Categories: 120000001300000011000000
+  Description: A thin botanical solar panel built to catch light rays and generate
+    oxygen for the world.
+  Categories: 11000000

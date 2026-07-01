@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 561
   Name: Needle
-  Description: 
-  Categories: 2100000025000000220000002600000018000000
+  Description: A micro-thin steel wire with a sharp point and a tiny eye, used by
+    tailors to guide thread.
+  Categories: 18000000

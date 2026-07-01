@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 270
   Name: Chameleon
-  Description: 
+  Description: A slow-moving lizard that rewrites its own skin pigment to blend seamlessly
+    into the scenery.
   Categories: 1b000000

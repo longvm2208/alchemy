@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Wind
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: f20662600e8feec42a108b6a74b1ffeb, type: 3}
   Id: 28
   Name: Wind
-  Description: 
-  Categories: 0100000006000000280000000200000007000000290000000d000000
+  Description: The invisible nomad of the atmosphere, constantly rushing across the
+    open landscape.
+  Categories: 020000000d000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 116
   Name: Barn
-  Description: 
-  Categories: 1b00000022000000240000002f0000001c00000023000000250000003000000016000000
+  Description: A large rustic wooden shelter designed to keep livestock and harvest
+    grain warm and safe.
+  Categories: 16000000

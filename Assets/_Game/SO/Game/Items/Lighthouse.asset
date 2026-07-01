@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 320
   Name: Lighthouse
-  Description: 
+  Description: A lonely stone tower on a cliff projecting a massive rotating light
+    to keep ships away from rocky doom.
   Categories: 1600000020000000

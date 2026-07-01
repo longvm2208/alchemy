@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 697
   Name: Mailbox
-  Description: 
+  Description: A small metal box erected outside houses to catch incoming letters
+    and paper updates from the mailman.
   Categories: 15000000

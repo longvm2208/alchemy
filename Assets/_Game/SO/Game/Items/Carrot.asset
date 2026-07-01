@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 265
   Name: Carrot
-  Description: 
+  Description: A pointy, bright orange subterranean root vegetable traditionally
+    believed to upgrade eyesight.
   Categories: 1100000021000000

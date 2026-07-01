@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 585
   Name: Snowmobile
-  Description: 
+  Description: A specialized alpine vehicle utilizing tracks and skis to fly across
+    deep frozen snow sheets.
   Categories: 27000000

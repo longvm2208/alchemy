@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 476
   Name: Seaplane
-  Description: 
+  Description: An exotic mechanical bird fitted with water shoes, capable of taking
+    flights directly from the sea.
   Categories: 27000000

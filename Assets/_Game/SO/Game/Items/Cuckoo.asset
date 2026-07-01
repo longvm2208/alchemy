@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 279
   Name: Cuckoo
-  Description: 
+  Description: A highly eccentric bird famous for hijacking other nests and living
+    inside clocks to tell the hour.
   Categories: 08000000170000001d00000024000000

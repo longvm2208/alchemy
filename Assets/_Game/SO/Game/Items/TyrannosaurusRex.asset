@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 494
-  Name: TyrannosaurusRex
-  Description: 
+  Name: Tyrannosaurus Rex
+  Description: The undisputed royal apex monster of the dinosaur era, despite possessing
+    comical front arms.
   Categories: 1c00000026000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 583
   Name: Silo
-  Description: 
+  Description: A tall, cylindrical farm tower engineered to keep vast amounts of
+    harvested grain safe and dry.
   Categories: 1500000016000000

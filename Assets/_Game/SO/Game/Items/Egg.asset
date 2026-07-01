@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 198
   Name: Egg
-  Description: 
-  Categories: 0f000000150000001600000017000000190000002000000010000000180000001a000000210000000a000000
+  Description: A fragile, calcium-shielded biological capsule holding the blueprint
+    of a future winged life.
+  Categories: 0a000000

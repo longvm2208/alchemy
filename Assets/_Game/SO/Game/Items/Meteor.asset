@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 135
   Name: Meteor
-  Description: 
-  Categories: 2d0000002e0000000b00000013000000
+  Description: A falling space stone making a dramatic entrance by burning up in
+    our atmosphere.
+  Categories: 0b00000013000000

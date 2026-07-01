@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 344
-  Name: PiggyBank
-  Description: 
+  Name: Piggy Bank
+  Description: A hollow clay or ceramic swine designed to swallow a human's loose
+    metallic change for a rainy day.
   Categories: 150000001f000000

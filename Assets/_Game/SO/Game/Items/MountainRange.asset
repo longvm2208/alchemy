@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 58
-  Name: MountainRange
-  Description: 
-  Categories: 05000000070000003100000006000000080000003200000003000000
+  Name: Mountain Range
+  Description: A colossal spine of interconnected rocky giants that divides empires
+    and touches the sky.
+  Categories: 03000000

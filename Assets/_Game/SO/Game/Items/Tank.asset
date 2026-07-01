@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 594
   Name: Tank
-  Description: 
+  Description: A heavily armored metal land fortress moving on tracks, armed with
+    a powerful cannon gun.
   Categories: 1a0000001e00000027000000

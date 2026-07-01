@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 231
   Name: Shuriken
-  Description: 
+  Description: A flat, aerodynamic metal star thrown by hidden shadows to deliver
+    a sharp message from afar.
   Categories: 1a000000

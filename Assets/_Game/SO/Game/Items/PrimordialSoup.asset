@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 95
-  Name: PrimordialSoup
-  Description: 
-  Categories: 0f000000100000000a000000
+  Name: Primordial Soup
+  Description: A warm, chaotic broth of ancient organic chemicals where the first
+    spark of life cooked.
+  Categories: 0a000000

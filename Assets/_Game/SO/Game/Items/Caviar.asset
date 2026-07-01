@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 397
   Name: Caviar
-  Description: 
-  Categories: 170000002e000000180000002f00000021000000
+  Description: A fancy, expensive gathering of black sturgeon roe, eaten by elite
+    mortals to show off wealth.
+  Categories: 21000000

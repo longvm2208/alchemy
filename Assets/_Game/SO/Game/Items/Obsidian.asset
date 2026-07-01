@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 0f44cbb9f3ad36a42816311711f1cb71, type: 3}
   Id: 24
   Name: Obsidian
-  Description: 
-  Categories: 0000000003000000010000000400000006000000
+  Description: A sleek, dark volcanic glass born from the sudden shock of liquid
+    fire meeting cool water.
+  Categories: 06000000

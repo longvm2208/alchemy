@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 256
   Name: Ash
-  Description: 
-  Categories: 00000000050000000100000006000000
+  Description: The soft, grey powdery ghost left behind on the hearth after fire
+    finishes devouring matter.
+  Categories: 06000000

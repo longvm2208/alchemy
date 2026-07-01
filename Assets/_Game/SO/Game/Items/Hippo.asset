@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 308
   Name: Hippo
-  Description: 
+  Description: A massive, short-legged river tank that looks deceptively chubby but
+    runs fast and bites hard.
   Categories: 1b000000

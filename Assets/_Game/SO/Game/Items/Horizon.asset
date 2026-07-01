@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 130
   Name: Horizon
-  Description: 
-  Categories: 0c0000002d0000000d0000002e0000000e000000
+  Description: The beautiful, shifting optical illusion where the ground seemingly
+    kisses the open sky.
+  Categories: 0e000000

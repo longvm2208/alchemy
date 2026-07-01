@@ -20,5 +20,10 @@ public class HomeCanvas : SingletonCanvas<HomeCanvas>
 	{
 		UIManager.Ins.Open<PopupSettings>();
 	}
+
+	public void OnClickBook()
+	{
+		UIManager.Ins.Open<PopupBook>();
+	}
 	#endregion
 }

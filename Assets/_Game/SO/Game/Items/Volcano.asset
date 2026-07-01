@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Volcano
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2f7bf7e5cac72f94d87d78f815a15771, type: 3}
   Id: 27
   Name: Volcano
-  Description: 
-  Categories: 020000000500000007000000030000000600000008000000010000000d00000013000000
+  Description: A dramatic mountain forge that vents subterranean wrath, ashes, and
+    molten fire.
+  Categories: 01000000030000000d00000013000000

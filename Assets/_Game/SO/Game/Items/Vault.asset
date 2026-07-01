@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 600
   Name: Vault
-  Description: 
+  Description: A heavily reinforced concrete and steel sanctuary built inside banks
+    to guard gold and cash boxes.
   Categories: 150000001e000000

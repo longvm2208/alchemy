@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 294
   Name: Fossil
-  Description: 
-  Categories: 0f000000160000001f000000100000001700000020000000030000001b00000025000000
+  Description: A ancient stone imprint or bone outline preserved by tectonic history
+    for modern scholars to study.
+  Categories: 030000001b00000025000000

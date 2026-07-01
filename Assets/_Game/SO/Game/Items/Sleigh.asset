@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 660
   Name: Sleigh
-  Description: 
+  Description: A wooden winter carriage without wheels, designed to slide effortlessly
+    over ice and snow sheets.
   Categories: 27000000

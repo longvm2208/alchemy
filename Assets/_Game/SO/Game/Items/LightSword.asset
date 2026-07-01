@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 133
-  Name: LightSword
-  Description: 
+  Name: Light Sword
+  Description: A legendary blade woven entirely from humming plasma energy, cutting
+    through any material.
   Categories: 1a00000026000000

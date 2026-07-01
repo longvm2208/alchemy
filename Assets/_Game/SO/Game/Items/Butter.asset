@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 522
   Name: Butter
-  Description: 
-  Categories: 2e0000002f00000021000000
+  Description: A creamy, churned block of dense dairy gold harvested from bovine
+    milk to upgrade bread flavor.
+  Categories: 21000000

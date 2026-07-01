@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 687
-  Name: CookieCutter
-  Description: 
+  Name: Cookie Cutter
+  Description: A geometric metal or plastic mold used by bakers to stamp out shapes
+    from soft dough matrices.
   Categories: 18000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: e68aadccb3c3d0e4ab7b8629cdf5d5b4, type: 3}
   Id: 32
   Name: Lake
-  Description: 
-  Categories: 040000000b000000150000001700000028000000050000000c00000016000000180000002900000003000000
+  Description: A calm pool of fresh water trapped entirely by land, far too large
+    to be a simple puddle.
+  Categories: 0300000004000000

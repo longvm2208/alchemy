@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 572
   Name: Rat
-  Description: 
-  Categories: 1a0000001b000000
+  Description: A highly adaptable, intelligent rodent known for navigating urban
+    tunnels and finding scraps.
+  Categories: 1b000000

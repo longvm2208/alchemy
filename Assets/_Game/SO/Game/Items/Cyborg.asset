@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 194
   Name: Cyborg
-  Description: 
+  Description: A living vessel merged with artificial hardware, walking the boundary
+    between meat and machine.
   Categories: 190000002400000028000000

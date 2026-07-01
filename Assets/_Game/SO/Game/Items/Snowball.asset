@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 238
   Name: Snowball
-  Description: 
+  Description: A handheld missile of compressed winter frost weaponized for minor
+    neighborhood skirmishes.
   Categories: 0100000002000000

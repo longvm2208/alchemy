@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 73
-  Name: BlackHole
-  Description: 
+  Name: Black Hole
+  Description: An insatiable cosmic abyss with a gravity so heavy that even light
+    cannot escape its dark throat.
   Categories: 0b000000

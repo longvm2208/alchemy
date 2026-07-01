@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 648
-  Name: PanFlute
-  Description: 
+  Name: Pan Flute
+  Description: A traditional cluster of linked wooden pipes that transmutates breath
+    into rustic melodies.
   Categories: 18000000

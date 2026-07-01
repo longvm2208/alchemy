@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 87
   Name: Hurricane
-  Description: 
-  Categories: 06000000070000000200000013000000
+  Description: A massive, raging vortex of wind and water born over tropical seas
+    to reshape coastlines.
+  Categories: 0200000013000000

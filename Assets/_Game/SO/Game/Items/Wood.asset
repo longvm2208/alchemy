@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: cdc84306a4baa9b4789da87e63e8361a, type: 3}
   Id: 498
   Name: Wood
-  Description: 
-  Categories: 120000002100000028000000130000002200000029000000
+  Description: The sturdy fibrous core of botanical skyscrapers, harvested for construction
+    and campfires.
+  Categories: 12000000

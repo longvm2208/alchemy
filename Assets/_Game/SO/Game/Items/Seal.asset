@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 475
   Name: Seal
-  Description: 
-  Categories: 1d0000001e0000001b000000
+  Description: A slick, puppy-faced marine mammal that navigates arctic waves like
+    a torpedo.
+  Categories: 1b000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 385
   Name: Zombie
-  Description: 
+  Description: A reanimated biological corpse devoid of reason or soul, driven exclusively
+    by an unholy hunger.
   Categories: 190000002500000026000000

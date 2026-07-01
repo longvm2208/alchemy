@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 507
   Name: Arrow
-  Description: 
-  Categories: 23000000240000001a000000
+  Description: A slender, aerodynamic missile with a sharp tooth, propelled from
+    a high-tension bow thread.
+  Categories: 1a000000

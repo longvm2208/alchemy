@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 284
   Name: Duck
-  Description: 
-  Categories: 190000001a0000001d000000
+  Description: A multi-terrain avian explorer capable of walking awkwardly, swimming
+    happily, and flying decently.
+  Categories: 1d000000

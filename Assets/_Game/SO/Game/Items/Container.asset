@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 405
   Name: Container
-  Description: 
-  Categories: 2f000000300000001500000017000000
+  Description: An open geometric vessel crafted specifically to hold, store, or organize
+    other materials.
+  Categories: 1500000017000000

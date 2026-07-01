@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 148
-  Name: SwimGoggles
-  Description: 
+  Name: Swim Goggles
+  Description: Mini waterproof transparent cups worn to help mortals see clearly
+    while mimicking fish.
   Categories: 18000000

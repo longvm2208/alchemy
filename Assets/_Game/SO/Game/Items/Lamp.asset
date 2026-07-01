@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 213
   Name: Lamp
-  Description: 
+  Description: A structured home built to hold and direct an artificial light source
+    upon command.
   Categories: 1700000020000000

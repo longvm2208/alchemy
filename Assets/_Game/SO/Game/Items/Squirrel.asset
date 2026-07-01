@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 588
   Name: Squirrel
-  Description: 
-  Categories: 1a0000001b000000
+  Description: A bushy-tailed tree acrobat completely obsessed with hoarding nuts
+    for the winter cold.
+  Categories: 1b000000

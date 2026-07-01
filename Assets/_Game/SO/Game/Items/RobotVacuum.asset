@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 655
-  Name: RobotVacuum
-  Description: 
+  Name: Robot Vacuum
+  Description: A compact artificial robotic insect that patrols human floors to swallow
+    dust dandruff.
   Categories: 24000000

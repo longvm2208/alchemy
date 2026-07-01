@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 215
   Name: Livestock
-  Description: 
+  Description: Useful, domesticated farm beasts kept by humans for their milk, wool,
+    or savory flesh.
   Categories: 1b000000

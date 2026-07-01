@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 641
   Name: Money
-  Description: 
+  Description: Paper sheets and metallic discs that mortals trade for resources,
+    comfort, or imaginary security.
   Categories: 080000001f000000

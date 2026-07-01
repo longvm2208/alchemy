@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 236
   Name: Snake
-  Description: 
-  Categories: 16000000170000001c000000
+  Description: A legless, sliding serpent of ancient myths that navigates the grass
+    with a flicking tongue.
+  Categories: 1c000000

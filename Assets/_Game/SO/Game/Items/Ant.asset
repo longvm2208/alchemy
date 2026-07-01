@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 388
   Name: Ant
-  Description: 
-  Categories: 140000001500000029000000
+  Description: A tiny, hyper-disciplined citizen of the dirt, capable of lifting
+    boulders relative to its size.
+  Categories: 29000000

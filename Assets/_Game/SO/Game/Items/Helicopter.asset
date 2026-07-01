@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 429
   Name: Helicopter
-  Description: 
-  Categories: 2c0000002d00000027000000
+  Description: A loud mechanical bird utilizing giant spinning ceiling blades to
+    lift vertically into the air.
+  Categories: 27000000

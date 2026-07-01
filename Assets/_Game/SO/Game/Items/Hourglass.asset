@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 86
   Name: Hourglass
-  Description: 
-  Categories: 0a0000000b0000000800000018000000
+  Description: An ancient glass device that counts the literal sands of time slipping
+    away.
+  Categories: 0800000018000000

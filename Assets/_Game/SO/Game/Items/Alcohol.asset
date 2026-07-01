@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 503
   Name: Alcohol
-  Description: 
-  Categories: 2e0000002f0000000400000005000000
+  Description: A distilled, intoxicating liquid essence that temporarily alters a
+    mortal's reality.
+  Categories: 0400000005000000

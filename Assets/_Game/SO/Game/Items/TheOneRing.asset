@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 489
-  Name: TheOneRing
-  Description: 
+  Name: The One Ring
+  Description: A dangerous golden circle forged in fire, capable of turning mortals
+    invisible and corrupting souls.
   Categories: 1f00000026000000

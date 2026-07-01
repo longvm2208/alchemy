@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 617
   Name: Cookbook
-  Description: 
+  Description: A dedicated book of culinary algorithms used by humans to avoid burning
+    their organic dinners.
   Categories: 14000000

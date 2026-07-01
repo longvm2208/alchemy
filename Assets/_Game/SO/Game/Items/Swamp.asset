@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 488
   Name: Swamp
-  Description: 
-  Categories: 01000000040000000f0000001000000011000000150000001600000002000000050000001200000017000000030000000e000000
+  Description: A humid, treacherous wetland playground where firm ground and muddy
+    waters blend into one.
+  Categories: 030000000e000000

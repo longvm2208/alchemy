@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 127
   Name: Fog
-  Description: 
+  Description: A thick, low-hanging cloud that crawled down to earth to blind travelers
+    and hide monsters.
   Categories: 02000000

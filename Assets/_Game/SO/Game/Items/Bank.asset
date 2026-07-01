@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 72
   Name: Bank
-  Description: 
+  Description: A heavily guarded stone fortress where mortals store their gold and
+    trade imaginary numbers.
   Categories: 16000000

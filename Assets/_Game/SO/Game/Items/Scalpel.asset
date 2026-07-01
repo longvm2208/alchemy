@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 473
   Name: Scalpel
-  Description: 
+  Description: A minuscule, exceptionally sharp steel blade utilized by medical wizards
+    for precise biological cuts.
   Categories: 18000000

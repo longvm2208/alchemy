@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 363
   Name: Snowboard
-  Description: 
+  Description: A single waxed wooden plank used to surf down frozen alpine slopes
+    with gravity's help.
   Categories: 27000000

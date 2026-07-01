@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 702
   Name: Paraglider
-  Description: 
+  Description: A wide fabric wing structure allowing a mortal to surf atmospheric
+    wind currents from high peaks.
   Categories: 27000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 545
   Name: Garage
-  Description: 
+  Description: A dedicated room or separate building designed to shelter sleeping
+    cars and store mechanical tools.
   Categories: 16000000

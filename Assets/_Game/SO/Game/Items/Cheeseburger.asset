@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 684
   Name: Cheeseburger
-  Description: 
+  Description: An upgraded hamburger sandwich boasting a layer of rich, gooey melted
+    dairy cheese over the meat.
   Categories: 21000000

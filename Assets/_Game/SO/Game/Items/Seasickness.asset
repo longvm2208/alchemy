@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 358
   Name: Seasickness
-  Description: 
+  Description: A miserable inner ear balance error triggered when a mortal tries
+    to walk on rolling ocean currents.
   Categories: 0a000000

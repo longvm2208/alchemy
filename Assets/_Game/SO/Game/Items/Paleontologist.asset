@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 453
   Name: Paleontologist
-  Description: 
+  Description: A specialized historical detective who uncovers fossil skeletons to
+    decode dinosaur diaries.
   Categories: 19000000

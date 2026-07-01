@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Wave
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 979feac9a4016f447b6af7270fe22167, type: 3}
   Id: 69
   Name: Wave
-  Description: 
-  Categories: 0100000004000000090000001d0000002800000002000000050000000a0000001e0000002900000007000000
+  Description: A kinetic ripple traveling across the water's surface, driven by wind
+    power.
+  Categories: 07000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 645
   Name: Newspaper
-  Description: 
+  Description: Flat paper sheets printed with text updates tracking the daily chaos
+    of the human world.
   Categories: 1200000014000000

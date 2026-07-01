@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 694
   Name: Librarian
-  Description: 
+  Description: A quiet guardian of text temples who organizes thousands of book volumes
+    and shushes noisy mortals.
   Categories: 19000000

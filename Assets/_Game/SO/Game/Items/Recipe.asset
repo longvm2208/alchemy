@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 654
   Name: Recipe
-  Description: 
+  Description: A step-by-step alchemical equation guiding a cook on how to accurately
+    assemble an organic meal.
   Categories: 14000000

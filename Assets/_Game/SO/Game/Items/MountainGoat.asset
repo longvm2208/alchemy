@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 446
-  Name: MountainGoat
-  Description: 
+  Name: Mountain Goat
+  Description: An absolute gravity-defying beast capable of standing on vertical
+    mountain rock faces.
   Categories: 1b000000

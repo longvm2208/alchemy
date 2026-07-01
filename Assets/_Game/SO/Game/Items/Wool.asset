@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 500
   Name: Wool
-  Description: 
-  Categories: 1b00000020000000250000001c000000210000002600000012000000
+  Description: The thick, fluffy cloud coat shorn from sheep to manufacture cozy
+    winter sweaters.
+  Categories: 12000000

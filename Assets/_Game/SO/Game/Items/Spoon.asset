@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 662
   Name: Spoon
-  Description: 
+  Description: A small metallic shovel optimized for lifting liquid soups or ice
+    cream safely into mouths.
   Categories: 18000000

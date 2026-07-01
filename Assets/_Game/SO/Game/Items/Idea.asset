@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 211
   Name: Idea
-  Description: 
+  Description: A sudden, illuminating spark of lightning that flashes inside the
+    dark matrix of a brain.
   Categories: 14000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 560
   Name: Motorcycle
-  Description: 
+  Description: A high-speed, two-wheeled iron chariot propelled by a noisy combustion
+    engine heart.
   Categories: 27000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 683
   Name: Candle
-  Description: 
+  Description: A slender stick of molded wax holding a simple cotton thread, providing
+    a small, flickering fire spark.
   Categories: 1800000020000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 675
   Name: Writer
-  Description: 
+  Description: A thought alchemist who arranges text characters on paper sheets to
+    manifest stories.
   Categories: 19000000

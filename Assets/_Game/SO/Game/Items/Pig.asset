@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 224
   Name: Pig
-  Description: 
-  Categories: 1b0000001c000000
+  Description: A heavy, mud-loving quadruped that transmutates simple farm scraps
+    into delicious bacon.
+  Categories: 1b000000

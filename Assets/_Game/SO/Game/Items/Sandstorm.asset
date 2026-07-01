@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Sandstorm
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 7acdaa936e23e274bb3b2c499e5b66a8, type: 3}
   Id: 63
   Name: Sandstorm
-  Description: 
-  Categories: 080000003100000009000000320000000200000013000000
+  Description: A blinding, golden vortex of high-speed wind that temporarily devours
+    the desert sun.
+  Categories: 0200000013000000

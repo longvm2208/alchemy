@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 566
   Name: Penicillin
-  Description: 
-  Tier: 0
+  Description: A miraculous biological defense shield harvested from mold to destroy
+    harmful bacteria invaders.
+  Categories: 

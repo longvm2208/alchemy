@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 182
   Name: Bird
-  Description: 
-  Categories: 190000001f0000001a000000200000001d000000
+  Description: A winged spirit of the upper ether, bridging the terrestrial world
+    and the open heavens.
+  Categories: 1d000000

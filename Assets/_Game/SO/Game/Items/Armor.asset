@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 605
   Name: Armor
-  Description: 
-  Categories: 2300000025000000260000002c00000024000000270000002d000000180000001e000000
+  Description: A heavy iron plate suit engineered to turn a warrior into a walking,
+    unyielding fortress.
+  Categories: 180000001e000000

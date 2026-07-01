@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 312
   Name: Ice
-  Description: 
-  Categories: 0b0000000c00000001000000
+  Description: Solidified water resulting from the complete extraction of heat; nature's
+    coldest brick.
+  Categories: 01000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 602
   Name: Witch
-  Description: 
+  Description: A magical woman who brews potions in cauldrons and flies across the
+    night sky on a broom.
   Categories: 1900000026000000

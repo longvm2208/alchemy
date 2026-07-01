@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 164
   Name: Robot
-  Description: 
+  Description: An artificial golem made of iron, silicon, and logic, mimicking life
+    without possessing a soul.
   Categories: 2400000028000000

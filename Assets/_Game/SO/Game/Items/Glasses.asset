@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 84
   Name: Glasses
-  Description: 
-  Categories: 300000003100000018000000
+  Description: Dual transparent lenses mounted on a frame to upgrade a mortal's flawed
+    eyesight.
+  Categories: 18000000

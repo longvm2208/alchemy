@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 604
   Name: Apron
-  Description: 
+  Description: A protective textile shield tied over a mortal's clothes to guard
+    against cooking chaos.
   Categories: 1e000000

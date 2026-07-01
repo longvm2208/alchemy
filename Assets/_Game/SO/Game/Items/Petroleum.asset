@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 459
   Name: Petroleum
-  Description: 
-  Categories: 0e0000000f00000012000000
+  Description: Black gold; the highly volatile subterranean fluid that fuels modern
+    human mobility.
+  Categories: 12000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 137
   Name: Paint
-  Description: 
+  Description: A colorful liquid mineral mixture used by mortals to coat surfaces
+    in shade and expression.
   Categories: 1200000022000000

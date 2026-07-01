@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 577
   Name: Sack
-  Description: 
+  Description: A large bag woven from coarse fabric or plastic, ideal for holding
+    heavy field crops or coal.
   Categories: 15000000

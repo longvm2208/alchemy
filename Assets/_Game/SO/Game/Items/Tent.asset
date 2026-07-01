@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 666
   Name: Tent
-  Description: 
+  Description: A collapsible fabric shell carried by nomadic travelers to erect a
+    brief wilderness sanctuary.
   Categories: 1e000000

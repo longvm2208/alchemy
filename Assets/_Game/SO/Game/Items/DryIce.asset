@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 414
-  Name: DryIce
-  Description: 
+  Name: Dry Ice
+  Description: Solid carbon dioxide so exceptionally cold that it forgets to melt
+    and turns directly into smoke.
   Categories: 0100000012000000

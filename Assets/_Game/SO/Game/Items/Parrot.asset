@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 456
   Name: Parrot
-  Description: 
+  Description: A highly colorful tropical avian mimic capable of stealing human words
+    and pirate phrases.
   Categories: 1d000000

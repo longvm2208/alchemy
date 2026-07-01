@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 306
   Name: Hammer
-  Description: 
-  Categories: 210000002200000018000000
+  Description: A heavy metallic block mounted on a handle, engineered to drive nails
+    or smash stubborn obstacles.
+  Categories: 18000000

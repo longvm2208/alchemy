@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: f4842ff72f656f547a4c3638dc008b99, type: 3}
   Id: 225
   Name: Plant
-  Description: 
-  Categories: 1100000012000000
+  Description: A silent botanical miracle that drinks sunlight and breathes out fresh
+    atmosphere.
+  Categories: 11000000

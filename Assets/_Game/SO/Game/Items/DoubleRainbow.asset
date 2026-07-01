@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 122
-  Name: DoubleRainbow
-  Description: 
+  Name: Double Rainbow
+  Description: A rare, spectacular celestial optical miracle so intense it might
+    make a mortal cry.
   Categories: 020000001300000020000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 656
   Name: Rock
-  Description: 
-  Categories: 00000000030000000500000007000000080000000d0000001f000000010000000400000006000000090000000e00000020000000
+  Description: A solid, generic fragment of planetary crust formed over eons by tectonic
+    pressure.
+  Categories: 03000000

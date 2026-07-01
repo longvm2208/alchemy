@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 187
   Name: Camel
-  Description: 
-  Categories: 080000001b000000090000001c00000027000000
+  Description: The ultimate, humped desert walking vehicle designed to navigate sand
+    without needing a water refill.
+  Categories: 1b00000027000000

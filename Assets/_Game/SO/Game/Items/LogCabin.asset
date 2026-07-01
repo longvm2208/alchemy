@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 556
-  Name: LogCabin
-  Description: 
+  Name: Log Cabin
+  Description: A rustic, cozy wilderness home engineered completely out of stacked
+    forest tree trunks.
   Categories: 16000000

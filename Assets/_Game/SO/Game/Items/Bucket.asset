@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 520
   Name: Bucket
-  Description: 
+  Description: An open metal or plastic vessel with a handle, ideal for moving liquids
+    or building beach sand castles.
   Categories: 15000000

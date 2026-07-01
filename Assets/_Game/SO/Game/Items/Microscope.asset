@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 219
   Name: Microscope
-  Description: 
-  Categories: 300000003100000018000000
+  Description: An aligned tube of powerful lenses that blows up tiny bacteria to
+    look like massive giants.
+  Categories: 18000000

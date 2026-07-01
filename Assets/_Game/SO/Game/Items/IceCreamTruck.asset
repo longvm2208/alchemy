@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 632
-  Name: IceCreamTruck
-  Description: 
+  Name: Ice Cream Truck
+  Description: A noisy, musical urban vehicle that travels streets distributing frozen
+    dairy confections to kids.
   Categories: 27000000

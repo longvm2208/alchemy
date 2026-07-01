@@ -15,5 +15,5 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 639e09cd0676f5c4e879b2e27b4a39c0, type: 3}
   Id: 16
   Name: Brick
-  Description: 
-  Categories: 0300000024000000040000002500000012000000
+  Description: Earth-mud baked until solid; the geometric starting point of all architectures.
+  Categories: 12000000

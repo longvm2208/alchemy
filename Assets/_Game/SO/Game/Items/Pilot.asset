@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 460
   Name: Pilot
-  Description: 
-  Categories: 2c0000002f0000002d0000003000000019000000
+  Description: A trained atmospheric navigator who steers massive metal airplanes
+    through the upper sky.
+  Categories: 19000000

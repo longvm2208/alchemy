@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 313
   Name: Iceberg
-  Description: 
-  Categories: 090000000b0000001d0000000a0000000c0000001e00000003000000
+  Description: A colossal, floating mountain of prehistoric ice that hides ninety
+    percent of its mass below the tide.
+  Categories: 03000000

@@ -67,6 +67,7 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
         ItemId[] startItems = LevelManager.Ins.CurrentLevel.StartItems;
         for (int i = 0; i < startItems.Length; i++)
         {
+            if (!GamePref.Ins.DiscoveredItems.Contains(startItems[i])) continue;
             availableItems.Add(startItems[i]);
         }
 
@@ -122,6 +123,8 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
     {
         if (DatabaseManager.Ins.TryGetRecipes(itemViewA.Id, itemViewB.Id, out List<MergeRecipe> recipes))
         {
+            GameTut.Ins.NextMergeStep();
+
             RemoveItem(itemViewA);
             RemoveItem(itemViewB);
 
@@ -217,6 +220,8 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             itemViewB.Destroy();
         });
 
+        seq.AppendInterval(0.25f);
+
         for (int i = 0; i < resultItems.Count; i++)
         {
             if (i == 0)
@@ -286,7 +291,10 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
             if (GamePref.Ins.DiscoveredItems.Contains(recipe.ResultItemId))
             {
                 CheckCollectTarget(result, resultItem);
-                CheckWin(1);
+                if (result.IsTarget)
+                {
+                    CheckWin(1.5f);
+                }
             }
             else
             {
@@ -296,18 +304,21 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
                 UIManager.Ins.Open<PopupNewItem>().Init(recipe.ResultItemId).OnClose(() =>
                 {
                     CheckCollectTarget(result, resultItem);
-                    CheckWin(0.25f);
+                    if (result.IsTarget)
+                    {
+                        CheckWin(1);
+                    }
                 });
             }
         }
     }
-    
+
     void CheckCollectTarget(MergeResult result, ItemView resultItem)
     {
         if (result.IsTarget)
         {
             RemoveItem(resultItem);
-            resultItem.Remove(false);
+            resultItem.Remove();
 
             ItemId resultItemId = result.Recipe.ResultItemId;
             Vector3 pos = resultItem.rect.position;
@@ -341,4 +352,16 @@ public class BoardManager : SingletonMonoBehaviour<BoardManager>
 
         BoosterManager.Ins.UpdateHint();
     }
+
+    #region GameTut
+    public ItemView GetItem1()
+    {
+        return itemViews[0];
+    }
+
+    public ItemView GetItem2()
+    {
+        return itemViews[1];
+    }
+    #endregion
 }

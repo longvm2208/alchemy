@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 673
   Name: Wine
-  Description: 
-  Categories: 2e0000002f00000005000000
+  Description: An elegant distilled liquid essence born from the patient fermentation
+    of juicy grape fruit bodies.
+  Categories: 05000000

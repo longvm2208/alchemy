@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 252
   Name: Algae
-  Description: 
-  Categories: 11000000180000001200000019000000
+  Description: Simple aquatic green scum that acts as the ancient, underwater ancestor
+    of all land plants.
+  Categories: 11000000

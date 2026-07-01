@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: c4bb63b44198e2c4c994ce960d1a58f1, type: 3}
   Id: 1
   Name: Air
-  Description: 
-  Categories: 2c0000002d000000
+  Description: An invisible blend of gases that creates the vital atmosphere surrounding
+    our world.
+  Categories: 

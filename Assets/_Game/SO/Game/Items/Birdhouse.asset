@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 259
   Name: Birdhouse
-  Description: 
+  Description: A small, cozy wooden apartment built in trees to offer free real estate
+    to local feathered friends.
   Categories: 16000000

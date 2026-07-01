@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 543
-  Name: FrenchFries
-  Description: 
+  Name: French Fries
+  Description: Golden, salted sticks of potato cut and fried to absolute crispy perfection.
   Categories: 21000000

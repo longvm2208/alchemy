@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 437
-  Name: LawnMower
-  Description: 
+  Name: Lawn Mower
+  Description: A mechanical chariot with spinning blades built to give overgrown
+    lawns a clean haircut.
   Categories: 24000000

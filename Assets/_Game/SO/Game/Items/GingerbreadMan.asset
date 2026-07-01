@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 692
-  Name: GingerbreadMan
-  Description: 
+  Name: Gingerbread Man
+  Description: A tiny, spiced cookie golem baked into a human silhouette, famously
+    prone to running away fast.
   Categories: 2100000026000000

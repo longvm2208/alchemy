@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 521
   Name: Bus
-  Description: 
+  Description: A massive public metal chariot designed to gather dozens of mortals
+    and move them along asphalt.
   Categories: 27000000

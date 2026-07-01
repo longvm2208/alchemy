@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 396
   Name: Cauldron
-  Description: 
+  Description: A large iron brewing basin favored by witches and alchemists for crafting
+    magical liquid solutions.
   Categories: 15000000

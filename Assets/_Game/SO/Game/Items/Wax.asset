@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 671
   Name: Wax
-  Description: 
+  Description: A moldable, non-reactive solid harvested from beehives or petroleum,
+    famously used to forge candles.
   Categories: 12000000

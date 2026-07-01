@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 390
   Name: Bee
-  Description: 
-  Categories: 1300000014000000150000001600000029000000
+  Description: A flying black-and-yellow pilot that cross-pollinates blossoms and
+    manufactures liquid gold.
+  Categories: 29000000

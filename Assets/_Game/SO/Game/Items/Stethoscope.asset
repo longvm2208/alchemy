@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 367
   Name: Stethoscope
-  Description: 
+  Description: A flexible listening apparatus utilized by medical wizards to amplify
+    the internal rhythm of a heart.
   Categories: 18000000

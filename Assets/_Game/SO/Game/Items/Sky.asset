@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 102
   Name: Sky
-  Description: 
-  Categories: 060000000a0000000c000000190000002c000000070000000b0000000d0000001a0000002d0000000f000000
+  Description: The vast, blue canvas above our heads where clouds drift and stars
+    hide during the day.
+  Categories: 0b0000000f000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 322
   Name: Liquid
-  Description: 
-  Categories: 0e0000000f0000000c000000
+  Description: A shape-shifting state of matter that flows easily, fills containers,
+    and respects gravity.
+  Categories: 0c000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 146
-  Name: StunGun
-  Description: 
+  Name: Stun Gun
+  Description: A handheld shock device that delivers a non-lethal buzz of electricity
+    to freeze muscles.
   Categories: 1a000000

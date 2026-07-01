@@ -1,5 +1,6 @@
 public class GamePref : PrefBase<GamePref>
 {
+    public bool IsMergeTut;
     public int LevelIndex;
     public SerializableHashSet<ItemId> DiscoveredItems;
     public SerializableHashSet<int> DiscoveredRecipes;
@@ -11,8 +12,16 @@ public class GamePref : PrefBase<GamePref>
     {
         base.Init();
 
+        IsMergeTut = true;
         LevelIndex = 0;
-        DiscoveredItems = new SerializableHashSet<ItemId>();
+        DiscoveredItems = new SerializableHashSet<ItemId>()
+        {
+            ItemId.Air,
+            ItemId.Earth,
+            ItemId.Fire,
+            ItemId.Water,
+            ItemId.Time,
+        };
         DiscoveredRecipes = new SerializableHashSet<int>();
         CoinCount = 0;
         HintCount = 1;

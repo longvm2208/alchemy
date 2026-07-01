@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 483
   Name: Statue
-  Description: 
+  Description: A frozen monument sculpted out of solid stone or metal to preserve
+    a form for eternity.
   Categories: 1600000017000000

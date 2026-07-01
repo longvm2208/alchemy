@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 690
   Name: Email
-  Description: 
+  Description: Digital letters transmitted instantly through the global internet
+    spiderweb instead of paper sacks.
   Categories: 1400000015000000

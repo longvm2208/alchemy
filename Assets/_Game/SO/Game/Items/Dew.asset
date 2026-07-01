@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 195
   Name: Dew
-  Description: 
-  Categories: 01000000040000000200000005000000
+  Description: Tiny, pristine liquid jewels deposited on plants by the cool breath
+    of the early morning.
+  Categories: 04000000

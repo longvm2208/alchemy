@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 538
   Name: Fireplace
-  Description: 
+  Description: A structured stone hearth built inside a house to safely contain warm,
+    cozy wood flames.
   Categories: 1600000017000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 406
   Name: Cook
-  Description: 
+  Description: A kitchen alchemist who skillfully manipulates fire and raw organics
+    to generate delicious meals.
   Categories: 19000000

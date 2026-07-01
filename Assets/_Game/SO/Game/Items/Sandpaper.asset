@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 659
   Name: Sandpaper
-  Description: 
+  Description: A rough scratchy sheet coated in pulverized sand dust, used to polish
+    stubborn wood textures.
   Categories: 18000000

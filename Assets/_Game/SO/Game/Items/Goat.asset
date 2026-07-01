@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 300
   Name: Goat
-  Description: 
-  Categories: 1b0000001c000000
+  Description: A stubborn, sure-footed mountain climber capable of chewing through
+    almost any material on Earth.
+  Categories: 1b000000

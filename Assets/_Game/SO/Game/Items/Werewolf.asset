@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 381
   Name: Werewolf
-  Description: 
+  Description: A cursed human who undergoes a dramatic canine transmutation whenever
+    the full moon mirror shows up.
   Categories: 190000001b00000026000000

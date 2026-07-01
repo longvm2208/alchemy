@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 378
   Name: Vegetable
-  Description: 
-  Categories: 22000000230000001100000021000000
+  Description: Edible plant components harvested from fields to deliver clean, vitamin-rich
+    nutrition.
+  Categories: 1100000021000000

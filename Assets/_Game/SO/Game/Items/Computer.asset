@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 275
   Name: Computer
-  Description: 
-  Categories: 2b000000300000002c000000310000001400000024000000
+  Description: A complex logical canvas of silicon and copper circuits built to calculate
+    numbers and display memes.
+  Categories: 1400000024000000

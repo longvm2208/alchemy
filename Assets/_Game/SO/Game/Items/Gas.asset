@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 298
   Name: Gas
-  Description: 
+  Description: A free-spirited state of matter where atoms refuse to bind and instead
+    fill whatever space is open.
   Categories: 0c000000

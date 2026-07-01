@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 619
   Name: Crayon
-  Description: 
+  Description: A small cylinder of pigmented wax used by tiny humans to color the
+    walls and paper sheets.
   Categories: 18000000

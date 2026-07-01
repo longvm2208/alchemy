@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 625
-  Name: FlyingSquirrel
-  Description: 
+  Name: Flying Squirrel
+  Description: A nimble tree-dwelling acrobat that uses a built-in skin parachute
+    to glide across forest branches.
   Categories: 1b000000

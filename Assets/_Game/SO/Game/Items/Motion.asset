@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 330
   Name: Motion
-  Description: 
+  Description: The fundamental act of changing physical coordinates across the universe;
+    the enemy of stillness.
   Categories: 07000000

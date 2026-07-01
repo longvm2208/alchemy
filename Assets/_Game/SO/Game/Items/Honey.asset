@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 550
   Name: Honey
-  Description: 
-  Categories: 13000000140000002e000000150000002f00000021000000
+  Description: A sweet, golden liquid reward manufactured by flying insects from
+    the nectar of colorful blossoms.
+  Categories: 21000000

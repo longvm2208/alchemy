@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Smoke
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 63d817eff545cdf448df222b94ce0f35, type: 3}
+  Icon: {fileID: 21300000, guid: 3690c7ad19f0cf44c86ed2287bd0ba36, type: 3}
   Id: 14
   Name: Smoke
-  Description: 
-  Categories: 00000000010000000600000002000000070000000f000000
+  Description: A solid, hardened chunk of rock shaped over time by the planet's tectonic
+    forces.
+  Categories: 0f000000

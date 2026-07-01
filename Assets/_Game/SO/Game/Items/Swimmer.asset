@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 243
   Name: Swimmer
-  Description: 
+  Description: A mortal who has successfully learned to move efficiently through
+    water without sinking like a stone.
   Categories: 19000000

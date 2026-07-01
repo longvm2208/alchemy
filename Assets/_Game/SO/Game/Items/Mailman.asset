@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 698
   Name: Mailman
-  Description: 
+  Description: A persistent postal traveler who walks the neighborhoods to deliver
+    letters and wrapped gift packages.
   Categories: 19000000

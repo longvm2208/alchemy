@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: eb54726dcdf66ad45945214ca52e42e2, type: 3}
   Id: 264
-  Name: CarbonDioxide
-  Description: 
+  Name: Carbon Dioxide
+  Description: The invisible breath exhaled by animals, eagerly captured by plants
+    to fuel their green magic.
   Categories: 0f00000012000000

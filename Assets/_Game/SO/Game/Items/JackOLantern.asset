@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 432
-  Name: JackOLantern
-  Description: 
+  Name: Jack-o'-lantern
+  Description: A hollowed-out orange pumpkin sculpted with a spooky face and illuminated
+    by a flame spark.
   Categories: 22000000

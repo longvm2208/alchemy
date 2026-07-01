@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 190
   Name: Cold
-  Description: 
-  Categories: 0b0000000c00000001000000
+  Description: The slow, quiet absence of thermal energy that makes atoms freeze
+    and mortals shiver.
+  Categories: 01000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 107
-  Name: SwimmingPool
-  Description: 
+  Name: Swimming Pool
+  Description: A structured, artificial basin of clear water built for mortals to
+    mimic fish.
   Categories: 040000000e000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 562
   Name: Paper
-  Description: 
-  Categories: 1200000030000000130000003100000018000000
+  Description: Thin, flat sheets made from processed wood fibers, built to store
+    information or sketches.
+  Categories: 1200000018000000

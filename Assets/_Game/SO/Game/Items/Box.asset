@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 610
   Name: Box
-  Description: 
-  Categories: 2f0000003000000015000000
+  Description: A hollow geometric cardboard or wooden cube constructed specifically
+    to hold other treasures.
+  Categories: 15000000

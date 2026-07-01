@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 287
-  Name: ElectricEel
-  Description: 
+  Name: Electric Eel
+  Description: A slippery underwater serpent capable of weaponizing its own battery
+    pack to shock nosy neighbors.
   Categories: 1000000023000000

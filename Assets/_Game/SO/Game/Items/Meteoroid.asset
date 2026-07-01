@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 91
   Name: Meteoroid
-  Description: 
+  Description: A rogue cosmic stone drifting through the void, waiting to catch fire
+    in an atmosphere.
   Categories: 030000000b000000

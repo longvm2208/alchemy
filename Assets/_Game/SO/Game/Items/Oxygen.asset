@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: f46ad78bf6a8b134984adcafab15e413, type: 3}
   Id: 338
   Name: Oxygen
-  Description: 
+  Description: The invisible celestial gas that fuels every breath of life and keeps
+    fires burning.
   Categories: 0f00000012000000

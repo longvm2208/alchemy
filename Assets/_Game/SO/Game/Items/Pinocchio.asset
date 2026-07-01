@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 567
   Name: Pinocchio
-  Description: 
+  Description: A living wooden puppet whose nose expands whenever he chooses to rewrite
+    the truth.
   Categories: 160000001900000026000000

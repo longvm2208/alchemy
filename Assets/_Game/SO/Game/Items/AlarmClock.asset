@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 174
-  Name: AlarmClock
-  Description: 
+  Name: Alarm Clock
+  Description: A mechanical noise hazard engineered to brutally tear mortals away
+    from their dreams.
   Categories: 0800000018000000

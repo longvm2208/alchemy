@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 415
   Name: Duckling
-  Description: 
+  Description: A fluffy, yellow junior avian explorer that follows its mother's wake
+    in perfect alignment.
   Categories: 1d000000

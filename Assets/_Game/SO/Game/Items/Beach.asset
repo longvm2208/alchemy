@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Beach
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3862dba75272a5348b8128abb44ae747, type: 3}
   Id: 44
   Name: Beach
-  Description: 
-  Categories: 08000000180000000900000019000000030000000e000000
+  Description: The relaxing, sandy border where the solid earth meets the restless
+    waves.
+  Categories: 030000000e000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 377
   Name: Vampire
-  Description: 
+  Description: An immortal aristocrat of the dark hours who stays out of sunlight
+    and sustains life via mortal blood veins.
   Categories: 1900000026000000

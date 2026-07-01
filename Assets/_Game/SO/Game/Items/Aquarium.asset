@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 70
   Name: Aquarium
-  Description: 
+  Description: A transparent glass cage built to hold a miniature piece of the ocean
+    inside a human room.
   Categories: 150000001700000022000000

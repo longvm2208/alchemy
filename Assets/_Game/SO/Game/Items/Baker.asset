@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 677
   Name: Baker
-  Description: 
+  Description: A culinary alchemist specializing in turning powdery flour and water
+    dough into warm bread.
   Categories: 19000000

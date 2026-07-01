@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 384
   Name: Windsurfer
-  Description: 
+  Description: A single water board fitted with a sail, allowing a human to surf
+    the waves using wind power.
   Categories: 19000000

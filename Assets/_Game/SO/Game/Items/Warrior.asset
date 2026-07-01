@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 247
   Name: Warrior
-  Description: 
+  Description: A mortal soul trained in the arts of combat, armed to defend structures
+    or conquer lands.
   Categories: 19000000

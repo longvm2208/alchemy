@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 180
   Name: Astronomer
-  Description: 
+  Description: A mortal scholar who stays up all night staring through long tubes
+    at burning cosmic furnaces.
   Categories: 19000000

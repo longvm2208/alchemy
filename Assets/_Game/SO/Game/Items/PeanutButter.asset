@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 563
-  Name: PeanutButter
-  Description: 
+  Name: Peanut Butter
+  Description: A dense, rich and creamy spread manufactured by grinding up crunchy
+    roasted peanuts.
   Categories: 21000000

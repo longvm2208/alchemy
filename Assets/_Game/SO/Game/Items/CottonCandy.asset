@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 618
-  Name: CottonCandy
-  Description: 
+  Name: Cotton Candy
+  Description: A fluffy, pink cloud of pure airborne sugar spun onto a stick at festive
+    human gatherings.
   Categories: 21000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 112
   Name: Village
-  Description: 
-  Categories: 1e000000240000002f0000001f00000025000000300000000e000000
+  Description: A cozy, quiet cluster of human homes where mortals live in harmony
+    with the soil.
+  Categories: 0e000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 74
   Name: Blender
-  Description: 
+  Description: A mechanical vortex with spinning blades designed to violently turn
+    solid foods into mush.
   Categories: 18000000

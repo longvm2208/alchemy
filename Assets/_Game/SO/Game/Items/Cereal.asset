@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 527
   Name: Cereal
-  Description: 
+  Description: Processed field grain flakes traditionally combined with cold milk
+    to fuel a mortal's morning.
   Categories: 21000000

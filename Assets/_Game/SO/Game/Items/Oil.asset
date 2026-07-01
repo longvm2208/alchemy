@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: f001cc9eaf4e7c4499960927f9634004, type: 3}
   Id: 451
   Name: Oil
-  Description: 
-  Categories: 0e0000000f00000021000000
+  Description: A slippery, energy-dense liquid asset extracted from the deep subterranean
+    crust.
+  Categories: 21000000

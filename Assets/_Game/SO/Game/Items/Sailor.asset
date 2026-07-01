@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 227
   Name: Sailor
-  Description: 
+  Description: A persistent voyager who spends life reading wind currents and dancing
+    with the open sea tides.
   Categories: 19000000

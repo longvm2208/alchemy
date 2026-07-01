@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 464
   Name: Potato
-  Description: 
+  Description: A modest, underground organic tuber that can be transmutated into
+    delicious golden fries.
   Categories: 21000000

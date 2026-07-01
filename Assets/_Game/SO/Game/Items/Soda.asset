@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 481
   Name: Soda
-  Description: 
+  Description: A sugary, artificially colored liquid beverage infused with thousands
+    of buzzing gas bubbles.
   Categories: 05000000

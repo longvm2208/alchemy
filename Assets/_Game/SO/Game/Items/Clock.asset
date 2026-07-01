@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 153
   Name: Clock
-  Description: 
-  Categories: 0a000000300000000b000000310000000800000017000000
+  Description: A mechanical or digital wheel of time that keeps mortals strictly
+    on schedule.
+  Categories: 0800000017000000

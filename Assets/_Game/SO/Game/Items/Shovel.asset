@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 582
   Name: Shovel
-  Description: 
+  Description: A flat iron blade mounted on a long handle, engineered for digging
+    soil or moving heavy sand.
   Categories: 18000000

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 693
-  Name: HotChocolate
-  Description: 
+  Name: Hot Chocolate
+  Description: A rich, steaming winter beverage forged by introducing dark chocolate
+    confection to boiling milk.
   Categories: 0100000005000000

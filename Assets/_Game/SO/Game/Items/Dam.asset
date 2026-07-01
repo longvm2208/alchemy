@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Dam
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 3df64ce5c96a24947a8702c4990c00ee, type: 3}
   Id: 48
   Name: Dam
-  Description: 
+  Description: A monumental concrete shield engineered to hold back the immense kinetic
+    push of a river.
   Categories: 16000000

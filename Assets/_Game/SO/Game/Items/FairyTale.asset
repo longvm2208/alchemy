@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 417
-  Name: FairyTale
-  Description: 
+  Name: Fairy Tale
+  Description: A classic narrative vessel filled with magic, talking wolves, and
+    predictable happy endings.
   Categories: 26000000

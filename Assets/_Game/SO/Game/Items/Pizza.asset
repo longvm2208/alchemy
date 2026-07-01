@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 652
   Name: Pizza
-  Description: 
-  Categories: 2e0000002f00000021000000
+  Description: A great, baked dough disk painted with tomato sauce and completely
+    buried under a melted cheese cloud.
+  Categories: 21000000

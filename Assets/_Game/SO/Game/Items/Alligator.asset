@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 253
   Name: Alligator
-  Description: 
-  Categories: 15000000160000001c000000170000001d000000
+  Description: A prehistoric, armor-plated river lizard optimized for floating silently
+    and biting heavily.
+  Categories: 1c000000

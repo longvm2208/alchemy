@@ -11,6 +11,8 @@ public class GameConf : ConfBase<GameConf>
     public int RevivePrice;
     public int ReviveSeconds;
     public int WinReward;
+    public int BackHomeLevel;
+    public int MergeTutLevel;
     [TableList]
     public TimeLimit[] TimeLimits;
 

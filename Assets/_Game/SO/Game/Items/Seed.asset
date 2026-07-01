@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 477
   Name: Seed
-  Description: 
-  Categories: 13000000140000000a00000011000000
+  Description: A tiny biological capsule holding the complete compressed blueprint
+    of a future plant or tree.
+  Categories: 0a00000011000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 516
   Name: Bottle
-  Description: 
+  Description: A hollow glass or plastic cylinder sculpted to trap, store, and transport
+    refreshing liquids.
   Categories: 15000000

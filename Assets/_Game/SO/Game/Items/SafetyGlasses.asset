@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 142
-  Name: SafetyGlasses
-  Description: 
+  Name: Safety Glasses
+  Description: Tough transparent shields worn over mortal eyes to protect them from
+    flying sparks and chemicals.
   Categories: 18000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 423
   Name: Gardener
-  Description: 
+  Description: A patient mortal who spends life grooming soil, feeding flora, and
+    organizing green spaces.
   Categories: 19000000

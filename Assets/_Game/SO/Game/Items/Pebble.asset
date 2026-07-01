@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 564
   Name: Pebble
-  Description: 
+  Description: A tiny, smooth fragment of rock nicely polished by the eternal tumbling
+    of river currents.
   Categories: 03000000

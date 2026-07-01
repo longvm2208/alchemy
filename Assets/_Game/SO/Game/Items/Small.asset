@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 479
   Name: Small
-  Description: 
-  Categories: 310000003200000007000000
+  Description: A conceptual modifier that shrinks the physical scale of any target
+    element.
+  Categories: 07000000

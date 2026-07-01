@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 401
-  Name: ChristmasTree
-  Description: 
+  Name: Christmas Tree
+  Description: A decorated evergreen pine that travels indoors to wear flashing lights
+    and hide family gifts.
   Categories: 1100000017000000

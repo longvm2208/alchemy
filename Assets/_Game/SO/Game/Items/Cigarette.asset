@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 615
   Name: Cigarette
-  Description: 
+  Description: A tight paper cylinder packing dried tobacco leaves, waiting to breath
+    smoke into the atmosphere.
   Categories: 18000000

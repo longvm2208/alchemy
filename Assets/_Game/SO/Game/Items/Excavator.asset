@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 624
   Name: Excavator
-  Description: 
+  Description: A heavy metal construction dinosaur utilizing a giant iron claw to
+    rip up the solid earth.
   Categories: 1800000027000000

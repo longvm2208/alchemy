@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 506
   Name: Anthill
-  Description: 
+  Description: A subterranean metropolis of dirt engineered by thousands of hyper-disciplined
+    crawlers.
   Categories: 16000000

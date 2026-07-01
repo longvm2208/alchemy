@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 309
   Name: Horseshoe
-  Description: 
+  Description: A crescent iron boot nailed to an equine hoof to upgrade traction
+    and allegedly attract luck.
   Categories: 1800000022000000

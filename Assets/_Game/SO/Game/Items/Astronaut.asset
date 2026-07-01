@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 179
   Name: Astronaut
-  Description: 
-  Categories: 0c0000002c0000002f0000000d0000002d0000003000000019000000
+  Description: Ambitious celestial voyagers packed into iron tubes to float where
+    gravity cannot reach them.
+  Categories: 19000000

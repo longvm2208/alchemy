@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 646
   Name: Orchard
-  Description: 
-  Categories: 120000001300000011000000
+  Description: A neatly arranged forest grid populated exclusively by domesticated
+    fruit trees.
+  Categories: 11000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 430
   Name: Husky
-  Description: 
+  Description: A thick-furred, dramatic snow canine engineered for pulling sleds
+    and vocalizing loud complaints.
   Categories: 1b000000

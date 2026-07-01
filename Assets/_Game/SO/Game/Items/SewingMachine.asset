@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 581
-  Name: SewingMachine
-  Description: 
+  Name: Sewing Machine
+  Description: A mechanical apparatus that rapidly drives a needle and thread to
+    assemble textile fabrics.
   Categories: 24000000

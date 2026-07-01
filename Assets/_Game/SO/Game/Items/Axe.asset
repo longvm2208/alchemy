@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 509
   Name: Axe
-  Description: 
-  Categories: 12000000210000001300000022000000180000001a000000
+  Description: A heavy iron tooth mounted on wood, engineered by lumberjacks to conquer
+    tall trees.
+  Categories: 180000001a000000

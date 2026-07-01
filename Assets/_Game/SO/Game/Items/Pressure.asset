@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Pressure
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: fb80c7d95f192de428b4fbb30bfe286b, type: 3}
+  Icon: {fileID: 21300000, guid: d410fa20d2df3c7469e1c4d692a2d3f5, type: 3}
   Id: 12
   Name: Pressure
-  Description: 
-  Categories: 020000000500000003000000060000000d000000
+  Description: An intense, crushing invisible weight that squeezes space and matter
+    tightly.
+  Categories: 0d000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 582a35e9237ab644d900b54039297dbe, type: 3}
   Id: 485
   Name: Steel
-  Description: 
-  Categories: 0d000000210000002300000026000000290000002a0000000e0000002200000024000000270000002b00000012000000
+  Description: An upgraded iron alloy refined with carbon to become the absolute
+    backbone of skyscrapers.
+  Categories: 12000000

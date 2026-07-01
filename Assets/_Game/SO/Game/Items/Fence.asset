@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 125
   Name: Fence
-  Description: 
+  Description: A wooden or metallic barrier built around a piece of earth to politely
+    say "keep out".
   Categories: 16000000

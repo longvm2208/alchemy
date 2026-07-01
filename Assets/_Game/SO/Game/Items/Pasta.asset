@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 650
   Name: Pasta
-  Description: 
-  Categories: 2e0000002f00000021000000
+  Description: Dried geometric dough strings or tubes, traditionally boiled and coated
+    in rich mineral sauces.
+  Categories: 21000000

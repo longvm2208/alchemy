@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 355
   Name: Saddle
-  Description: 
+  Description: A leather seat of control buckled to an equine back to make human
+    transport much smoother.
   Categories: 18000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 598
   Name: Tractor
-  Description: 
+  Description: A heavy farm vehicle with giant wheels, built to drag heavy plows
+    through agricultural fields.
   Categories: 27000000

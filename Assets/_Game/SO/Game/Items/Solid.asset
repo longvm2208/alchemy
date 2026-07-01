@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 364
   Name: Solid
-  Description: 
+  Description: A firm, unyielding state of matter where atoms hold onto each other
+    tightly to maintain structural form.
   Categories: 0b000000

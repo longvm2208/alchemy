@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 670
   Name: Wagon
-  Description: 
-  Categories: 1b000000270000002a0000001c000000280000002b00000018000000
+  Description: A basic four-wheeled wooden box with a handle, ideal for pulling children
+    or farm harvests.
+  Categories: 1800000027000000

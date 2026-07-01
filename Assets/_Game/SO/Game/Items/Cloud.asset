@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 76
   Name: Cloud
-  Description: 
-  Categories: 010000000600000002000000070000000f00000004000000
+  Description: A fluffy, floating reservoir of airborne water vapor looking for a
+    good place to rain.
+  Categories: 02000000040000000f000000

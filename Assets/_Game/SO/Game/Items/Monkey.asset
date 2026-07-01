@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 445
   Name: Monkey
-  Description: 
-  Categories: 1e0000001f0000001b000000
+  Description: A nimble, tree-dwelling forest climber known for its high intelligence
+    and love of bananas.
+  Categories: 1b000000

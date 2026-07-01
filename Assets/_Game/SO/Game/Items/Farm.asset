@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 157
   Name: Farm
-  Description: 
+  Description: A cultivated patch of earth dedicated to growing food and raising
+    noisy livestock.
   Categories: 0e00000016000000

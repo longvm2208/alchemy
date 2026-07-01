@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 126
   Name: Flamethrower
-  Description: 
+  Description: A destructive mechanical tube designed to spray liquid fire upon anything
+    in its path.
   Categories: 1a000000

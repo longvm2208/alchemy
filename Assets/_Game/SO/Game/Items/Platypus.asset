@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 347
   Name: Platypus
-  Description: 
+  Description: A bizarre ecological mashup featuring a duck's beak, a beaver's tail,
+    and a venomous kick.
   Categories: 1b000000

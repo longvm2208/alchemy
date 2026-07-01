@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 685
-  Name: ChocolateMilk
-  Description: 
+  Name: Chocolate Milk
+  Description: A comforting liquid blend where rich chocolate confection dissolves
+    into fresh mammal milk.
   Categories: 05000000

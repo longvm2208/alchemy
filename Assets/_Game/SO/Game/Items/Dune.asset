@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7e752ef16268439931fd35465030a, type: 3}
   m_Name: Dune
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2219abdb1885c7b438271288ff2a2db8, type: 3}
   Id: 50
   Name: Dune
-  Description: 
-  Categories: 080000000900000003000000
+  Description: A shifting wave or mountain of loose sand, sculpted by the restless
+    fingers of the wind.
+  Categories: 03000000

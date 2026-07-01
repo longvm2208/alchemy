@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 119
   Name: Binoculars
-  Description: 
+  Description: Dual aligned optical tubes crafted to help mortals spy on distant
+    objects or birds.
   Categories: 18000000

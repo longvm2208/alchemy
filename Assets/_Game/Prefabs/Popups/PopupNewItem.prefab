@@ -415,9 +415,18 @@ MonoBehaviour:
   canvasGroup: {fileID: 8083697323532850648}
   animations:
   - rid: 7295528342220701961
+  - rid: 4984145148402729039
   references:
     version: 2
     RefIds:
+    - rid: 4984145148402729039
+      type: {class: MoveAnchorPosition, ns: Toolkit, asm: Assembly-CSharp}
+      data:
+        duration: 0.5
+        start: {x: 0, y: 173}
+        end: {x: 0, y: 123}
+        ease: 6
+        rt: {fileID: 9050792468863368276}
     - rid: 7295528342220701961
       type: {class: FadeCanvasGroup, ns: Toolkit, asm: Assembly-CSharp}
       data:
@@ -441,9 +450,18 @@ MonoBehaviour:
   canvasGroup: {fileID: 8083697323532850648}
   animations:
   - rid: 7295528342220701963
+  - rid: 4984145148402729040
   references:
     version: 2
     RefIds:
+    - rid: 4984145148402729040
+      type: {class: MoveAnchorPosition, ns: Toolkit, asm: Assembly-CSharp}
+      data:
+        duration: 0.5
+        start: {x: 0, y: 123}
+        end: {x: 0, y: 73}
+        ease: 6
+        rt: {fileID: 9050792468863368276}
     - rid: 7295528342220701963
       type: {class: FadeCanvasGroup, ns: Toolkit, asm: Assembly-CSharp}
       data:

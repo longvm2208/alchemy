@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 327
   Name: Mineral
-  Description: 
-  Categories: 030000000d000000040000000e00000006000000
+  Description: A naturally occurring solid crystal structure forged under the crust
+    by planetary chemistry.
+  Categories: 06000000

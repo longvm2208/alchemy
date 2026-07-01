@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 304
   Name: Greenhouse
-  Description: 
-  Categories: 11000000120000001500000016000000
+  Description: A clear glass or plastic house designed to trap heat and trick plants
+    into thinking it's always summer.
+  Categories: 1500000016000000

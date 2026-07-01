@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 273
   Name: Chill
-  Description: 
+  Description: A minor, refreshing drop in thermal energy that hints at cold weather
+    and requests a light jacket.
   Categories: 01000000

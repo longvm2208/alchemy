@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 570
   Name: Quicksand
-  Description: 
+  Description: A treacherous mixture of fine sand and water that loses stability
+    and swallows heavy travelers.
   Categories: 03000000

@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 346
   Name: Pirate
-  Description: 
+  Description: A lawless maritime voyager seeking gold caches while flying a skull
+    flag on the high seas.
   Categories: 19000000

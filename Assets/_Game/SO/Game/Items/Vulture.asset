@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 379
   Name: Vulture
-  Description: 
-  Categories: 08000000190000001c000000090000001a0000001d000000
+  Description: A patient, large-winged avian glider circling high above places where
+    life returns to the dust.
+  Categories: 1d000000

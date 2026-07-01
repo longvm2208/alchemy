@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 22dd045fd83206b48ba2f65dd4638f26, type: 3}
   Id: 33
   Name: Metal
-  Description: 
-  Categories: 0d000000210000002300000026000000290000002a0000000e0000002200000024000000270000002b0000000600000012000000
+  Description: A dense, shiny and durable material forged in planetary cores; the
+    literal spine of human tools.
+  Categories: 0600000012000000

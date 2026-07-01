@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 226
   Name: Potter
-  Description: 
+  Description: A skilled artisan who shapes wet clay mud into functional geometry
+    using a spinning wheel.
   Categories: 19000000

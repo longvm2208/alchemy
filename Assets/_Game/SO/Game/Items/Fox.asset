@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 421
   Name: Fox
-  Description: 
-  Categories: 1a0000001c0000001b0000001d000000
+  Description: A clever, orange-furred canine trickster famous for sneaking into
+    chicken coops.
+  Categories: 1b000000

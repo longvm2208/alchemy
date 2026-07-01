@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
   Id: 557
-  Name: MapleSyrup
-  Description: 
+  Name: Maple Syrup
+  Description: Sweet liquid gold boiled down from the mineral-rich sap flowing inside
+    maple tree veins.
   Categories: 21000000

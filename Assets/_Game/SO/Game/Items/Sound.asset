@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 104
   Name: Sound
-  Description: 
+  Description: Invisible vibrational waves traveling through the air to deliver noise
+    directly to mortal ears.
   Categories: 07000000

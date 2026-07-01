@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 6b660a9b84bcb2946a4d482bde253460, type: 3}
   Id: 11
   Name: Mud
-  Description: 
-  Categories: 0000000003000000040000000e0000000f000000010000000500000010000000
+  Description: A soft, sticky and squishy combination of fine soil and liquid water
+    blended together.
+  Categories: 03000000

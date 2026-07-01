@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 296
   Name: Fridge
-  Description: 
+  Description: A cold metal kitchen cabinet designed to freeze time for groceries
+    and stop milk from spoiling.
   Categories: 17000000

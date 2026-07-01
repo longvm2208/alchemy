@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 129
   Name: Hangar
-  Description: 
+  Description: A giant stone or metal garage built specifically to shelter sleeping
+    mechanical birds.
   Categories: 16000000

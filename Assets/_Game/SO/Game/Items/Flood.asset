@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 82
   Name: Flood
-  Description: 
-  Categories: 3100000032000000030000000400000013000000
+  Description: When water escapes its boundaries and decides to claim the dry land
+    as its personal playground.
+  Categories: 030000000400000013000000

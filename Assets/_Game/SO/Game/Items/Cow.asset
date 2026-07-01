@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 277
   Name: Cow
-  Description: 
-  Categories: 1b0000001c000000
+  Description: A slow-chewing, heavy field beast that acts as a four-legged milk
+    factory and landscape lawnmower.
+  Categories: 1b000000

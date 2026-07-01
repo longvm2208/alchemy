@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 549
   Name: Hill
-  Description: 
-  Categories: 03000000070000000400000008000000
+  Description: A gentle, minor elevation of land rock that didn't grow tall enough
+    to become a mountain giant.
+  Categories: 03000000

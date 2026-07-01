@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 167
   Name: Soil
-  Description: 
-  Categories: 00000000030000000f000000100000000100000004000000110000000a000000
+  Description: The fertile, nutrient-rich dark womb of the earth that feeds the roots
+    of civilization.
+  Categories: 030000000a000000

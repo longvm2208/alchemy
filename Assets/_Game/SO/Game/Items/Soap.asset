@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 586
   Name: Soap
-  Description: 
+  Description: A processed chemical block or liquid used with water to dissolve oil
+    dirt and clean human skin.
   Categories: 06000000

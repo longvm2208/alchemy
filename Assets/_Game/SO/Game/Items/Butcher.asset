@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 261
   Name: Butcher
-  Description: 
+  Description: A skilled meat-processing artisan who handles the transition from
+    farm livestock to kitchen steak.
   Categories: 19000000

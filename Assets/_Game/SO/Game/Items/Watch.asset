@@ -15,5 +15,6 @@ MonoBehaviour:
   Icon: {fileID: 0}
   Id: 248
   Name: Watch
-  Description: 
+  Description: A compact, strapped wheel of time designed to monitor passing moments
+    on a mortal's wrist.
   Categories: 0800000018000000
